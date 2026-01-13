@@ -1,0 +1,11 @@
+# Robots.txt for StuCarbon - Student Carbon Footprint Calculator
+# https://stucarbon.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://stucarbon.com/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

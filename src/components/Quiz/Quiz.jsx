@@ -1,0 +1,122 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { questions } from '../../data/questions';
+import { Button, ProgressBar } from '../UI';
+import './Quiz.css';
+
+export default function Quiz({ onComplete, onGoHome }) {
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [answers, setAnswers] = useState({});
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    const question = questions[currentQuestion];
+    const totalQuestions = questions.length;
+    const selectedOption = answers[question.id];
+
+    const handleOptionSelect = (optionId) => {
+        setAnswers(prev => ({
+            ...prev,
+            [question.id]: optionId
+        }));
+    };
+
+    const handleNext = () => {
+        if (!selectedOption) return;
+
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            if (currentQuestion < totalQuestions - 1) {
+                setCurrentQuestion(prev => prev + 1);
+            } else {
+                // Quiz complete
+                onComplete(answers);
+            }
+            setIsTransitioning(false);
+        }, 300);
+    };
+
+    const handleBack = () => {
+        if (currentQuestion > 0) {
+            setIsTransitioning(true);
+            setTimeout(() => {
+                setCurrentQuestion(prev => prev - 1);
+                setIsTransitioning(false);
+            }, 300);
+        }
+    };
+
+    const isLastQuestion = currentQuestion === totalQuestions - 1;
+
+    return (
+        <div className="quiz-container">
+            {/* Logo - always visible for navigation back home */}
+            <div className="quiz-logo" onClick={onGoHome}>
+                <span className="quiz-logo-icon">🌱</span>
+                <span className="quiz-logo-text">StuCarbon</span>
+            </div>
+
+            <div className="quiz-header">
+                <h2 className="quiz-title">
+                    <span className="text-gradient">Quick Carbon Check</span> 🌱
+                </h2>
+                <p className="quiz-subtitle">Answer honestly - no judgment, just insights!</p>
+            </div>
+
+            <div className="quiz-progress">
+                <ProgressBar current={currentQuestion + 1} total={totalQuestions} />
+            </div>
+
+            <div className={`question-card ${isTransitioning ? '' : 'question-entering'}`}>
+                <div className="question-number">
+                    <span>{question.emoji}</span>
+                    <span>Question {currentQuestion + 1}</span>
+                </div>
+
+                <div className="question-emoji">{question.emoji}</div>
+
+                <h3 className="question-text">{question.question}</h3>
+
+                <div className="options-grid">
+                    {question.options.map(option => (
+                        <button
+                            key={option.id}
+                            className={`option-button ${selectedOption === option.id ? 'selected' : ''}`}
+                            onClick={() => handleOptionSelect(option.id)}
+                        >
+                            <span className="option-emoji">{option.emoji}</span>
+                            <div className="option-content">
+                                <span className="option-label">{option.label}</span>
+                            </div>
+                            <div className="option-check">
+                                {selectedOption === option.id && (
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                        <polyline points="20 6 9 17 4 12" />
+                                    </svg>
+                                )}
+                            </div>
+                        </button>
+                    ))}
+                </div>
+            </div>
+
+            <div className="quiz-navigation">
+                <Button
+                    variant="ghost"
+                    onClick={handleBack}
+                    disabled={currentQuestion === 0}
+                >
+                    ← Back
+                </Button>
+
+                <Button
+                    variant="primary"
+                    onClick={handleNext}
+                    disabled={!selectedOption}
+                >
+                    {isLastQuestion ? 'See Results 🎉' : 'Next →'}
+                </Button>
+            </div>
+        </div>
+    );
+}

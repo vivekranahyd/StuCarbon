@@ -1,0 +1,246 @@
+/* Tips Component Styles */
+.tips-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Tips Logo - Always visible for navigation */
+.tips-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.tips-logo:hover {
+    transform: scale(1.05);
+}
+
+.tips-logo-icon {
+    font-size: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.tips-logo-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-700);
+}
+
+.tips-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.tips-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.tips-subtitle {
+    color: var(--gray-500);
+    font-size: 1.125rem;
+}
+
+/* Section */
+.tips-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.tips-section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.tips-section-icon {
+    font-size: 1.75rem;
+}
+
+.tips-section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.tips-section-badge {
+    background: var(--primary-100);
+    color: var(--primary-700);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Tip Card */
+.tips-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.tip-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    border-left: 4px solid transparent;
+}
+
+.tip-card:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.tip-card.high-impact {
+    border-left-color: var(--primary-500);
+    background: linear-gradient(135deg, var(--white) 0%, var(--primary-50) 100%);
+}
+
+.tip-card.medium-impact {
+    border-left-color: var(--accent-orange);
+}
+
+.tip-card.low-impact {
+    border-left-color: var(--gray-300);
+}
+
+.tip-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.tip-content {
+    flex: 1;
+}
+
+.tip-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--dark);
+    margin-bottom: var(--space-xs);
+}
+
+.tip-description {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    line-height: 1.5;
+}
+
+.tip-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+}
+
+.tip-savings {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-600);
+    background: var(--primary-50);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+}
+
+.tip-category {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+    text-transform: capitalize;
+}
+
+/* Impact Badge */
+.impact-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.impact-badge.high {
+    background: var(--primary-100);
+    color: var(--primary-700);
+}
+
+.impact-badge.medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.impact-badge.low {
+    background: var(--gray-100);
+    color: var(--gray-600);
+}
+
+/* Potential Savings */
+.potential-savings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--gradient-eco);
+    border-radius: var(--radius-lg);
+    color: white;
+    margin-top: var(--space-xl);
+}
+
+.savings-icon {
+    font-size: 2rem;
+}
+
+.savings-content {
+    text-align: left;
+}
+
+.savings-value {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.savings-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* Tips Actions */
+.tips-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .tips-container {
+        padding: var(--space-md);
+    }
+
+    .tip-card {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .tip-meta {
+        flex-wrap: wrap;
+    }
+}

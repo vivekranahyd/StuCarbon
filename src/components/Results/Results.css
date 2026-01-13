@@ -1,0 +1,333 @@
+/* Results Component Styles */
+.results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-xl);
+    animation: fadeIn 0.5s ease;
+}
+
+/* Results Logo - Always visible for navigation */
+.results-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-xl);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.results-logo:hover {
+    transform: scale(1.05);
+}
+
+.results-logo-icon {
+    font-size: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.results-logo-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-700);
+}
+
+.results-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.results-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+.results-subtitle {
+    color: var(--gray-500);
+    font-size: 1.125rem;
+}
+
+/* Score Section */
+.score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.score-gauge-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin-bottom: var(--space-xl);
+}
+
+.score-gauge {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.score-gauge-bg {
+    fill: none;
+    stroke: var(--gray-200);
+    stroke-width: 12;
+}
+
+.score-gauge-fill {
+    fill: none;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s ease-out;
+}
+
+.score-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.score-value {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: var(--space-xs);
+}
+
+.score-unit {
+    font-size: 1rem;
+    color: var(--gray-500);
+    margin-bottom: var(--space-sm);
+}
+
+.score-rating {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* Comparison */
+.comparison-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.comparison-icon {
+    font-size: 2rem;
+}
+
+.comparison-text {
+    font-size: 1rem;
+    color: var(--dark);
+}
+
+.comparison-highlight {
+    font-weight: 700;
+    color: var(--primary-600);
+}
+
+.comparison-highlight.worse {
+    color: var(--accent-coral);
+}
+
+/* Breakdown Section */
+.breakdown-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-md);
+}
+
+.breakdown-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    border: 2px solid transparent;
+}
+
+.breakdown-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.breakdown-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto var(--space-md);
+}
+
+.breakdown-label {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    margin-bottom: var(--space-xs);
+}
+
+.breakdown-value {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+}
+
+.breakdown-percent {
+    font-size: 0.75rem;
+    color: var(--gray-400);
+}
+
+/* Donut Chart */
+.donut-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.donut-chart {
+    width: 200px;
+    height: 200px;
+}
+
+.donut-chart svg {
+    transform: rotate(-90deg);
+}
+
+.donut-segment {
+    fill: none;
+    stroke-width: 40;
+    transition: all var(--transition-base);
+}
+
+.donut-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.875rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Fun Equivalents */
+.equivalents-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.equivalents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.equivalent-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+}
+
+.equivalent-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
+}
+
+.equivalent-emoji {
+    font-size: 2rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.equivalent-content {
+    flex: 1;
+}
+
+.equivalent-value {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.equivalent-label {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+/* Actions */
+.results-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-2xl);
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .results-container {
+        padding: var(--space-md);
+    }
+
+    .score-gauge-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .score-value {
+        font-size: 2.5rem;
+    }
+
+    .breakdown-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .equivalents-grid {
+        grid-template-columns: 1fr;
+    }
+}
