@@ -3,7 +3,7 @@ name: "Google Indexing"
 on:
   push:
     branches:
-      - main  # Or 'master', whichever is your production branch
+      - main
 
 jobs:
   google_indexing:
@@ -19,6 +19,5 @@ jobs:
       - name: Install & Run Indexing Script
         env:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
-          SITE_URL: "https://stu-carbon.vercel.app" # CHANGE THIS to your actual site
         run: |
-          npx google-indexing-script
+          npx google-indexing-script https://stu-carbon.vercel.app
