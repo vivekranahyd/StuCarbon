@@ -10,9 +10,9 @@ export default function KidsResults({ score, onRetake, onGoHome }) {
     const planetPoints = Math.max(0, 200 - score);
 
     return (
-        <div className="kids-results">
+        <article className="kids-results" aria-label="Carbon footprint quiz results for kids">
             {/* Confetti Animation */}
-            <div className="kids-confetti">
+            <div className="kids-confetti" aria-hidden="true">
                 {['🎉', '⭐', '🌟', '✨', '🎊', '💫'].map((emoji, i) => (
                     <span key={i} className={`confetti-piece confetti-${i + 1}`}>{emoji}</span>
                 ))}
@@ -111,6 +111,6 @@ export default function KidsResults({ score, onRetake, onGoHome }) {
                     <p className="kids-cert-tip">📸 Take a screenshot to save your certificate!</p>
                 </div>
             </div>
-        </div>
+        </article>
     );
 }

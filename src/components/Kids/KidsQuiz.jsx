@@ -42,12 +42,12 @@ export default function KidsQuiz({ onComplete, onGoHome }) {
     const progressEmojis = ['🌱', '🌿', '🌲', '🌳', '🌴', '🌍'];
 
     return (
-        <div className="kids-quiz">
+        <section className="kids-quiz" aria-label="Carbon footprint quiz for kids">
             {/* Reaction Overlay */}
             {showReaction && (
-                <div className="kids-reaction-overlay">
+                <div className="kids-reaction-overlay" role="dialog" aria-label="Feedback message">
                     <div className="kids-reaction-box">
-                        <span className="kids-reaction-emoji">{question.mascot}</span>
+                        <span className="kids-reaction-emoji" aria-hidden="true">{question.mascot}</span>
                         <p className="kids-reaction-text">{reaction}</p>
                     </div>
                 </div>
@@ -55,9 +55,6 @@ export default function KidsQuiz({ onComplete, onGoHome }) {
 
             {/* Header */}
             <div className="kids-quiz-header">
-                <button className="kids-home-btn" onClick={onGoHome}>
-                    🏠 Home
-                </button>
                 <div className="kids-quiz-title">
                     <span>Planet Hero Quiz</span>
                     <span className="kids-free-small">FREE!</span>
@@ -117,6 +114,6 @@ export default function KidsQuiz({ onComplete, onGoHome }) {
                 <span>You're doing great!</span>
                 <span>🌟</span>
             </div>
-        </div>
+        </section>
     );
 }

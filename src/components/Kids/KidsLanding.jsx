@@ -1,85 +1,98 @@
 import { Link } from 'react-router-dom';
+import { Button } from '../UI';
+import '../Landing/Landing.css';
 import './Kids.css';
 
 export default function KidsLanding({ onStart }) {
     return (
-        <div className="kids-landing">
-            {/* Animated Background Elements */}
-            <div className="kids-bg-elements">
-                <div className="kids-cloud kids-cloud-1">☁️</div>
-                <div className="kids-cloud kids-cloud-2">☁️</div>
-                <div className="kids-star kids-star-1">⭐</div>
-                <div className="kids-star kids-star-2">🌟</div>
-                <div className="kids-star kids-star-3">✨</div>
-                <div className="kids-animal kids-animal-1">🦋</div>
-                <div className="kids-animal kids-animal-2">🐝</div>
+        <div className="landing-container">
+            {/* Decorative Blobs */}
+            <div className="landing-blob landing-blob-1" />
+            <div className="landing-blob landing-blob-2" />
+            <div className="landing-blob landing-blob-3" />
+
+            {/* Subtle animated elements - keep for kids */}
+            <div className="kids-floating-elements" aria-hidden="true">
+                <span className="kids-float kids-float-1">🌿</span>
+                <span className="kids-float kids-float-2">🦋</span>
+                <span className="kids-float kids-float-3">⭐</span>
+                <span className="kids-float kids-float-4">🌸</span>
+                <span className="kids-float kids-float-5">🐝</span>
             </div>
 
-            <div className="kids-landing-content">
-                {/* Logo */}
-                <div className="kids-logo">
-                    <Link to="/" className="kids-logo-link">
-                        <span className="kids-logo-icon">🌱</span>
-                        <span className="kids-logo-text">StuCarbon</span>
-                    </Link>
-                    <span className="kids-badge">For Kids!</span>
-                </div>
+            <div className="landing-content animate-fade-in">
+                <Link to="/" className="landing-brand">
+                    <span className="landing-logo">🌱</span>
+                    <span className="landing-brand-name">StuCarbon</span>
+                </Link>
 
-                {/* Earth Mascot */}
-                <div className="kids-mascot">
-                    <span className="kids-earth">🌍</span>
-                    <div className="kids-mascot-speech">
-                        <p>Hi friend! I'm Earth! 👋</p>
-                        <p>Let's see how you help me stay healthy!</p>
-                    </div>
-                </div>
-
-                {/* Title */}
-                <h1 className="kids-title">
-                    <span className="kids-title-main">Planet Hero</span>
-                    <span className="kids-title-sub">Quiz</span>
+                <h1 className="landing-title">
+                    <span className="text-gradient">Kids Carbon Footprint</span>{' '}
+                    Calculator
                 </h1>
 
-                <p className="kids-subtitle">
-                    Answer 6 fun questions and discover your <br />
-                    <span className="kids-highlight">Animal Spirit Badge!</span> 🦁🐬🦅
+                <p className="landing-subtitle">
+                    Calculate your environmental impact in under 2 minutes.
+                    Get personalized tips to reduce your carbon footprint! 🌍
                 </p>
 
-                {/* FREE Badge */}
-                <div className="kids-free-badge">
-                    <span className="free-star">⭐</span>
-                    <span>100% FREE</span>
-                    <span className="free-star">⭐</span>
-                </div>
-
-                {/* Fun Facts */}
-                <div className="kids-fun-facts">
-                    <div className="kids-fact">
-                        <span className="kids-fact-emoji">🎮</span>
-                        <span>Fun like a game!</span>
+                {/* Feature Pills */}
+                <div className="landing-features">
+                    <div className="landing-feature">
+                        <span className="landing-feature-icon">⏱️</span>
+                        <span>Under 2 minutes</span>
                     </div>
-                    <div className="kids-fact">
-                        <span className="kids-fact-emoji">⏰</span>
-                        <span>Only 2 minutes!</span>
+                    <div className="landing-feature">
+                        <span className="landing-feature-icon">📊</span>
+                        <span>6 simple questions</span>
                     </div>
-                    <div className="kids-fact">
-                        <span className="kids-fact-emoji">🏆</span>
-                        <span>Earn a badge!</span>
+                    <div className="landing-feature">
+                        <span className="landing-feature-icon">🏆</span>
+                        <span>Earn a badge</span>
                     </div>
                 </div>
 
-                {/* CTA Button */}
-                <button className="kids-start-btn" onClick={onStart}>
-                    <span className="kids-btn-emoji">🚀</span>
-                    <span>Start My Adventure!</span>
-                    <span className="kids-btn-sparkle">✨</span>
-                </button>
+                {/* CTA Buttons */}
+                <div className="landing-cta-group">
+                    <div className="landing-cta">
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            onClick={onStart}
+                            icon="🚀"
+                        >
+                            Calculate
+                        </Button>
+                        <span className="cta-free-label">FREE!</span>
+                    </div>
+                </div>
 
-                {/* Parent Link */}
-                <p className="kids-parent-link">
-                    <Link to="/">Looking for the Student Calculator? →</Link>
-                </p>
+                <div className="landing-time">
+                    <span>✅</span>
+                    <span>Free • No signup required • 100% anonymous</span>
+                </div>
+
+                {/* Stats */}
+                <div className="landing-stats">
+                    <div className="landing-stat">
+                        <div className="landing-stat-value">200kg</div>
+                        <div className="landing-stat-label">Avg Kids CO₂/month</div>
+                    </div>
+                    <div className="landing-stat">
+                        <div className="landing-stat-value">6</div>
+                        <div className="landing-stat-label">Quick Questions</div>
+                    </div>
+                    <div className="landing-stat landing-stat-free">
+                        <div className="landing-stat-value">100%</div>
+                        <div className="landing-stat-label">Free Forever</div>
+                    </div>
+                </div>
             </div>
+
+            {/* SEO: Hidden text */}
+            <p className="kids-seo-text">
+                Free carbon footprint calculator for kids ages 8-12. Learn about environmental impact through fun questions.
+            </p>
         </div>
     );
 }

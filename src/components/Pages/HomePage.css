@@ -1,0 +1,166 @@
+/* Home Page Styles */
+.home-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #e0f7f0 0%, #f0fdf4 40%, #fef9e7 100%);
+    padding: 3rem 1.5rem 2rem;
+    text-align: center;
+}
+
+.home-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-logo {
+    font-size: 2.5rem;
+}
+
+.home-brand-name {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #047857;
+}
+
+.home-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-title-gradient {
+    background: linear-gradient(135deg, #78350f 0%, #92400e 50%, #065f46 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+}
+
+/* Calculator Cards */
+.home-calculators {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.home-calc-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 300px;
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+}
+
+.home-calc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.home-calc-student:hover {
+    border-color: #10b981;
+}
+
+.home-calc-kids:hover {
+    border-color: #f59e0b;
+}
+
+.home-calc-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-calc-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.home-calc-desc {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.home-calc-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.home-calc-features li {
+    font-size: 0.85rem;
+    color: #374151;
+    padding: 0.25rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.home-calc-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: 700;
+}
+
+.home-calc-cta {
+    display: inline-block;
+    font-weight: 600;
+    color: #059669;
+    font-size: 0.95rem;
+}
+
+.home-calc-free {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #ef4444;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.home-footer-text {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-calc-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}

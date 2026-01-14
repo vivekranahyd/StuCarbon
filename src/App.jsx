@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 // Layout
 import Navbar from './components/Layout/Navbar';
 import Footer from './components/Layout/Footer';
+import TopNav from './components/Layout/TopNav';
 
 // Calculator Components
 import Landing from './components/Landing/Landing';
@@ -22,6 +23,7 @@ import Contact from './components/Pages/Contact';
 import Blog, { BlogPost } from './components/Pages/Blog';
 import PrivacyPolicy from './components/Pages/PrivacyPolicy';
 import TermsOfService from './components/Pages/TermsOfService';
+import HomePage from './components/Pages/HomePage';
 
 // Utils
 import { calculateFootprint } from './utils/carbonCalculator';
@@ -47,8 +49,8 @@ const SCREENS = {
   TIPS: 'tips'
 };
 
-// Home page with calculator flow
-function Home() {
+// Student Calculator page with flow
+function StudentCalculator() {
   const [currentScreen, setCurrentScreen] = useState(SCREENS.LANDING);
   const [results, setResults] = useState(null);
   const [showShare, setShowShare] = useState(false);
@@ -100,7 +102,7 @@ function Home() {
       <Helmet>
         <title>Student Carbon Footprint Calculator | StuCarbon - 100% Free Quiz</title>
         <meta name="description" content="Calculate your carbon footprint as a student with our FREE 2-minute quiz. Get personalized tips to reduce your environmental impact on campus. Try StuCarbon now - 100% Free!" />
-        <link rel="canonical" href="https://stucarbon.com/" />
+        <link rel="canonical" href="https://stucarbon.com/students" />
       </Helmet>
 
       {currentScreen === SCREENS.LANDING && (
@@ -171,9 +173,59 @@ function KidsCalculator() {
   return (
     <>
       <Helmet>
-        <title>Kids Carbon Footprint Calculator | StuCarbon - Free Planet Hero Quiz</title>
-        <meta name="description" content="Fun, free carbon footprint quiz for kids ages 8-12! Answer 6 simple questions and earn your Planet Hero Animal Badge. 100% free, kid-friendly, and educational!" />
+        {/* Primary SEO Meta Tags */}
+        <title>Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon</title>
+        <meta name="title" content="Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon" />
+        <meta name="description" content="Free carbon footprint calculator for kids! Our fun, kid-friendly environmental quiz helps children ages 8-12 learn about their carbon footprint. Answer 6 simple questions, earn your Planet Hero Animal Badge, and discover easy ways to help the Earth. 100% free and educational!" />
+        <meta name="keywords" content="carbon footprint calculator for kids, kids carbon footprint quiz, children's environmental calculator, carbon footprint for children, kid-friendly carbon calculator, eco quiz for kids, environmental quiz for children, planet hero quiz, free kids carbon calculator, carbon footprint game for kids" />
         <link rel="canonical" href="https://stucarbon.com/kids" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stucarbon.com/kids" />
+        <meta property="og:title" content="Carbon Footprint Calculator for Kids | Free Planet Hero Quiz" />
+        <meta property="og:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly 2-minute quiz. Earn a Planet Hero Animal Badge!" />
+        <meta property="og:image" content="https://stucarbon.com/og-image-kids.png" />
+        <meta property="og:site_name" content="StuCarbon" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://stucarbon.com/kids" />
+        <meta name="twitter:title" content="Carbon Footprint Calculator for Kids | Free Planet Hero Quiz" />
+        <meta name="twitter:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly 2-minute quiz." />
+        <meta name="twitter:image" content="https://stucarbon.com/og-image-kids.png" />
+
+        {/* Structured Data - JSON-LD */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Carbon Footprint Calculator for Kids",
+            "alternateName": "StuCarbon Kids Planet Hero Quiz",
+            "description": "A free, fun carbon footprint calculator designed for kids ages 8-12. Children answer 6 simple questions about their daily habits and earn a Planet Hero Animal Badge while learning about environmental impact.",
+            "url": "https://stucarbon.com/kids",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "Any",
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Children",
+              "suggestedMinAge": "8",
+              "suggestedMaxAge": "12"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "StuCarbon"
+            },
+            "educationalLevel": "Elementary School",
+            "learningResourceType": "Interactive Quiz",
+            "teaches": ["Environmental Awareness", "Carbon Footprint", "Sustainability for Kids"]
+          }
+        `}</script>
       </Helmet>
 
       {currentScreen === 'landing' && (
@@ -194,19 +246,21 @@ function KidsCalculator() {
 function App() {
   const location = useLocation();
 
-  // Hide navbar on landing page and kids pages to keep them clean
+  // Hide navbar on calculator pages to keep them clean
   const isHomePage = location.pathname === '/';
+  const isStudentsPage = location.pathname.startsWith('/students');
   const isKidsPage = location.pathname.startsWith('/kids');
-  const hideNavbar = isHomePage || isKidsPage;
+  const hideNavbar = isHomePage || isStudentsPage || isKidsPage;
 
   return (
     <>
       <ScrollToTop />
-      {!hideNavbar && <Navbar />}
+      <TopNav />
 
-      <main>
+      <main style={{ paddingTop: '3.5rem' }}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/students" element={<StudentCalculator />} />
           <Route path="/kids" element={<KidsCalculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -217,7 +271,7 @@ function App() {
         </Routes>
       </main>
 
-      {!isKidsPage && <Footer />}
+      <Footer />
     </>
   );
 }

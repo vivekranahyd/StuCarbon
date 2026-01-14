@@ -13,10 +13,6 @@ export default function Footer() {
                         <span>StuCarbon</span>
                         <span className="footer-free-badge">100% FREE</span>
                     </div>
-                    <p>
-                        Free Student Carbon Footprint Calculator. Helping students understand
-                        and reduce their environmental impact, one quiz at a time.
-                    </p>
                 </div>
 
                 <div className="footer-nav">

@@ -1,0 +1,53 @@
+/* Top Navigation Bar - Simple links for all pages */
+.top-nav {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 0.75rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.top-nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.top-nav-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.top-nav-link:hover {
+    color: #059669;
+    background: rgba(5, 150, 105, 0.08);
+}
+
+.top-nav-link.active {
+    color: #059669;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .top-nav-links {
+        gap: 0.75rem;
+    }
+
+    .top-nav-link {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.5rem;
+    }
+}

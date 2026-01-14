@@ -11,10 +11,10 @@ export default function Landing({ onStart }) {
             <div className="landing-blob landing-blob-3" />
 
             <div className="landing-content animate-fade-in">
-                <div className="landing-brand">
+                <Link to="/" className="landing-brand">
                     <span className="landing-logo">🌱</span>
                     <span className="landing-brand-name">StuCarbon</span>
-                </div>
+                </Link>
 
                 <h1 className="landing-title">
                     <span className="text-gradient">Student Carbon Footprint</span>{' '}
@@ -49,19 +49,12 @@ export default function Landing({ onStart }) {
                             variant="primary"
                             size="lg"
                             onClick={onStart}
-                            icon="🎓"
+                            icon="🚀"
                         >
-                            Student Calculator
+                            Calculate
                         </Button>
                         <span className="cta-free-label">FREE!</span>
                     </div>
-
-                    {/* Kids Calculator Link */}
-                    <Link to="/kids" className="kids-calculator-btn">
-                        <span className="kids-emoji">🧸</span>
-                        <span>Kids Calculator (Ages 8-12)</span>
-                        <span className="kids-badge-small">FREE</span>
-                    </Link>
                 </div>
 
                 <div className="landing-time">

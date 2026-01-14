@@ -63,6 +63,7 @@
     justify-content: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
+    text-decoration: none;
 }
 
 .landing-logo {

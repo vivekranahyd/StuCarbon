@@ -66,16 +66,6 @@ export default function Quiz({ onComplete, onGoHome }) {
 
     return (
         <div className="quiz-container">
-            {/* Header with Home button and title */}
-            <div className="quiz-top-header">
-                <button className="quiz-home-btn" onClick={onGoHome}>
-                    🏠 Home
-                </button>
-                <div className="quiz-logo">
-                    <span className="quiz-logo-icon">🌱</span>
-                    <span className="quiz-logo-text">StuCarbon</span>
-                </div>
-            </div>
 
             <div className="quiz-header">
                 <h2 className="quiz-title">
