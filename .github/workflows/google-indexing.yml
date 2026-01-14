@@ -19,6 +19,6 @@ jobs:
       - name: Install & Run Indexing Script
         env:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
-          SITE_URL: "https://stucarbon.com" # CHANGE THIS to your actual site
+          SITE_URL: "https://stu-carbon.vercel.app" # CHANGE THIS to your actual site
         run: |
           npx google-indexing-script
