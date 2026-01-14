@@ -40,8 +40,12 @@ export default function Blog() {
                             className="blog-card animate-slide-up"
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
-                            <div className="blog-card-image">
-                                <span>{post.emoji}</span>
+                            <div className={`blog-card-image ${post.featuredImage ? 'has-image' : ''}`}>
+                                {post.featuredImage ? (
+                                    <img src={post.featuredImage} alt={post.title} loading="lazy" />
+                                ) : (
+                                    <span>{post.emoji}</span>
+                                )}
                             </div>
                             <div className="blog-card-content">
                                 <span className="blog-card-category">{post.category}</span>
@@ -233,6 +237,19 @@ export function BlogPost() {
                         <span className="blog-article-author">By {post.author.name}</span>
                     </div>
                 </header>
+
+                {/* Featured Image */}
+                {post.featuredImage && (
+                    <figure className="blog-featured-image">
+                        <img
+                            src={post.featuredImage}
+                            alt={post.title}
+                            loading="eager"
+                            width="1200"
+                            height="675"
+                        />
+                    </figure>
+                )}
 
                 {/* Table of Contents */}
                 <nav className="blog-toc">
