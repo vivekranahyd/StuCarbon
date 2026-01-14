@@ -188,6 +188,11 @@ export function BlogPost() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={post.metaTitle} />
                 <meta name="twitter:description" content={post.metaDescription} />
+                {post.featuredImage && <meta name="twitter:image" content={`https://stucarbon.com${post.featuredImage}`} />}
+                {post.featuredImage && <meta property="og:image" content={`https://stucarbon.com${post.featuredImage}`} />}
+
+                {/* Google Discover Optimization */}
+                <meta name="robots" content="max-image-preview:large" />
 
                 {/* Structured Data */}
                 <script
