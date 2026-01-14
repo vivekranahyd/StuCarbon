@@ -190,15 +190,18 @@ export function BlogPost() {
                 <meta name="twitter:description" content={post.metaDescription} />
 
                 {/* Structured Data */}
-                <script type="application/ld+json">
-                    {JSON.stringify(structuredData)}
-                </script>
-                <script type="application/ld+json">
-                    {JSON.stringify(faqStructuredData)}
-                </script>
-                <script type="application/ld+json">
-                    {JSON.stringify(breadcrumbData)}
-                </script>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+                />
             </Helmet>
 
             <article className="blog-article">
