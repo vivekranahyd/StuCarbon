@@ -1,70 +1,7 @@
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { blogPosts, getBlogPostBySlug, getRelatedPosts } from '../../data/blogPosts';
 import './Pages.css';
-
-// Blog posts data - in production, this would come from a CMS or API
-const blogPosts = [
-    {
-        id: 1,
-        slug: 'how-to-reduce-carbon-footprint-as-student',
-        title: '10 Easy Ways to Reduce Your Carbon Footprint as a Student',
-        excerpt: 'Simple, actionable tips that any college student can implement today to lower their environmental impact without breaking the bank.',
-        category: 'Tips',
-        date: 'January 12, 2026',
-        readTime: '5 min read',
-        emoji: '🌿'
-    },
-    {
-        id: 2,
-        slug: 'understanding-carbon-footprint',
-        title: 'What is a Carbon Footprint? A Student\'s Guide',
-        excerpt: 'Everything you need to know about carbon footprints - what they are, how they\'re calculated, and why they matter for your future.',
-        category: 'Education',
-        date: 'January 10, 2026',
-        readTime: '7 min read',
-        emoji: '📚'
-    },
-    {
-        id: 3,
-        slug: 'sustainable-dorm-living',
-        title: 'The Ultimate Guide to Sustainable Dorm Living',
-        excerpt: 'Transform your dorm room into an eco-friendly space with these practical tips for sustainable campus living.',
-        category: 'Lifestyle',
-        date: 'January 8, 2026',
-        readTime: '6 min read',
-        emoji: '🏠'
-    },
-    {
-        id: 4,
-        slug: 'meat-consumption-carbon-impact',
-        title: 'How Your Diet Affects Your Carbon Footprint',
-        excerpt: 'The surprising impact of food choices on carbon emissions, and how small dietary changes can make a big difference.',
-        category: 'Food',
-        date: 'January 5, 2026',
-        readTime: '8 min read',
-        emoji: '🥗'
-    },
-    {
-        id: 5,
-        slug: 'digital-carbon-footprint',
-        title: 'Your Digital Carbon Footprint: Streaming, Gaming & More',
-        excerpt: 'Did you know your Netflix habits have a carbon cost? Learn about the hidden environmental impact of digital activities.',
-        category: 'Technology',
-        date: 'January 3, 2026',
-        readTime: '5 min read',
-        emoji: '💻'
-    },
-    {
-        id: 6,
-        slug: 'campus-sustainability-initiatives',
-        title: 'How Universities Are Leading the Sustainability Charge',
-        excerpt: 'Discover how colleges and universities around the world are implementing green initiatives and how you can get involved.',
-        category: 'Campus',
-        date: 'December 28, 2025',
-        readTime: '6 min read',
-        emoji: '🎓'
-    }
-];
 
 export default function Blog() {
     return (
@@ -74,6 +11,17 @@ export default function Blog() {
                 <meta name="description" content="Read the StuCarbon blog for tips on reducing your carbon footprint as a student, sustainable living guides, and environmental education content." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://stucarbon.com/blog" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="StuCarbon Blog - Student Sustainability Tips & Guides" />
+                <meta property="og:description" content="Tips, guides, and insights to help students live more sustainably and reduce their carbon footprint." />
+                <meta property="og:url" content="https://stucarbon.com/blog" />
+                <meta property="og:type" content="website" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="StuCarbon Blog - Student Sustainability Tips" />
+                <meta name="twitter:description" content="Tips, guides, and insights for sustainable student living." />
             </Helmet>
 
             <div className="blog-page">
@@ -114,25 +62,261 @@ export default function Blog() {
     );
 }
 
-// Individual blog post component (placeholder)
+// Full Blog Post Component with SEO optimization
 export function BlogPost() {
+    const { slug } = useParams();
+    const post = getBlogPostBySlug(slug);
+    const relatedPosts = getRelatedPosts(slug);
+
+    // 404 handling
+    if (!post) {
+        return (
+            <>
+                <Helmet>
+                    <title>Post Not Found | StuCarbon</title>
+                    <meta name="robots" content="noindex" />
+                </Helmet>
+                <div className="legal-page">
+                    <div className="legal-content" style={{ textAlign: 'center', padding: '4rem 0' }}>
+                        <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>😕</div>
+                        <h1>Post Not Found</h1>
+                        <p style={{ marginTop: '1rem' }}>
+                            We couldn't find the blog post you're looking for.
+                        </p>
+                        <Link to="/blog" className="btn btn-primary" style={{ display: 'inline-block', marginTop: '2rem' }}>
+                            ← Back to Blog
+                        </Link>
+                    </div>
+                </div>
+            </>
+        );
+    }
+
+    // JSON-LD Structured Data for Google Rich Results
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.metaDescription,
+        "image": `https://stucarbon.com/og-${post.slug}.png`,
+        "author": {
+            "@type": "Organization",
+            "name": post.author.name,
+            "url": post.author.url
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "StuCarbon",
+            "url": "https://stucarbon.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://stucarbon.com/logo.png"
+            }
+        },
+        "datePublished": post.datePublished,
+        "dateModified": post.dateModified,
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://stucarbon.com/blog/${post.slug}`
+        }
+    };
+
+    // FAQ Structured Data
+    const faqStructuredData = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": post.content.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
+    // Breadcrumb Structured Data
+    const breadcrumbData = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://stucarbon.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://stucarbon.com/blog"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": post.title,
+                "item": `https://stucarbon.com/blog/${post.slug}`
+            }
+        ]
+    };
+
     return (
         <>
             <Helmet>
-                <title>Blog Post | StuCarbon</title>
+                <title>{post.metaTitle}</title>
+                <meta name="description" content={post.metaDescription} />
+                <meta name="keywords" content={post.keywords.join(', ')} />
+                <meta name="author" content={post.author.name} />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href={`https://stucarbon.com/blog/${post.slug}`} />
+
+                {/* Open Graph */}
+                <meta property="og:title" content={post.metaTitle} />
+                <meta property="og:description" content={post.metaDescription} />
+                <meta property="og:url" content={`https://stucarbon.com/blog/${post.slug}`} />
+                <meta property="og:type" content="article" />
+                <meta property="article:published_time" content={post.datePublished} />
+                <meta property="article:modified_time" content={post.dateModified} />
+                <meta property="article:author" content={post.author.name} />
+                <meta property="article:section" content={post.category} />
+                {post.keywords.map((keyword, i) => (
+                    <meta key={i} property="article:tag" content={keyword} />
+                ))}
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={post.metaTitle} />
+                <meta name="twitter:description" content={post.metaDescription} />
+
+                {/* Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify(structuredData)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(faqStructuredData)}
+                </script>
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbData)}
+                </script>
             </Helmet>
-            <div className="legal-page">
-                <div className="legal-content" style={{ textAlign: 'center', padding: '4rem 0' }}>
-                    <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>📝</div>
-                    <h1>Blog Post Coming Soon</h1>
-                    <p style={{ marginTop: '1rem' }}>
-                        We're working on creating amazing content for you. Check back soon!
-                    </p>
-                    <Link to="/blog" style={{ display: 'inline-block', marginTop: '2rem' }}>
-                        ← Back to Blog
+
+            <article className="blog-article">
+                {/* Breadcrumbs */}
+                <nav className="blog-breadcrumbs" aria-label="Breadcrumb">
+                    <Link to="/">Home</Link>
+                    <span className="breadcrumb-separator">›</span>
+                    <Link to="/blog">Blog</Link>
+                    <span className="breadcrumb-separator">›</span>
+                    <span className="breadcrumb-current">{post.category}</span>
+                </nav>
+
+                {/* Article Header */}
+                <header className="blog-article-header">
+                    <span className="blog-article-category">{post.category}</span>
+                    <h1 className="blog-article-title">{post.title}</h1>
+                    <div className="blog-article-meta">
+                        <span className="blog-article-date">
+                            <time dateTime={post.datePublished}>{post.date}</time>
+                        </span>
+                        <span className="blog-article-separator">•</span>
+                        <span className="blog-article-read-time">{post.readTime}</span>
+                        <span className="blog-article-separator">•</span>
+                        <span className="blog-article-author">By {post.author.name}</span>
+                    </div>
+                </header>
+
+                {/* Table of Contents */}
+                <nav className="blog-toc">
+                    <h2 className="blog-toc-title">📋 In This Article</h2>
+                    <ul className="blog-toc-list">
+                        {post.content.sections.map((section, index) => (
+                            <li key={index}>
+                                <a href={`#section-${index + 1}`}>{section.heading}</a>
+                            </li>
+                        ))}
+                        <li><a href="#faqs">Frequently Asked Questions</a></li>
+                    </ul>
+                </nav>
+
+                {/* Article Content */}
+                <div className="blog-article-content">
+                    {/* Introduction */}
+                    <p className="blog-article-intro">{post.content.intro}</p>
+
+                    {/* Main Sections */}
+                    {post.content.sections.map((section, index) => (
+                        <section key={index} id={`section-${index + 1}`} className="blog-section">
+                            <h2>{section.heading}</h2>
+                            <p>{section.content}</p>
+                            {section.tip && (
+                                <div className="blog-tip">
+                                    <span className="blog-tip-icon">💡</span>
+                                    <div className="blog-tip-content">
+                                        <strong>Pro Tip:</strong> {section.tip}
+                                    </div>
+                                </div>
+                            )}
+                        </section>
+                    ))}
+
+                    {/* Conclusion */}
+                    <section className="blog-conclusion">
+                        <h2>Wrapping Up</h2>
+                        <p>{post.content.conclusion}</p>
+                        <div className="blog-cta">
+                            <h3>Ready to measure your impact?</h3>
+                            <p>Take our free 2-minute quiz to calculate your carbon footprint and get personalized tips.</p>
+                            <Link to="/" className="btn btn-primary btn-cta">
+                                Calculate Your Footprint →
+                            </Link>
+                        </div>
+                    </section>
+
+                    {/* FAQs */}
+                    <section id="faqs" className="blog-faqs">
+                        <h2>Frequently Asked Questions</h2>
+                        <div className="blog-faq-list">
+                            {post.content.faqs.map((faq, index) => (
+                                <details key={index} className="blog-faq-item">
+                                    <summary className="blog-faq-question">{faq.question}</summary>
+                                    <p className="blog-faq-answer">{faq.answer}</p>
+                                </details>
+                            ))}
+                        </div>
+                    </section>
+                </div>
+
+                {/* Related Posts */}
+                {relatedPosts.length > 0 && (
+                    <aside className="blog-related">
+                        <h2>Related Articles</h2>
+                        <div className="blog-related-grid">
+                            {relatedPosts.map((relatedPost) => (
+                                <Link
+                                    key={relatedPost.id}
+                                    to={`/blog/${relatedPost.slug}`}
+                                    className="blog-related-card"
+                                >
+                                    <span className="blog-related-emoji">{relatedPost.emoji}</span>
+                                    <div className="blog-related-content">
+                                        <span className="blog-related-category">{relatedPost.category}</span>
+                                        <h3>{relatedPost.title}</h3>
+                                        <span className="blog-related-meta">{relatedPost.readTime}</span>
+                                    </div>
+                                </Link>
+                            ))}
+                        </div>
+                    </aside>
+                )}
+
+                {/* Back to Blog */}
+                <div className="blog-back">
+                    <Link to="/blog" className="blog-back-link">
+                        ← Back to All Articles
                     </Link>
                 </div>
-            </div>
+            </article>
         </>
     );
 }
