@@ -872,6 +872,56 @@
     box-shadow: var(--shadow-md);
 }
 
+/* FREE Badges */
+.navbar-free-badge {
+    background: #10b981;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    margin-left: var(--space-xs);
+}
+
+.navbar-cta {
+    position: relative;
+}
+
+.navbar-cta-free {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 0.55rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+}
+
+.navbar-link-kids {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-full);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.navbar-link-kids:hover {
+    color: var(--dark);
+    box-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+}
+
+.footer-free-badge {
+    background: #10b981;
+    color: white;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    margin-left: var(--space-sm);
+}
+
 /* Mobile Navigation */
 .navbar-toggle {
     display: none;

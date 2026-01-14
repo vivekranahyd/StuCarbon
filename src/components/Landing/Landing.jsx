@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Button } from '../UI';
 import './Landing.css';
 
@@ -39,26 +40,32 @@ export default function Landing({ onStart }) {
                         <span className="landing-feature-icon">💡</span>
                         <span>Personalized tips</span>
                     </div>
-                    <div className="landing-feature">
-                        <span className="landing-feature-icon">📱</span>
-                        <span>Share your score</span>
-                    </div>
                 </div>
 
-                {/* CTA Button */}
-                <div className="landing-cta">
-                    <Button
-                        variant="primary"
-                        size="lg"
-                        onClick={onStart}
-                        icon="🚀"
-                    >
-                        Calculate My Footprint
-                    </Button>
+                {/* CTA Buttons */}
+                <div className="landing-cta-group">
+                    <div className="landing-cta">
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            onClick={onStart}
+                            icon="🎓"
+                        >
+                            Student Calculator
+                        </Button>
+                        <span className="cta-free-label">FREE!</span>
+                    </div>
+
+                    {/* Kids Calculator Link */}
+                    <Link to="/kids" className="kids-calculator-btn">
+                        <span className="kids-emoji">🧸</span>
+                        <span>Kids Calculator (Ages 8-12)</span>
+                        <span className="kids-badge-small">FREE</span>
+                    </Link>
                 </div>
 
                 <div className="landing-time">
-                    <span>⏱️</span>
+                    <span>✅</span>
                     <span>Free • No signup required • 100% anonymous</span>
                 </div>
 
@@ -72,7 +79,7 @@ export default function Landing({ onStart }) {
                         <div className="landing-stat-value">8</div>
                         <div className="landing-stat-label">Quick Questions</div>
                     </div>
-                    <div className="landing-stat">
+                    <div className="landing-stat landing-stat-free">
                         <div className="landing-stat-value">100%</div>
                         <div className="landing-stat-label">Free Forever</div>
                     </div>

@@ -14,6 +14,7 @@ export default function Navbar() {
                 <Link to="/" className="navbar-logo">
                     <span>🌱</span>
                     <span>StuCarbon</span>
+                    <span className="navbar-free-badge">FREE</span>
                 </Link>
 
                 <button
@@ -28,6 +29,9 @@ export default function Navbar() {
                     <Link to="/" className="navbar-link" onClick={() => setIsOpen(false)}>
                         Calculator
                     </Link>
+                    <Link to="/kids" className="navbar-link navbar-link-kids" onClick={() => setIsOpen(false)}>
+                        🧸 Kids
+                    </Link>
                     <Link to="/about" className="navbar-link" onClick={() => setIsOpen(false)}>
                         About
                     </Link>
@@ -40,6 +44,7 @@ export default function Navbar() {
                     {!isHome && (
                         <Link to="/" className="navbar-cta" onClick={() => setIsOpen(false)}>
                             Start Quiz 🚀
+                            <span className="navbar-cta-free">FREE</span>
                         </Link>
                     )}
                 </div>

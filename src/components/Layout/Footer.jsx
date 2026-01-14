@@ -11,6 +11,7 @@ export default function Footer() {
                     <div className="footer-logo">
                         <span>🌱</span>
                         <span>StuCarbon</span>
+                        <span className="footer-free-badge">100% FREE</span>
                     </div>
                     <p>
                         Free Student Carbon Footprint Calculator. Helping students understand
@@ -19,11 +20,11 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-nav">
-                    <h4>Calculator</h4>
+                    <h4>Calculators</h4>
                     <ul>
-                        <li><Link to="/">Take the Quiz</Link></li>
+                        <li><Link to="/">Student Quiz 🎓</Link></li>
+                        <li><Link to="/kids">Kids Quiz 🧸</Link></li>
                         <li><Link to="/about">How It Works</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
                     </ul>
                 </div>
 
@@ -48,7 +49,7 @@ export default function Footer() {
 
             <div className="footer-bottom">
                 <p className="footer-copyright">
-                    © {currentYear} StuCarbon. All rights reserved. | stucarbon.com
+                    © {currentYear} StuCarbon. All rights reserved. | stucarbon.com | <strong>100% Free Forever</strong>
                 </p>
                 <div className="footer-links">
                     <Link to="/privacy-policy">Privacy</Link>

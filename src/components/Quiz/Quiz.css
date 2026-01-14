@@ -6,29 +6,45 @@
     animation: fadeIn 0.5s ease;
 }
 
-/* Quiz Logo - Always visible for navigation */
+/* Quiz Top Header with Home Button */
+.quiz-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+}
+
+.quiz-home-btn {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.quiz-home-btn:hover {
+    background: white;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Quiz Logo */
 .quiz-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: var(--space-sm);
-    margin-bottom: var(--space-xl);
-    cursor: pointer;
-    transition: all var(--transition-base);
-}
-
-.quiz-logo:hover {
-    transform: scale(1.05);
 }
 
 .quiz-logo-icon {
-    font-size: 2rem;
-    animation: bounce 2s ease-in-out infinite;
+    font-size: 1.5rem;
 }
 
 .quiz-logo-text {
     font-family: var(--font-display);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--primary-700);
 }

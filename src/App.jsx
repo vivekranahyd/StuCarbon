@@ -13,6 +13,9 @@ import Results from './components/Results/Results';
 import Tips from './components/Tips/Tips';
 import ShareCard from './components/Share/ShareCard';
 
+// Kids Calculator Components
+import { KidsLanding, KidsQuiz, KidsResults } from './components/Kids';
+
 // Pages
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
@@ -52,7 +55,6 @@ function Home() {
 
   const handleStartQuiz = () => {
     setCurrentScreen(SCREENS.QUIZ);
-    // Scroll to top
     window.scrollTo(0, 0);
   };
 
@@ -96,8 +98,8 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Student Carbon Footprint Calculator | StuCarbon - Free Quiz</title>
-        <meta name="description" content="Calculate your carbon footprint as a student with our free 2-minute quiz. Get personalized tips to reduce your environmental impact on campus. Try StuCarbon now!" />
+        <title>Student Carbon Footprint Calculator | StuCarbon - 100% Free Quiz</title>
+        <meta name="description" content="Calculate your carbon footprint as a student with our FREE 2-minute quiz. Get personalized tips to reduce your environmental impact on campus. Try StuCarbon now - 100% Free!" />
         <link rel="canonical" href="https://stucarbon.com/" />
       </Helmet>
 
@@ -138,20 +140,74 @@ function Home() {
   );
 }
 
+// Kids Calculator page with its own flow
+function KidsCalculator() {
+  const [currentScreen, setCurrentScreen] = useState('landing');
+  const [score, setScore] = useState(null);
+
+  const handleStartQuiz = () => {
+    setCurrentScreen('quiz');
+    window.scrollTo(0, 0);
+  };
+
+  const handleQuizComplete = (totalScore, answers) => {
+    setScore(totalScore);
+    setCurrentScreen('results');
+    window.scrollTo(0, 0);
+  };
+
+  const handleRetake = () => {
+    setScore(null);
+    setCurrentScreen('quiz');
+    window.scrollTo(0, 0);
+  };
+
+  const handleGoHome = () => {
+    setScore(null);
+    setCurrentScreen('landing');
+    window.scrollTo(0, 0);
+  };
+
+  return (
+    <>
+      <Helmet>
+        <title>Kids Carbon Footprint Calculator | StuCarbon - Free Planet Hero Quiz</title>
+        <meta name="description" content="Fun, free carbon footprint quiz for kids ages 8-12! Answer 6 simple questions and earn your Planet Hero Animal Badge. 100% free, kid-friendly, and educational!" />
+        <link rel="canonical" href="https://stucarbon.com/kids" />
+      </Helmet>
+
+      {currentScreen === 'landing' && (
+        <KidsLanding onStart={handleStartQuiz} />
+      )}
+
+      {currentScreen === 'quiz' && (
+        <KidsQuiz onComplete={handleQuizComplete} onGoHome={handleGoHome} />
+      )}
+
+      {currentScreen === 'results' && score !== null && (
+        <KidsResults score={score} onRetake={handleRetake} onGoHome={handleGoHome} />
+      )}
+    </>
+  );
+}
+
 function App() {
   const location = useLocation();
 
-  // Hide navbar on landing page to keep it clean
+  // Hide navbar on landing page and kids pages to keep them clean
   const isHomePage = location.pathname === '/';
+  const isKidsPage = location.pathname.startsWith('/kids');
+  const hideNavbar = isHomePage || isKidsPage;
 
   return (
     <>
       <ScrollToTop />
-      {!isHomePage && <Navbar />}
+      {!hideNavbar && <Navbar />}
 
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/kids" element={<KidsCalculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
@@ -161,7 +217,7 @@ function App() {
         </Routes>
       </main>
 
-      <Footer />
+      {!isKidsPage && <Footer />}
     </>
   );
 }

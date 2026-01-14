@@ -118,11 +118,145 @@
 }
 
 /* CTA */
+.landing-cta-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-lg);
+}
+
 .landing-cta {
-    margin-bottom: var(--space-xl);
+    position: relative;
+    display: inline-block;
+}
+
+.landing-cta .btn {
+    min-width: 320px;
+}
+
+.cta-free-label {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    background: #ff6b6b;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    animation: pulse-free 2s ease-in-out infinite;
+}
+
+@keyframes pulse-free {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* FREE Ribbon */
+.landing-free-ribbon {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: var(--space-lg);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    animation: shimmer-badge 3s ease-in-out infinite;
+}
+
+.free-star {
+    animation: twinkle 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer-badge {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 6px 30px rgba(16, 185, 129, 0.5);
+    }
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(0.9);
+    }
+}
+
+/* Kids Calculator Link */
+.kids-calculator-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: var(--dark);
+    padding: var(--space-lg) var(--space-2xl);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #fbbf24;
+    min-width: 320px;
+}
+
+.kids-calculator-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(251, 191, 36, 0.3);
+    color: var(--dark);
+}
+
+.kids-emoji {
+    font-size: 1.25rem;
+}
+
+.kids-badge-small {
+    background: #10b981;
+    color: white;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+}
+
+/* FREE Feature Highlight */
+.landing-feature-free {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    border: 2px solid #10b981;
+    color: #065f46;
+}
+
+/* Stat FREE Highlight */
+.landing-stat-free .landing-stat-value {
+    color: #10b981;
 }
 
 .landing-time {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,8 +356,9 @@
     }
 
     .landing-features {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: var(--space-sm);
         margin-bottom: var(--space-lg);
     }
@@ -238,13 +373,42 @@
         font-size: 1rem;
     }
 
+    /* Mobile CTA group spacing fix */
+    .landing-cta-group {
+        gap: var(--space-md);
+        margin-bottom: var(--space-sm);
+    }
+
     .landing-cta {
-        margin-bottom: var(--space-md);
+        margin-bottom: 0;
     }
 
     .landing-cta .btn {
         padding: var(--space-sm) var(--space-lg);
         font-size: 0.9rem;
+    }
+
+    .kids-calculator-btn {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    .kids-badge-small {
+        font-size: 0.6rem;
+        padding: 0.1rem 0.3rem;
+    }
+
+    .cta-free-label {
+        top: -8px;
+        right: -10px;
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
+    }
+
+    .landing-free-ribbon {
+        font-size: 0.85rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: var(--space-md);
     }
 
     .landing-time {

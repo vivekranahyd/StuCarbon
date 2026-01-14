@@ -14,10 +14,26 @@ export default function Quiz({ onComplete, onGoHome }) {
     const selectedOption = answers[question.id];
 
     const handleOptionSelect = (optionId) => {
-        setAnswers(prev => ({
-            ...prev,
+        // Store the answer
+        const newAnswers = {
+            ...answers,
             [question.id]: optionId
-        }));
+        };
+        setAnswers(newAnswers);
+
+        // Auto-advance after a brief delay to show selection
+        setIsTransitioning(true);
+
+        setTimeout(() => {
+            if (currentQuestion < totalQuestions - 1) {
+                // Go to next question
+                setCurrentQuestion(prev => prev + 1);
+            } else {
+                // Quiz complete - submit with the new answers
+                onComplete(newAnswers);
+            }
+            setIsTransitioning(false);
+        }, 400);
     };
 
     const handleNext = () => {
@@ -50,10 +66,15 @@ export default function Quiz({ onComplete, onGoHome }) {
 
     return (
         <div className="quiz-container">
-            {/* Logo - always visible for navigation back home */}
-            <div className="quiz-logo" onClick={onGoHome}>
-                <span className="quiz-logo-icon">🌱</span>
-                <span className="quiz-logo-text">StuCarbon</span>
+            {/* Header with Home button and title */}
+            <div className="quiz-top-header">
+                <button className="quiz-home-btn" onClick={onGoHome}>
+                    🏠 Home
+                </button>
+                <div className="quiz-logo">
+                    <span className="quiz-logo-icon">🌱</span>
+                    <span className="quiz-logo-text">StuCarbon</span>
+                </div>
             </div>
 
             <div className="quiz-header">
@@ -83,6 +104,7 @@ export default function Quiz({ onComplete, onGoHome }) {
                             key={option.id}
                             className={`option-button ${selectedOption === option.id ? 'selected' : ''}`}
                             onClick={() => handleOptionSelect(option.id)}
+                            disabled={isTransitioning}
                         >
                             <span className="option-emoji">{option.emoji}</span>
                             <div className="option-content">
