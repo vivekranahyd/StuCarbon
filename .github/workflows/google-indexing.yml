@@ -1,0 +1,24 @@
+name: "Google Indexing"
+
+on:
+  push:
+    branches:
+      - main  # Or 'master', whichever is your production branch
+
+jobs:
+  google_indexing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install & Run Indexing Script
+        env:
+          GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
+          SITE_URL: "https://yourwebsite.com" # CHANGE THIS to your actual site
+        run: |
+          npx google-indexing-script
