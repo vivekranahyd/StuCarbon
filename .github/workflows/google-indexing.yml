@@ -21,4 +21,4 @@ jobs:
           GOOGLE_INDEXING_KEY: ${{ secrets.GOOGLE_INDEXING_KEY }}
         run: |
           echo "$GOOGLE_INDEXING_KEY" > service_account.json
-          npx google-indexing-script https://stu-carbon.vercel.app
+          npx google-indexing-script https://stucarbon.com
