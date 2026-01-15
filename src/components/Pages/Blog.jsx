@@ -67,6 +67,15 @@ export default function Blog() {
 }
 
 // Full Blog Post Component with SEO optimization
+// Helper function to safely stringify JSON for HTML script tags
+const safeJsonStringify = (obj) => {
+    return JSON.stringify(obj)
+        .replace(/</g, '\\u003c')
+        .replace(/>/g, '\\u003e')
+        .replace(/&/g, '\\u0026');
+};
+
+
 export function BlogPost() {
     const { slug } = useParams();
     const post = getBlogPostBySlug(slug);
@@ -201,15 +210,15 @@ export function BlogPost() {
                 {/* Structured Data */}
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(structuredData) }}
                 />
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(faqStructuredData) }}
                 />
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(breadcrumbData) }}
                 />
             </Helmet>
 
