@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 import { blogPosts, getBlogPostBySlug, getRelatedPosts } from '../../data/blogPosts';
 import { safeJsonStringify } from '../../utils/jsonLd';
 import './Pages.css';
@@ -97,74 +98,105 @@ export function BlogPost() {
         );
     }
 
-    // JSON-LD Structured Data for Google Rich Results
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": post.title,
-        "description": post.metaDescription,
-        "image": `https://stucarbon.com/og-${post.slug}.png`,
-        "author": {
-            "@type": "Organization",
-            "name": post.author.name,
-            "url": post.author.url
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "StuCarbon",
-            "url": "https://stucarbon.com",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://stucarbon.com/logo.png"
-            }
-        },
-        "datePublished": post.datePublished,
-        "dateModified": post.dateModified,
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `https://stucarbon.com/blog/${post.slug}`
-        }
-    };
-
-    // FAQ Structured Data
-    const faqStructuredData = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": post.content.faqs.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-            }
-        }))
-    };
-
-    // Breadcrumb Structured Data
-    const breadcrumbData = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://stucarbon.com"
+    // Inject JSON-LD structured data directly into head (react-helmet-async has issues with script tags)
+    useEffect(() => {
+        // JSON-LD Structured Data for Google Rich Results
+        const structuredData = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": post.title,
+            "description": post.metaDescription,
+            "image": `https://stucarbon.com/og-${post.slug}.png`,
+            "author": {
+                "@type": "Organization",
+                "name": post.author.name,
+                "url": post.author.url
             },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://stucarbon.com/blog"
+            "publisher": {
+                "@type": "Organization",
+                "name": "StuCarbon",
+                "url": "https://stucarbon.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://stucarbon.com/logo.png"
+                }
             },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": post.title,
-                "item": `https://stucarbon.com/blog/${post.slug}`
+            "datePublished": post.datePublished,
+            "dateModified": post.dateModified,
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://stucarbon.com/blog/${post.slug}`
             }
-        ]
-    };
+        };
+
+        // FAQ Structured Data
+        const faqStructuredData = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": post.content.faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                }
+            }))
+        };
+
+        // Breadcrumb Structured Data
+        const breadcrumbData = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://stucarbon.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://stucarbon.com/blog"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": post.title,
+                    "item": `https://stucarbon.com/blog/${post.slug}`
+                }
+            ]
+        };
+
+        // Create and inject script tags
+        const scripts = [
+            { id: 'ld-article', data: structuredData },
+            { id: 'ld-faq', data: faqStructuredData },
+            { id: 'ld-breadcrumb', data: breadcrumbData }
+        ];
+
+        scripts.forEach(({ id, data }) => {
+            // Remove existing script if present
+            const existing = document.getElementById(id);
+            if (existing) existing.remove();
+
+            // Create new script
+            const script = document.createElement('script');
+            script.id = id;
+            script.type = 'application/ld+json';
+            script.textContent = safeJsonStringify(data);
+            document.head.appendChild(script);
+        });
+
+        // Cleanup on unmount
+        return () => {
+            scripts.forEach(({ id }) => {
+                const el = document.getElementById(id);
+                if (el) el.remove();
+            });
+        };
+    }, [post]);
 
     return (
         <>
@@ -198,20 +230,6 @@ export function BlogPost() {
 
                 {/* Google Discover Optimization */}
                 <meta name="robots" content="max-image-preview:large" />
-
-                {/* Structured Data */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(structuredData) }}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(faqStructuredData) }}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: safeJsonStringify(breadcrumbData) }}
-                />
             </Helmet>
 
             <article className="blog-article">

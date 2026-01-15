@@ -171,6 +171,53 @@ function KidsCalculator() {
     window.scrollTo(0, 0);
   };
 
+  // Inject JSON-LD structured data directly into head
+  useEffect(() => {
+    const kidsStructuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Carbon Footprint Calculator for Kids",
+      "alternateName": "StuCarbon Kids Planet Hero Quiz",
+      "description": "A free, fun carbon footprint calculator designed for kids ages 8-12. Children answer 6 simple questions about their daily habits and earn a Planet Hero Animal Badge while learning about environmental impact.",
+      "url": "https://stucarbon.com/kids",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Children",
+        "suggestedMinAge": "8",
+        "suggestedMaxAge": "12"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "StuCarbon"
+      },
+      "educationalLevel": "Elementary School",
+      "learningResourceType": "Interactive Quiz",
+      "teaches": ["Environmental Awareness", "Carbon Footprint", "Sustainability for Kids"]
+    };
+
+    // Remove existing and create new script
+    const existingScript = document.getElementById('ld-kids-app');
+    if (existingScript) existingScript.remove();
+
+    const script = document.createElement('script');
+    script.id = 'ld-kids-app';
+    script.type = 'application/ld+json';
+    script.textContent = safeJsonStringify(kidsStructuredData);
+    document.head.appendChild(script);
+
+    return () => {
+      const el = document.getElementById('ld-kids-app');
+      if (el) el.remove();
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -195,41 +242,6 @@ function KidsCalculator() {
         <meta name="twitter:title" content="Carbon Footprint Calculator for Kids | Free Planet Hero Quiz" />
         <meta name="twitter:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly 2-minute quiz." />
         <meta name="twitter:image" content="https://stucarbon.com/og-image-kids.png" />
-
-        {/* Structured Data - JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: safeJsonStringify({
-              "@context": "https://schema.org",
-              "@type": "WebApplication",
-              "name": "Carbon Footprint Calculator for Kids",
-              "alternateName": "StuCarbon Kids Planet Hero Quiz",
-              "description": "A free, fun carbon footprint calculator designed for kids ages 8-12. Children answer 6 simple questions about their daily habits and earn a Planet Hero Animal Badge while learning about environmental impact.",
-              "url": "https://stucarbon.com/kids",
-              "applicationCategory": "EducationalApplication",
-              "operatingSystem": "Any",
-              "audience": {
-                "@type": "Audience",
-                "audienceType": "Children",
-                "suggestedMinAge": "8",
-                "suggestedMaxAge": "12"
-              },
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "USD"
-              },
-              "author": {
-                "@type": "Organization",
-                "name": "StuCarbon"
-              },
-              "educationalLevel": "Elementary School",
-              "learningResourceType": "Interactive Quiz",
-              "teaches": ["Environmental Awareness", "Carbon Footprint", "Sustainability for Kids"]
-            })
-          }}
-        />
       </Helmet>
 
       {currentScreen === 'landing' && (
