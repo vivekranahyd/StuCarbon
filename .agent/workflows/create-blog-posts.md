@@ -51,8 +51,19 @@ If the blog post needs a featured image, use the generate_image tool to create o
 - datePublished/dateModified format: ISO 8601 (e.g., "2026-01-15T10:00:00+05:30")
 
 ## JSON-LD Structured Data Guidelines
-The blog component in `Blog.jsx` uses `safeJsonStringify()` to escape special characters in structured data. This prevents Google Search Console parsing errors. When writing blog content:
-- The helper function automatically escapes `<`, `>`, and `&` characters
-- Avoid using HTML tags in FAQ answers or content fields
-- Use standard apostrophes and quotes (they are handled correctly)
+All pages with JSON-LD structured data MUST use the shared `safeJsonStringify` utility from `src/utils/jsonLd.js`. This prevents Google Search Console parsing errors by escaping special characters.
+
+**How to use:**
+```jsx
+import { safeJsonStringify } from '../../utils/jsonLd';
+
+<script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: safeJsonStringify(yourDataObject) }}
+/>
+```
+
+**Never use:**
+- Template literals with `{``}` for JSON-LD
+- Plain `JSON.stringify()` without the safe wrapper
 

@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Link, useParams } from 'react-router-dom';
 import { blogPosts, getBlogPostBySlug, getRelatedPosts } from '../../data/blogPosts';
+import { safeJsonStringify } from '../../utils/jsonLd';
 import './Pages.css';
 
 export default function Blog() {
@@ -67,15 +68,6 @@ export default function Blog() {
 }
 
 // Full Blog Post Component with SEO optimization
-// Helper function to safely stringify JSON for HTML script tags
-const safeJsonStringify = (obj) => {
-    return JSON.stringify(obj)
-        .replace(/</g, '\\u003c')
-        .replace(/>/g, '\\u003e')
-        .replace(/&/g, '\\u0026');
-};
-
-
 export function BlogPost() {
     const { slug } = useParams();
     const post = getBlogPostBySlug(slug);
