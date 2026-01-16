@@ -44,7 +44,12 @@ export default function Blog() {
                         >
                             <div className={`blog-card-image ${post.featuredImage ? 'has-image' : ''}`}>
                                 {post.featuredImage ? (
-                                    <img src={post.featuredImage} alt={post.title} loading="lazy" />
+                                    <img
+                                        src={post.featuredImage}
+                                        alt={post.title}
+                                        loading="lazy"
+                                        decoding="async"
+                                    />
                                 ) : (
                                     <span>{post.emoji}</span>
                                 )}
@@ -73,6 +78,12 @@ export function BlogPost() {
     const { slug } = useParams();
     const post = getBlogPostBySlug(slug);
     const relatedPosts = getRelatedPosts(slug);
+
+    // Explicitly scroll to top when the post (slug) changes
+    // This fixes the issue where blog pages sometimes open at the bottom
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, [slug]);
 
     // 404 handling
     if (!post) {
@@ -264,6 +275,8 @@ export function BlogPost() {
                             src={post.featuredImage}
                             alt={post.title}
                             loading="eager"
+                            decoding="async"
+                            fetchpriority="high"
                             width="1200"
                             height="675"
                         />

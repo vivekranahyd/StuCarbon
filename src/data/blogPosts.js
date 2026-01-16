@@ -3,6 +3,74 @@
 
 export const blogPosts = [
     {
+        id: 11,
+        slug: 'chatgpt-eco-diet-plan-sustainable-savings',
+        title: "I Let ChatGPT Plan My 'Eco-Diet' for a Week and My Grocery Bill Dropped by 30%",
+        excerpt: "Can AI solve the climate crisis one meal at a time? I spent 7 days following a ChatGPT-generated sustainable meal plan. The results for my wallet and the planet were shocking.",
+        category: 'Food',
+        date: 'January 17, 2026',
+        readTime: '7 min read',
+        emoji: '🥗',
+        featuredImage: '/blog/ai-diet-hero.png',
+
+        // SEO Meta - High Discovery Feeds Optimization
+        metaTitle: "I Tried a ChatGPT Eco-Diet for 7 Days: Savings & Carbon Results | StuCarbon",
+        metaDescription: "Can AI make you a climate hero? 🦸‍♂️ I followed a ChatGPT sustainable meal plan for a week. 📉 30% cheaper groceries and 50% less carbon! Here's how. 🥗💰",
+        keywords: ['chatgpt meal plan sustainability', 'eco-friendly diet on a budget', 'ai for sustainable living', 'cheap sustainable meals student', 'reduce food carbon footprint AI'],
+
+        // Structured Data
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-17T09:00:00+05:30',
+        dateModified: '2026-01-17T09:00:00+05:30',
+
+        // Full Content
+        content: {
+            intro: `We've all heard that plant-based eating is better for the planet, but let's be real: as a student, planning balanced, low-carbon meals on a tight budget is exhausting. That's why I decided to outsource my life to AI for a week. My prompt was simple: "Plan a 7-day plant-based, low-carbon diet for a college student with a $50 weekly budget. Optimize for zero waste and seasonal ingredients." The results were better than any cookbook I've ever owned.`,
+
+            sections: [
+                {
+                    heading: 'The Monday Morning Grocery Run',
+                    content: `ChatGPT didn't just give me recipes; it gave me a coordinated shopping list. By focusing on bulk staples like lentils, oats, and frozen seasonal greens, it eliminated the "analysis paralysis" at the store. Usually, I spend $75 a week and end up throwing away half a bag of spinach. This week, I spent exactly $48.30. The AI's secret? Multi-purpose ingredients—using roasted chickpeas as a snack on Monday and a salad topper on Tuesday.`,
+                    tip: `When using AI for meal planning, ask for a 'cross-utilization list' to ensure every item you buy is used in multiple meals.`
+                },
+                {
+                    heading: 'The Carbon Math: 50% Less CO2',
+                    content: `I plugged my AI-generated meals into the StuCarbon calculator, and the numbers were staggering. By replacing my usual convenience meals (frozen pizza, beef burritos) with the AI's lentil dahls and budget-friendly power bowls, my food-related carbon footprint dropped by nearly 15kg of CO2e in just one week. That's equivalent to driving 60km in a gas-powered car!`,
+                    tip: `Small swaps matter. The AI suggested using sunflower seeds instead of imported pine nuts—a tiny change that slashed transportation emissions while saving $5.`
+                },
+                {
+                    heading: 'Is AI Cooking Actually... Good?',
+                    content: `There's a myth that budget "eco-eating" is just plain rice and beans. ChatGPT surprised me with a "Zero-Waste Pesto" made from carrot tops and walnuts that actually tasted better than store-bought sauce. It also suggested "overnight oats" variations that kept me full through three-hour lectures without needing a mid-day vending machine run. It wasn't just sustainable; it was delicious.`,
+                    tip: `Ask the AI to include 'culinary hacks' for leftovers. It knows exactly how to turn tonight's stir-fry into tomorrow's savory breakfast pancake.`
+                },
+                {
+                    heading: 'The Verdict: Should You Do It?',
+                    content: `Following an AI diet isn't about giving up control; it's about gaining efficiency. For a student, the biggest barrier to sustainable living is time. AI removes that barrier. While the first few days were a bit of a learning curve in the kitchen, by Sunday I had more money in my bank account, less trash in my bin, and a significantly smaller carbon footprint.`,
+                    tip: `Start with a 3-day plan if a full week feels overwhelming. AI is a tool—use it to fit your specific schedule and cravings.`
+                }
+            ],
+
+            conclusion: `Using AI to hack my sustainability journey was a game-changer. It proved that you don't need a massive budget or a degree in nutrition to save the planet—you just need the right data. My grocery bill is down, my energy is up, and my footprint is smaller than ever. Ready to start your own experiment? Take our student carbon footprint quiz first to see where your baseline is, then let the bots help you beat it!`,
+
+            faqs: [
+                {
+                    question: 'Can ChatGPT really plan a healthy diet?',
+                    answer: 'While AI can provide great inspiration and budget-friendly lists, always cross-reference with nutritional guidelines and consult a professional if you have specific medical needs.'
+                },
+                {
+                    question: 'Is AI-generated meal planning better than standard apps?',
+                    answer: 'AI is more flexible. You can tell it exactly what\'s already in your fridge to minimize waste, which most static apps can\'t do.'
+                },
+                {
+                    question: 'Doesn\'t using AI itself have a carbon footprint?',
+                    answer: 'Yes, every AI query has a small cost. However, the efficiency gains in reducing food waste and shifting to a plant-based diet far outweigh the carbon cost of a few chatbot messages.'
+                }
+            ]
+        },
+
+        relatedPosts: ['plant-based-eating-student-budget', 'meat-consumption-carbon-impact', '12-sustainability-trends-2026']
+    },
+    {
         id: 1,
         slug: 'how-to-reduce-carbon-footprint-as-student',
         title: '10 Easy Ways to Reduce Your Carbon Footprint as a Student',
