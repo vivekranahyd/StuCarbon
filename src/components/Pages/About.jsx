@@ -8,7 +8,7 @@ export default function About() {
         <>
             <Helmet>
                 <title>About StuCarbon | Free Student Carbon Footprint Calculator</title>
-                <meta name="description" content="Learn about StuCarbon, the free Student Carbon Footprint Calculator designed to help college and university students measure and reduce their environmental impact." />
+                <meta name="description" content="Meet StuCarbon: The student-first sustainability movement. Discover how we empower college students to measure emissions, save money, and fight climate change—for free. 🌱" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://stucarbon.com/about" />
             </Helmet>

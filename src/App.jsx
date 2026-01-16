@@ -102,7 +102,7 @@ function StudentCalculator() {
     <>
       <Helmet>
         <title>Student Carbon Footprint Calculator | StuCarbon - 100% Free Quiz</title>
-        <meta name="description" content="Calculate your carbon footprint as a student with our FREE 2-minute quiz. Get personalized tips to reduce your environmental impact on campus. Try StuCarbon now - 100% Free!" />
+        <meta name="description" content="What's your carbon score? 🎓 Take the 2-minute Student Footprint Quiz! Find out if your dorm life, diet, and commute are eco-friendly—or eco-disasters. 🌍💸" />
         <link rel="canonical" href="https://stucarbon.com/students" />
       </Helmet>
 
@@ -224,7 +224,7 @@ function KidsCalculator() {
         {/* Primary SEO Meta Tags */}
         <title>Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon</title>
         <meta name="title" content="Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon" />
-        <meta name="description" content="Free carbon footprint calculator for kids! Our fun, kid-friendly environmental quiz helps children ages 8-12 learn about their carbon footprint. Answer 6 simple questions, earn your Planet Hero Animal Badge, and discover easy ways to help the Earth. 100% free and educational!" />
+        <meta name="description" content="Kids! Become a Planet Hero today! 🦸‍♂️ Take our fun, free Carbon Footprint Quiz. Answer simple questions, earn badges, and learn how to save the Earth!" />
         <meta name="keywords" content="carbon footprint calculator for kids, kids carbon footprint quiz, children's environmental calculator, carbon footprint for children, kid-friendly carbon calculator, eco quiz for kids, environmental quiz for children, planet hero quiz, free kids carbon calculator, carbon footprint game for kids" />
         <link rel="canonical" href="https://stucarbon.com/kids" />
 
@@ -271,6 +271,30 @@ function App() {
   return (
     <>
       <ScrollToTop />
+      <Helmet>
+        <title>Student Carbon Footprint Calculator | StuCarbon - Calculate Your Impact</title>
+        <meta name="title" content="Student Carbon Footprint Calculator | StuCarbon - Calculate Your Impact" />
+        <meta name="description" content="What's your campus impact? 🌍 Take our free, 2-minute Student Carbon Footprint Calculator. Get personalized tips to save money and the planet!" />
+        <meta name="keywords" content="student carbon footprint calculator, carbon footprint quiz, student sustainability, campus carbon calculator, college carbon footprint, environmental impact calculator, student eco calculator, carbon emissions student, university sustainability" />
+        <meta name="author" content="StuCarbon" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://stucarbon.com/" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://stucarbon.com/" />
+        <meta property="og:title" content="Student Carbon Footprint Calculator | StuCarbon" />
+        <meta property="og:description" content="Free 2-minute quiz to calculate your carbon footprint as a student. Get personalized tips to reduce your environmental impact!" />
+        <meta property="og:image" content="https://stucarbon.com/og-image.png" />
+        <meta property="og:site_name" content="StuCarbon" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://stucarbon.com/" />
+        <meta property="twitter:title" content="Student Carbon Footprint Calculator | StuCarbon" />
+        <meta property="twitter:description" content="Free 2-minute quiz to calculate your carbon footprint as a student. Get personalized tips to reduce your environmental impact!" />
+        <meta property="twitter:image" content="https://stucarbon.com/og-image.png" />
+      </Helmet>
       <TopNav />
 
       <main style={{ paddingTop: '3.5rem' }}>

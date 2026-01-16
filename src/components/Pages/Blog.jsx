@@ -10,7 +10,7 @@ export default function Blog() {
         <>
             <Helmet>
                 <title>Blog | StuCarbon - Student Carbon Footprint Tips & Education</title>
-                <meta name="description" content="Read the StuCarbon blog for tips on reducing your carbon footprint as a student, sustainable living guides, and environmental education content." />
+                <meta name="description" content="Level up your eco-game! 🚀 Explore the StuCarbon blog for student-friendly sustainability hacks, carbon-busting tips, and guides to saving the planet while studying." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://stucarbon.com/blog" />
 

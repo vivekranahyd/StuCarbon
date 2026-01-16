@@ -30,7 +30,7 @@ export default function Contact() {
         <>
             <Helmet>
                 <title>Contact Us | StuCarbon - Student Carbon Footprint Calculator</title>
-                <meta name="description" content="Get in touch with the StuCarbon team. Questions about our Student Carbon Footprint Calculator? Feedback or suggestions? We'd love to hear from you!" />
+                <meta name="description" content="Have questions or eco-ideas? Contact the StuCarbon team! We love hearing from students, educators, and partners. Let's collaborate for a greener future. 💬" />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://stucarbon.com/contact" />
             </Helmet>
