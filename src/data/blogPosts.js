@@ -3,6 +3,206 @@
 
 export const blogPosts = [
     {
+        id: 30,
+        slug: 'seal-drafty-windows-rental',
+        title: "How to Seal Drafty Windows in a Rental (Without Losing Your Deposit)",
+        excerpt: "Stop shivering! 🥶 Learn the 5 legal, renter-friendly ways to seal window gaps and save $50/month on heating—no permanent damage required.",
+        category: 'Lifestyle',
+        date: 'January 18, 2026',
+        readTime: '6 min read',
+        emoji: '🪟',
+        featuredImage: '/blog/renter-window-sealing.webp',
+        metaTitle: "How to Seal Drafty Windows in a Rental: 5 Renter-Friendly Hacks | StuCarbon",
+        metaDescription: "Cold air leaking through your windows? 🥶 We tested the 5 best renter-friendly ways to seal drafts that landlords won't even notice. Save money NOW. 💸",
+        keywords: ['how to seal drafty windows rental', 'renter friendly window insulation', 'temporary window sealing', 'stop window drafts apartment'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T08:00:00+05:30',
+        dateModified: '2026-01-18T08:00:00+05:30',
+        content: {
+            intro: "Living in a rental often feels like a choice between freezing or paying a $300 heating bill. Most landlords won't fix drafty windows, and you can't exactly install new double-glazing without losing your security deposit. But here's the good news: there are several 'secret' ways to seal those gaps that are 100% temporary and highly effective. We tested them all so you don't have to.",
+            sections: [
+                {
+                    heading: '1. The "Heat-Shrink" Film Trick',
+                    content: "This is the holy grail of renter insulation. It's a clear plastic film that you tape to the window frame and then shrink with a hairdryer until it's invisible. It creates an airtight seal that mimics double-paned glass. The best part? It peels off in seconds when you move out.",
+                    tip: 'Use the 3M brand tape—it is easier to remove without peeling paint.'
+                },
+                {
+                    heading: '2. Rope Caulk (The Removable Gap-Filler)',
+                    content: "Unlike permanent silicone, rope caulk stays soft and pliable. You just press it into the cracks where you feel the breeze. It looks like gray putty and can be pulled off and even reused next year. Perfect for sealing the gap where the sash meets the sill.",
+                    tip: 'Apply it on a dry day so the adhesive (if any) sticks better.'
+                },
+                {
+                    heading: '3. Strategic Thermal Curtains',
+                    content: "Don't just get 'thick' curtains—look for specifically labeled 'Thermal Out' drapes. They have a white acrylic backing that traps a layer of air between the curtain and the window. On a 10°F night, this can raise the room temp by 3-4 degrees alone.",
+                    tip: 'Make sure the curtains touch the floor or the sill to prevent "chimney effect" drafts.'
+                }
+            ],
+            conclusion: "You don't need to be a homeowner to have a warm home. By combining shrink-wrap and rope caulk, you can effectively 'winterize' your apartment for under $30. Your wallet (and the planet) will thank you.",
+            faqs: [
+                { question: 'Will window film damage the paint?', answer: 'Not if you use renter-safe tape. We recommend 3M Window Kits as their adhesive is designed to release without residue.' },
+                { question: 'Can I still open my windows?', answer: 'With shrink film, no. With rope caulk and thermal curtains, yes!' }
+            ]
+        },
+        relatedPosts: ['sustainable-dorm-living', 'soft-reset-january-trend', 'carbon-tax-everyday-products-2026']
+    },
+    {
+        id: 29,
+        slug: 'dispose-cooking-oil-apartment',
+        title: "How to Dispose of Used Cooking Oil in a Small Apartment (The Clean Way)",
+        excerpt: "Don't pour it down the sink! 🛑 Learn the 'Freezer Hack' and other sustainable ways to get rid of oil in an apartment without the mess.",
+        category: 'Tips',
+        date: 'January 18, 2026',
+        readTime: '4 min read',
+        emoji: '🍳',
+        featuredImage: '/blog/apartment-oil-disposal.webp',
+        metaTitle: "Sustainable Cooking Oil Disposal for Apartments | StuCarbon",
+        metaDescription: "Empty jar? 🫙 Freezer? ❄️ We found the only clean, sustainable way to dispose of cooking oil in a small apartment. Save your pipes and the planet. 🌍",
+        keywords: ['how to dispose of used cooking oil apartment', 'sustainable oil disposal', 'cooking oil freezer hack', 'apartment plumbing tips'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T09:00:00+05:30',
+        dateModified: '2026-01-18T09:00:00+05:30',
+        content: {
+            intro: "We've all been there: you just made the perfect crispy tofu, and now you have a pan full of shimmering oil. You're tempted to just pour it down the drain with some hot water. STOP. That oil will cool, solidify, and create a 'fatberg' that will ruin your plumbing (and potentially your security deposit). Here is exactly how to handle it in a tiny kitchen.",
+            sections: [
+                {
+                    heading: 'The "Freezer Brick" Method',
+                    content: "This is the cleanest way. Keep an old yogurt tub or coffee tin in your freezer. Every time you have oil, pour it in. It solidifies instantly. Once the tub is full, toss the whole frozen block in the trash. No leaks, no smell.",
+                    tip: 'Wait for the oil to cool to room temp before pouring it into a plastic tub!'
+                },
+                {
+                    heading: 'The Oil Solidifier Hack',
+                    content: "In 2026, many students are using 'Hardener Powder'. You sprinkle a spoonful into the hot oil, wait 10 minutes, and the oil turns into a gelatinous puck that you can literally lift out with a spatula and throw away. It is plant-based and biodegradable.",
+                    tip: 'Look for brands like "FryAway" or "Cooking Oil Hardener".'
+                }
+            ],
+            conclusion: "Disposing of oil doesn't have to be a nightmare. Keep a designated 'oil jar' or use the freezer trick to keep your kitchen clean and the water supply safe.",
+            faqs: [
+                { question: 'Can I put oil in the compost?', answer: 'No. Large amounts of oil will attract pests and won\'t break down properly in most home compost bins.' },
+                { question: 'Is it okay if I use lots of dish soap and hot water?', answer: 'No. The soap only breaks down the oil temporarily. It will still solidify further down the pipes.' }
+            ]
+        },
+        relatedPosts: ['circular-economy-8-ways-never-waste', 'water-crisis-2026-shocking-facts', '6-surprisingly-high-carbon-activities']
+    },
+    {
+        id: 28,
+        slug: '4k-vs-1080p-streaming-carbon',
+        title: "Is 4K Streaming Killing the Planet? The Hidden Carbon Cost of Ultra HD",
+        excerpt: "Your Netflix addiction has a footprint. 📺 We breakdown the energy difference between 4K and 1080p and why it matters for 2026 climate goals.",
+        category: 'Digital',
+        date: 'January 18, 2026',
+        readTime: '7 min read',
+        emoji: '📺',
+        featuredImage: '/blog/streaming-carbon-comparison.webp',
+        metaTitle: "4K vs 1080p Streaming Carbon Footprint: Which Is Greener? | StuCarbon",
+        metaDescription: "Does 4K use more energy? 🤯 We calculated the carbon footprint of Ultra HD vs HD streaming. The results might change how you binge-watch. 🍿",
+        keywords: ['carbon footprint of 4k streaming', '4k vs 1080p energy usage', 'digital carbon footprint streaming', 'sustainable internet habits'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T10:00:00+05:30',
+        dateModified: '2026-01-18T10:00:00+05:30',
+        content: {
+            intro: "In 2026, 4K is the standard. But most people don't realize that streaming in 'Ultra HD' requires 4x the data of 1080p. That data doesn't travel through magic—it requires servers, cooling systems, and network hubs that consume massive amounts of electricity. So, is that extra crispness worth the climate cost?",
+            sections: [
+                {
+                    heading: 'The Data Multiplier',
+                    content: "A 1080p stream uses about 3GB per hour. A 4K stream jumps to 7GB or even 10GB per hour. Every extra gigabyte processed in a data center adds to the 'Energy Stack'. While data centers are getting more efficient, the sheer volume of 4K content is outpacing those gains.",
+                    tip: 'On a phone or small laptop, you literally cannot see the difference between 4K and 1080p. Save the 4K for the big screen.'
+                },
+                {
+                    heading: "The 'TV Energy' Factor",
+                    content: "It's not just the signal. 4K TVs require more powerful processors to decode the high-bitrate video. On average, a 4K TV uses 1.7x more power than an equivalent HD set. If you're binging 'Stranger Things' for 4 hours, that adds up to roughly 40-50g of extra CO2.",
+                    tip: 'Turn on "Auto-Brightness" and "Eco-Mode" on your TV—it can cut consumption by 20%.'
+                }
+            ],
+            conclusion: "We're not saying don't watch movies. But being mindful—streaming 1080p for casual YouTube or background shows—is an easy way to lower your digital footprint without missing out.",
+            faqs: [
+                { question: 'Does downloading the movie help?', answer: 'Yes! Downloading once over Wi-Fi and watching offline is more efficient than streaming multiple times.' },
+                { question: 'Is 8K even worse?', answer: 'Yes, exponentially. 8K is purely a marketing gimmick for most home sizes.' }
+            ]
+        },
+        relatedPosts: ['digital-carbon-footprint', 'ai-carbon-footprint-chatgpt-students', '7-ways-2026-changes-carbon-footprint']
+    },
+    {
+        id: 27,
+        slug: 'bathtub-laundry-vs-machine',
+        title: "Bathtub Laundry: Is Hand-Washing Actually More Sustainable?",
+        excerpt: "No washing machine? No problem. 🛁 We compared bathtub laundry to high-efficiency machines to find out which is actually better for the planet.",
+        category: 'Lifestyle',
+        date: 'January 18, 2026',
+        readTime: '8 min read',
+        emoji: '🛁',
+        featuredImage: '/blog/bathtub-laundry-eco.webp',
+        metaTitle: "Bathtub Laundry vs Machine: Sustainable Washing Guide | StuCarbon",
+        metaDescription: "Can you save water by washing clothes in the bathtub? 🛁 We did the math. The results might surprise you. 🧼",
+        keywords: ['is bathtub laundry sustainable', 'hand wash vs machine water usage', 'sustainable laundry apartment', 'zero waste washing'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T11:00:00+05:30',
+        dateModified: '2026-01-18T11:00:00+05:30',
+        content: {
+            intro: "For many students and apartment dwellers, a private washing machine is a luxury. Between the cost of laundromats and the shared-germs of communal machines, the 'Bathtub Laundry' trend has taken off on TikTok. But is it actually greener? Or are we just wasting water and effort?",
+            sections: [
+                {
+                    heading: 'The Water Math',
+                    content: "A modern High-Efficiency (HE) washer uses about 15-30 liters per load. A standard bathtub holds about 150 liters. If you fill the whole tub to wash three shirts, you are being 10x WORSE than a machine. However, if you use a small bin inside the tub or only 10cm of water, hand-washing wins.",
+                    tip: 'Never wash single items. Wait for a "hand-wash bundle" to maximize water use.'
+                },
+                {
+                    heading: 'The "Microplastic" Advantage',
+                    content: "Machines are aggressive. They shred synthetic fibers (polyester, nylon) which then flow into the ocean. Hand-washing is much gentler, reducing microplastic shedding by roughly 40-60%. It also makes your clothes last longer, which is the ultimate sustainability win.",
+                    tip: 'Use a "GUPPYFRIEND" bag even when hand-washing to catch those tiny fibers.'
+                }
+            ],
+            conclusion: "If you have a modern HE machine, use it for full loads. But for delicates and small essentials, a mindful bathtub wash is a great, low-energy alternative.",
+            faqs: [
+                { question: 'What soap should I use?', answer: 'Castile soap or a ph-neutral biodegradable laundry liquid works best for hand-washing.' },
+                { question: 'How do I dry them?', answer: 'Roll them in a dry towel and step on it to squeeze out moisture before hanging. It cuts drying time in half!' }
+            ]
+        },
+        relatedPosts: ['6-surprisingly-high-carbon-activities', 'circular-economy-8-ways-never-waste', 'zero-waste-dorm-challenge-guide']
+    },
+    {
+        id: 26,
+        slug: 'recycle-yoga-mats-environmentally',
+        title: "How to Dispose of Old Yoga Mats (The Guide for Eco-Warriors)",
+        excerpt: "Yoga mats are a recycling nightmare. 🧘‍♀️ Don't just throw yours away! Here are 5 genius ways to upcycle or recycle your mat in 2026.",
+        category: 'Tips',
+        date: 'January 18, 2026',
+        readTime: '5 min read',
+        emoji: '🧘',
+        featuredImage: '/blog/yoga-mat-recycling.webp',
+        metaTitle: "How to Recycle Yoga Mats: Sustainable Disposal Guide | StuCarbon",
+        metaDescription: "Old mat crumbling? 🧘‍♂️ Don't send it to the landfill! We found 5 ways to recycle or upcycle your yoga mat effortlessly. ♻️",
+        keywords: ['how to dispose of yoga mats', 'recycle yoga mats', 'upcycle yoga mat ideas', 'sustainable yoga gear'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T12:00:00+05:30',
+        dateModified: '2026-01-18T12:00:00+05:30',
+        content: {
+            intro: "Most yoga mats are made of PVC, a plastic that can take hundreds of years to decompose. Even 'eco' TPE mats are hard to recycle because most city bins won't take them. If your mat has lost its grip or is starting to crumble, don't just toss it. There's a better way.",
+            sections: [
+                {
+                    heading: '1. The "Rug Gripper" Hack',
+                    content: "Cut your old mat into squares and place them under rugs or floor mats that tend to slide. The sticky texture of an old yoga mat is better than many store-bought rug grippers.",
+                    tip: 'Clean the mat with vinegar and water before cutting to remove any old sweat/oils.'
+                },
+                {
+                    heading: '2. Garden Kneeling Pad',
+                    content: "If you have a dorm balcony garden or a community plot, a folded yoga mat is the perfect cushion for your knees while weeding. It's waterproof and easy to clean.",
+                    tip: 'Stack 2-3 layers and staple them together for extra comfort.'
+                },
+                {
+                    heading: '3. Donate to Animal Shelters',
+                    content: "Cats and dogs in shelters often sleep on cold floors. Animal rescues love old yoga mats because they provide a soft, grippy surface that's easy to disinfect. Call ahead to see if they are currently accepting donations.",
+                    tip: 'Mention that it\'s cleaned and ready for use.'
+                }
+            ],
+            conclusion: "The best way to 'recycle' is to extend the life of the material. Before you buy your next mat, look for 100% natural cork or rubber options that are truly biodegradable.",
+            faqs: [
+                { question: 'Are there professional recycling programs?', answer: 'Yes! Companies like Manduka and Lululemon often have "take-back" programs where they process old mats into playground flooring.' },
+                { question: 'Can I put it in the blue bin?', answer: 'No. Standard municipal recycling centers cannot process the composite materials in most mats.' }
+            ]
+        },
+        relatedPosts: ['circular-economy-8-ways-never-waste', 'soft-reset-january-trend', '2016-aesthetic-sustainable']
+    },
+    {
         id: 25,
         slug: 'green-inventions-2026',
         title: "5 Mind-Blowing Green Inventions Launched in Jan 2026",
