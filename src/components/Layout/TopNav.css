@@ -203,3 +203,34 @@
         display: block;
     }
 }
+
+/* Article Page Title */
+.nav-article-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-display, sans-serif);
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--dark);
+    letter-spacing: -0.02em;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+@media (max-width: 1024px) {
+    .nav-article-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-article-title {
+        font-size: 1.25rem;
+        /* Ensure it doesn't overlap logo/hamburger on very small screens if needed */
+        max-width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

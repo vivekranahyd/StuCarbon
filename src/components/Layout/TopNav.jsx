@@ -28,6 +28,8 @@ export default function TopNav() {
         return false;
     };
 
+    const isArticlePage = location.pathname.startsWith('/blog/') && location.pathname !== '/blog';
+
     return (
         <nav className={`top-nav ${isScrolled ? 'scrolled' : ''}`}>
             <div className="nav-container">
@@ -80,6 +82,12 @@ export default function TopNav() {
                     <Link to="/kids" className={`nav-link ${isActive('/kids') ? 'active' : ''}`}>Kids Calculator</Link>
                     <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'active' : ''}`}>Blog</Link>
                 </div>
+
+                {isArticlePage && (
+                    <div className="nav-article-title">
+                        StuCarbon
+                    </div>
+                )}
 
                 {/* Mobile Toggle */}
                 <button
