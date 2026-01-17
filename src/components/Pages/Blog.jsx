@@ -49,6 +49,8 @@ export default function Blog() {
                                         alt={post.title}
                                         loading="lazy"
                                         decoding="async"
+                                        width="1200"
+                                        height="630"
                                     />
                                 ) : (
                                     <span>{post.emoji}</span>
