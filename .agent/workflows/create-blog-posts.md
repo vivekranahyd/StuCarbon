@@ -19,11 +19,11 @@ Add the new blog post object(s) to `src/data/blogPosts.js`:
 
 ## 2. Update Sitemap (AUTOMATED)
 // turbo
-Run the automated generation script to sync `sitemap.xml`:
+Run the automated generation script to sync `sitemap.xml` and notify Google:
 ```bash
-node generate_sitemap.cjs && node validate_sitemap.cjs
+node generate_sitemap.cjs && node validate_sitemap.cjs && node index_urls.cjs
 ```
-This script automatically pulls all new posts from `src/data/blogPosts.js` and ensures the XML is perfectly structured. **Never edit sitemap.xml manually.**
+This script automatically pulls all new posts from `src/data/blogPosts.js`, ensures the XML is perfectly structured, and submits the latest URLs to the Google Indexing API for rapid discovery.
 
 ## 3. Generate Images (Optional)
 If the blog post needs a featured image, use the generate_image tool to create one and save it to `public/blog/`.
