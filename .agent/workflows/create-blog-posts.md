@@ -17,26 +17,13 @@ Add the new blog post object(s) to `src/data/blogPosts.js`:
 - Write full content with intro, sections, conclusion, and FAQs
 - Include relatedPosts array with 3 related slugs
 
-## 2. Update Sitemap (REQUIRED)
+## 2. Update Sitemap (AUTOMATED)
 // turbo
-Add entries to `public/sitemap.xml` for each new blog post:
-```xml
-<url>
-  <loc>https://stucarbon.com/blog/{slug}</loc>
-  <lastmod>{YYYY-MM-DD}</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+Run the automated generation script to sync `sitemap.xml`:
+```bash
+node generate_sitemap.cjs && node validate_sitemap.cjs
 ```
-
-Also update the `lastmod` date for the main blog page entry:
-```xml
-<url>
-  <loc>https://stucarbon.com/blog</loc>
-  <lastmod>{today's date}</lastmod>
-  ...
-</url>
-```
+This script automatically pulls all new posts from `src/data/blogPosts.js` and ensures the XML is perfectly structured. **Never edit sitemap.xml manually.**
 
 ## 3. Generate Images (Optional)
 If the blog post needs a featured image, use the generate_image tool to create one and save it to `public/blog/`.
