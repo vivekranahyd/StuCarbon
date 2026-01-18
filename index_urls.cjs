@@ -48,7 +48,7 @@ async function indexLatestPosts() {
         return;
     }
 
-    // Submit the top 3 most recent posts (or fewer if less exist)
+    // Submit the top 3 most recent posts (standard limit)
     const latestSlugs = postMatches.slice(0, 3).map(m => m[1]);
     const urls = latestSlugs.map(slug => `https://stucarbon.com/blog/${slug}`);
 
@@ -63,17 +63,38 @@ async function indexLatestPosts() {
         console.log('✅ Authorized successfully with Google.');
 
         for (const url of urls) {
-            console.log(`🚀 Submitting URL: ${url}`);
+            console.log(`🚀 Checking/Submitting URL: ${url}`);
 
-            const res = await google.indexing('v3').urlNotifications.publish({
+            // 1. Publish notification
+            const pubRes = await google.indexing('v3').urlNotifications.publish({
                 auth: authClient,
                 requestBody: {
                     url: url,
                     type: 'URL_UPDATED'
                 }
             });
+            console.log(`   ✅ Submission: ${pubRes.data.urlNotificationMetadata?.latestUpdate?.type || 'OK'}`);
 
-            console.log(`✅ Success for ${url}:`, res.data.urlNotificationMetadata?.latestUpdate?.type || 'Submitted');
+            // 2. Get metadata to see what Google recorded
+            try {
+                const metaRes = await google.indexing('v3').urlNotifications.getMetadata({
+                    auth: authClient,
+                    url: url
+                });
+
+                const latest = metaRes.data.latestUpdate;
+                if (latest) {
+                    console.log(`   🔍 Google Record: Type: ${latest.type}, Time: ${latest.notifyTime}`);
+                } else {
+                    console.log(`   🔍 Google Record: No previous record found.`);
+                }
+            } catch (metaError) {
+                if (metaError.message.includes('404')) {
+                    console.log(`   🔍 Google Record: URL not yet in Indexing API registry (this is normal for brand new URLs).`);
+                } else {
+                    console.log(`   🔍 Google Record: Error fetching metadata: ${metaError.message}`);
+                }
+            }
         }
 
         console.log('🎉 Indexing submission complete!');

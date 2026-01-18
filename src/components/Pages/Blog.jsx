@@ -119,7 +119,7 @@ export function BlogPost() {
             "@type": "Article",
             "headline": post.title,
             "description": post.metaDescription,
-            "image": `https://stucarbon.com/og-${post.slug}.png`,
+            "image": `https://stucarbon.com${post.featuredImage}`,
             "author": {
                 "@type": "Organization",
                 "name": post.author.name,
