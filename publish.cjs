@@ -42,17 +42,11 @@ async function publish() {
     }
 
     if (!runCommand('git push')) {
-        console.error('\n🛑 Git push failed. Stopping flow to prevent indexing desync.');
+        console.error('\n🛑 Git push failed. Stopping flow.');
         process.exit(1);
     }
 
-    // 3. Google Indexing
-    console.log('\n--- Step 3: Google Indexing ---');
-    if (!runCommand('node index_urls.cjs')) {
-        console.warn('⚠️ Indexing notification failed, but code is already live.');
-    }
-
-    console.log('\n✨ ALL DONE! Your site is live and Google has been notified.');
+    console.log('\n✨ ALL DONE! Your site is live. Remember to manually index in GSC.');
 }
 
 publish();

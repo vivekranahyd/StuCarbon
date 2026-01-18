@@ -23,12 +23,11 @@ Once you have verified the articles and visuals, run the master publish script:
 ```bash
 node publish.cjs
 ```
-This single command handles everything:
+This single command handles:
 1.  **Sitemap**: Re-generates `sitemap.xml` automatically.
 2.  **Git**: Adds changes, commits, and pushes to GitHub.
-3.  **Indexing**: Sends the latest URLs to Google's Indexing API (only after the push is successful).
 
-**Note**: Ensure your `service-account.json` is in the root directory for indexing to work.
+**Note**: After pushing, you must **manually** go to Google Search Console and request indexing for the new URLs for immediate results.
 
 ## 3. Generate Images (Optional)
 If the blog post needs a featured image, use the generate_image tool to create one and save it to `public/blog/`.
