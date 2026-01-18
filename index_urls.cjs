@@ -14,9 +14,22 @@ const BLOG_POSTS_PATH = path.join(__dirname, 'src', 'data', 'blogPosts.js');
 async function indexLatestPosts() {
     console.log('🔍 Starting Google Indexing submission...');
 
-    if (!fs.existsSync(KEY_FILE)) {
-        console.error('❌ Error: service-account.json not found.');
-        console.error('Please follow the instructions in implementation_plan_indexing.md to set up your Google Service Account.');
+    let credentials;
+    // Check for environment variable first (safer for production/CI)
+    if (process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON) {
+        console.log('📄 Using credentials from environment variable.');
+        try {
+            credentials = JSON.parse(process.env.GOOGLE_APPLICATION_CREDENTIALS_JSON);
+        } catch (e) {
+            console.error('❌ Error: Failed to parse GOOGLE_APPLICATION_CREDENTIALS_JSON env var.');
+            process.exit(1);
+        }
+    } else if (fs.existsSync(KEY_FILE)) {
+        console.log('📂 Using credentials from service-account.json file.');
+        credentials = JSON.parse(fs.readFileSync(KEY_FILE, 'utf8'));
+    } else {
+        console.error('❌ Error: service-account.json not found and no environment variable set.');
+        console.error('Please follow the instructions in implementation_plan_indexing.md.');
         process.exit(1);
     }
 
@@ -41,7 +54,7 @@ async function indexLatestPosts() {
 
     // Initialize Google Auth
     const auth = new google.auth.GoogleAuth({
-        keyFile: KEY_FILE,
+        credentials, // Pass the parsed credentials object directly
         scopes: ['https://www.googleapis.com/auth/indexing'],
     });
 
