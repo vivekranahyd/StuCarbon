@@ -20,10 +20,12 @@ This protocol is based on the aggressive 4-week execution plan to dominate the S
 
 ## Phase 2: Content Creation Rules
 
-1.  **Headline Formula** (Engaging but Safe):
-    *   **Structure**: `[Personal Experience] + [Curiosity Gap] + [Benefit/Insight]`
-    *   *Bad*: "Lenovo's New Laptop is a Scam." (Legal risk!)
-    *   *Good*: "I Tested Lenovo's New 'Modular' Laptop and Found a Surprising Catch."
+1.  **Headline Formula** (Short, Catchy & Deeply Clickable):
+    *   **Rule**: Keep it short (5-10 words). Use a "Curiosity Gap" or "Shocking Reality" angle.
+    *   **Structure**: `[Impact Detail] + [Curiosity Gap] + [Benefit/Insight]`
+    *   *Bad*: "I Analyzed the Oxfam 2026 Carbon Report and Found a Shocking Reality for the Rest of Us" (Too long!)
+    *   *Good*: "I Analyzed the Oxfam Carbon Report: The Reality is Shocking"
+    *   *Good*: "38% of US CEOs Just Quit on Climate: Here’s Why"
 2.  **The "Discover" Image Rule**:
     *   Featured image MUST be **1200px wide** (minimum).
     *   **Style**: High-contrast, unique, generated (DALL-E 3/Bing) or Canva. NO STOCK PHOTOS.

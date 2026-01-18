@@ -519,6 +519,30 @@
     color: var(--primary-700);
 }
 
+/* Infographic Visuals */
+.blog-infographic {
+    margin: var(--space-2xl) 0;
+    padding: var(--space-xl);
+    background: var(--gray-50);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--gray-200);
+    text-align: center;
+}
+
+.blog-infographic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-md);
+}
+
+.blog-infographic figcaption {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+    font-weight: 500;
+}
+
 /* Conclusion & CTA */
 .blog-conclusion {
     margin-bottom: var(--space-2xl);

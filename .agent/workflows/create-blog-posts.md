@@ -10,6 +10,7 @@ Follow these steps when adding new blog posts to the StuCarbon website:
 Add the new blog post object(s) to `src/data/blogPosts.js`:
 - Increment the `id` from the last post
 - Create a unique, SEO-friendly `slug`
+- **Catchy Title**: Title MUST be short (max 10 words) and highly clickable (Discover-optimized).
 - Include all required fields: title, excerpt, category, date, readTime, emoji
 - Add SEO meta: metaTitle, metaDescription, keywords
 - Add structured data: author, datePublished, dateModified
@@ -40,10 +41,19 @@ Also update the `lastmod` date for the main blog page entry:
 ## 3. Generate Images (Optional)
 If the blog post needs a featured image, use the generate_image tool to create one and save it to `public/blog/`.
 
-## 4. Verify
-- Check that the blog post renders correctly at `/blog/{slug}`
-- Verify the sitemap is valid XML
-- Confirm all internal links work
+## 4. Performance Optimization (MANDATORY FINAL STEP)
+// turbo
+Ensure the article scores ~100 on PageSpeed Insights:
+1.  **Optimize Images**: Run `node optimize_images.js`. This converts PNGs to WebP and resizes them to 1200px.
+2.  **Verify Layout Shifts**: Confirm all images in `Blog.jsx` have explicit `width` and `height` attributes.
+3.  **Check SEO Tags**: Verify JSON-LD and meta tags are present for "Best Practices".
+
+## 5. Verify & Audit
+// turbo
+1.  **Local Audit**: Run `node analyze_lighthouse.js` to check scores.
+2.  **Visual Check**: Verify the blog post renders correctly at `/blog/{slug}`.
+3.  **Sitemap**: Verify the sitemap is valid XML and the new link works.
+4.  **Links**: Confirm all internal links work.
 
 ## Notes
 - Date format in sitemap: `YYYY-MM-DD`

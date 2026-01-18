@@ -221,6 +221,9 @@ export function BlogPost() {
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href={`https://stucarbon.com/blog/${post.slug}`} />
 
+                {/* Preload LCP Image */}
+                {post.featuredImage && <link rel="preload" as="image" href={post.featuredImage} fetchpriority="high" />}
+
                 {/* Open Graph */}
                 <meta property="og:title" content={post.metaTitle} />
                 <meta property="og:description" content={post.metaDescription} />
@@ -315,6 +318,20 @@ export function BlogPost() {
                                         <strong>Pro Tip:</strong> {section.tip}
                                     </div>
                                 </div>
+                            )}
+                            {section.infographic && (
+                                <figure className="blog-infographic animate-fade-in">
+                                    <img
+                                        src={section.infographic.url}
+                                        alt={section.infographic.alt}
+                                        loading="lazy"
+                                        width="1200"
+                                        height="630"
+                                    />
+                                    {section.infographic.caption && (
+                                        <figcaption>{section.infographic.caption}</figcaption>
+                                    )}
+                                </figure>
                             )}
                         </section>
                     ))}
