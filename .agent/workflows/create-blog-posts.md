@@ -17,13 +17,18 @@ Add the new blog post object(s) to `src/data/blogPosts.js`:
 - Write full content with intro, sections, conclusion, and FAQs
 - Include relatedPosts array with 3 related slugs
 
-## 2. Update Sitemap (AUTOMATED)
+## 2. Approve & Publish (AUTOMATED)
 // turbo
-Run the automated generation script to sync `sitemap.xml` and notify Google:
+Once you have verified the articles and visuals, run the master publish script:
 ```bash
-node generate_sitemap.cjs && node validate_sitemap.cjs && node index_urls.cjs
+node publish.cjs
 ```
-This script automatically pulls all new posts from `src/data/blogPosts.js`, ensures the XML is perfectly structured, and submits the latest URLs to the Google Indexing API for rapid discovery.
+This single command handles everything:
+1.  **Sitemap**: Re-generates `sitemap.xml` automatically.
+2.  **Git**: Adds changes, commits, and pushes to GitHub.
+3.  **Indexing**: Sends the latest URLs to Google's Indexing API (only after the push is successful).
+
+**Note**: Ensure your `service-account.json` is in the root directory for indexing to work.
 
 ## 3. Generate Images (Optional)
 If the blog post needs a featured image, use the generate_image tool to create one and save it to `public/blog/`.

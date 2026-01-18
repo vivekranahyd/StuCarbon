@@ -3,6 +3,42 @@
 
 export const blogPosts = [
     {
+        id: 41,
+        slug: 'nasa-2025-temperature-report-climate-omission',
+        title: "NASA Just Dropped the 2025 Heat Report—and Something Massive is Missing",
+        excerpt: "2025 was officially the hottest year on record, but NASA's latest report has a shocking twist. 🌡️ Why did the word 'climate change' vanish from the official statement?",
+        category: 'Science',
+        date: 'January 18, 2026',
+        readTime: '9 min read',
+        emoji: '🛰️',
+        metaTitle: "NASA 2025 Temperature Report: The Missing Climate Context",
+        metaDescription: "NASA confirms 2025 as the hottest year ever recorded, but the official report omits the phrase 'climate change'. 🌡️ Discover the science behind the data and the controversy.",
+        keywords: ['nasa temperature report 2025', 'hottest year on record 2025', 'nasa climate change omission', 'global heat stats 2026'],
+        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        datePublished: '2026-01-18T15:30:00+05:30',
+        dateModified: '2026-01-18T15:30:00+05:30',
+        content: {
+            intro: "NASA has officially released its annual global temperature analysis for 2025, confirming what many had long suspected: 2025 was the hottest year in recorded history. However, it's not the record-breaking heat that's making headlines today—it's the words that aren't there. For the first time in over a decade, NASA's annual temperature statement has reportedly omitted any direct reference to 'climate change' or 'global warming,' a shift that has ignited a firestorm of debate within the scientific community.",
+            sections: [
+                {
+                    heading: '2025: The Year the Mercury Shattered',
+                    content: "The raw data is undeniable. Global temperatures in 2025 were 1.25 degrees Celsius above the late 19th-century average. From unprecedented wildfires in the Boreal forests to the total disappearance of summer ice in parts of the Arctic, the physical evidence of a warming planet was everywhere. NASA's GISS (Goddard Institute for Space Studies) confirmed that June through December each set individual monthly records. While the numbers tell a story of rapid environmental shift, the official narrative accompanying them has taken a decidedly 'pragmatic' turn.",
+                },
+                {
+                    heading: 'The Case of the Missing Keywords',
+                    content: "Observers were quick to point out that the 2025 report focus shifted toward 'natural resource management' and 'atmospheric variability.' This change in terminology aligns with the current administration's stance on decoupling government science from political climate goals. While the underlying research remains robust and publicly accessible, the top-level summary's silence on the drivers of this heat—namely human-induced carbon emissions—has scientists worried about the future of independent research communication.",
+                    tip: "Always look for the 'Methods' section in NASA reports. The raw satellite data often contains the context that political summaries might gloss over."
+                }
+            ],
+            conclusion: "Whether we call it 'climate change' or 'atmospheric variability,' the reality of a warming Earth remains the defining challenge of our generation. 2025 was a record-breaker; let's hope 2026 is the year we start breaking the trend.",
+            faqs: [
+                { question: 'Was 2025 really the hottest year ever?', answer: 'Yes, according to NASA and NOAA data, average global temperatures in 2025 exceeded all previous years since record-keeping began in 1880.' },
+                { question: 'Why did NASA change the report language?', answer: 'The shift in terminology is widely seen as a response to political directives to use more "pragmatic" language, though the scientific data itself remains unchanged.' }
+            ],
+            relatedPosts: ['us-ceo-sustainability-gap-2026', 'oxfam-carbon-report-2026-disparity', 'water-crisis-2026-shocking-facts']
+        }
+    },
+    {
         id: 40,
         slug: 'us-ceo-sustainability-gap-2026',
         title: "38% of US CEOs Just Quit on Climate: Here’s Why",
