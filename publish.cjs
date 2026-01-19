@@ -4,7 +4,6 @@ const { execSync } = require('child_process');
  * Unified Publish Script for StuCarbon
  * 1. Generates and validates sitemap
  * 2. Staging, Committing, and Pushing to GitHub
- * 3. Submitting to Google Indexing API (only if push succeeds)
  */
 
 function runCommand(command) {
@@ -36,7 +35,7 @@ async function publish() {
         console.log('💡 No changes to commit.');
     } catch (e) {
         // execSync throws if there ARE changes
-        if (!runCommand('git commit -m "publish: automated sitemap update and blog indexing"')) {
+        if (!runCommand('git commit -m "publish: automated sitemap update"')) {
             console.log('⚠️ Commit failed or nothing to commit.');
         }
     }
