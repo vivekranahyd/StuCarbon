@@ -277,7 +277,7 @@ function App() {
         <meta name="description" content="What's your campus impact? 🌍 Take our free, 2-minute Student Carbon Footprint Calculator. Get personalized tips to save money and the planet!" />
         <meta name="keywords" content="student carbon footprint calculator, carbon footprint quiz, student sustainability, campus carbon calculator, college carbon footprint, environmental impact calculator, student eco calculator, carbon emissions student, university sustainability" />
         <meta name="author" content="StuCarbon" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
         <link rel="canonical" href="https://stucarbon.com/" />
 
         {/* Open Graph / Facebook */}
