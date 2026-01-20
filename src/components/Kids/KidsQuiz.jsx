@@ -42,77 +42,50 @@ export default function KidsQuiz({ onComplete, onGoHome }) {
     const progressEmojis = ['🌱', '🌿', '🌲', '🌳', '🌴', '🌍'];
 
     return (
-        <section className="kids-quiz" aria-label="Carbon footprint quiz for kids">
+        <section className="kids-modern-layout kids-quiz-layout" aria-label="Carbon footprint quiz for kids">
             {/* Reaction Overlay */}
             {showReaction && (
                 <div className="kids-reaction-overlay" role="dialog" aria-label="Feedback message">
-                    <div className="kids-reaction-box">
-                        <span className="kids-reaction-emoji" aria-hidden="true">{question.mascot}</span>
-                        <p className="kids-reaction-text">{reaction}</p>
+                    <div className="reaction-card">
+                        <span className="reaction-emoji" aria-hidden="true">{question.mascot}</span>
+                        <p className="reaction-text">{reaction}</p>
                     </div>
                 </div>
             )}
 
             {/* Header */}
-            <div className="kids-quiz-header">
-                <div className="kids-quiz-title">
-                    <span>Planet Hero Quiz</span>
-                    <span className="kids-free-small">FREE!</span>
-                </div>
+            <div className="kids-pill-badge" style={{ margin: '0 0 1rem', alignSelf: 'flex-start' }}>
+                <span>✨</span> Question {currentQuestion + 1} of {totalQuestions}
             </div>
 
             {/* Progress Bar */}
-            <div className="kids-progress">
-                <div className="kids-progress-bar">
-                    <div
-                        className="kids-progress-fill"
-                        style={{ width: `${progress}%` }}
-                    />
-                </div>
-                <div className="kids-progress-text">
-                    {progressEmojis.map((emoji, i) => (
-                        <span
-                            key={i}
-                            className={`kids-progress-emoji ${i < currentQuestion ? 'completed' : ''} ${i === currentQuestion ? 'current' : ''}`}
-                        >
-                            {emoji}
-                        </span>
-                    ))}
-                </div>
+            <div className="quiz-progress-track">
+                <div
+                    className="quiz-progress-fill"
+                    style={{ width: `${progress}%` }}
+                />
             </div>
 
             {/* Question Card */}
-            <div className="kids-question-card">
-                <div className="kids-question-number">
-                    <span className="kids-q-emoji">{question.emoji}</span>
-                    <span>Question {currentQuestion + 1} of {totalQuestions}</span>
-                </div>
-
-                <h2 className="kids-question-text">
+            <div className="quiz-card">
+                <h2 className="quiz-question">
                     {question.question}
                 </h2>
 
                 {/* Options */}
-                <div className="kids-options">
+                <div className="quiz-options-stack">
                     {question.options.map((option) => (
                         <button
                             key={option.id}
-                            className={`kids-option ${selectedOption === option.id ? 'selected' : ''}`}
+                            className={`quiz-opt-btn ${selectedOption === option.id ? 'selected' : ''}`}
                             onClick={() => handleOptionSelect(option)}
                             disabled={selectedOption !== null}
                         >
-                            <span className="kids-option-emoji">{option.emoji}</span>
-                            <span className="kids-option-label">{option.label}</span>
+                            <span style={{ fontSize: '1.5rem' }}>{option.emoji}</span>
+                            <span>{option.label}</span>
                         </button>
                     ))}
                 </div>
-            </div>
-
-            {/* Encouragement */}
-            <div className="kids-encouragement">
-                <span>🌟</span>
-                <span>You're doing great!</span>
-                <span>🌟</span>
             </div>
         </section>
     );

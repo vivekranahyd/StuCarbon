@@ -6,24 +6,7 @@
     text-align: center;
 }
 
-.home-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-}
 
-.home-logo {
-    font-size: 2.5rem;
-}
-
-.home-brand-name {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 700;
-    color: #047857;
-}
 
 .home-title {
     font-family: var(--font-display);

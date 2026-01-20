@@ -5,94 +5,86 @@ import './Kids.css';
 
 export default function KidsLanding({ onStart }) {
     return (
-        <div className="landing-container">
-            {/* Decorative Blobs */}
-            <div className="landing-blob landing-blob-1" />
-            <div className="landing-blob landing-blob-2" />
-            <div className="landing-blob landing-blob-3" />
+        <div className="kids-modern-layout animate-fade-in">
+            {/* Ambient Background */}
+            <div className="kids-ambient-orb orb-1" />
+            <div className="kids-ambient-orb orb-2" />
 
-            {/* Subtle animated elements - keep for kids */}
-            <div className="kids-floating-elements" aria-hidden="true">
-                <span className="kids-float kids-float-1">🌿</span>
-                <span className="kids-float kids-float-2">🦋</span>
-                <span className="kids-float kids-float-3">⭐</span>
-                <span className="kids-float kids-float-4">🌸</span>
-                <span className="kids-float kids-float-5">🐝</span>
+            {/* Floating Animations */}
+            <div className="floating-container">
+                <span className="floating-item float-1">☁️</span>
+                <span className="floating-item float-2">🍃</span>
+                <span className="floating-item float-3">🦋</span>
+                <span className="floating-item float-4">🌞</span>
+                <span className="floating-item float-5">🌱</span>
             </div>
 
-            <div className="landing-content animate-fade-in">
-                <Link to="/" className="landing-brand">
-                    <span className="landing-logo">🌱</span>
-                    <span className="landing-brand-name">StuCarbon</span>
-                </Link>
+            <main className="kids-hero">
 
-                <h1 className="landing-title">
-                    <span className="text-gradient">Kids Carbon Footprint</span>{' '}
-                    Calculator
+
+                {/* SEO OPTIMIZED H1 */}
+                <h1 className="kids-title-display">
+                    <span className="accent-nature">Carbon Footprint</span><br />
+                    Calculator <span style={{ color: 'var(--kids-primary)' }}>for Kids</span>
                 </h1>
 
-                <p className="landing-subtitle">
-                    Calculate your environmental impact in under 2 minutes.
-                    Get personalized tips to reduce your carbon footprint! 🌍
+                <p className="kids-lead-text">
+                    The fun, fast, and free way to learn about your impact on the planet.
+                    No math required—just 2 minutes to become a Planet Hero! 🌍
                 </p>
 
-                {/* Feature Pills */}
-                <div className="landing-features">
-                    <div className="landing-feature">
-                        <span className="landing-feature-icon">⏱️</span>
-                        <span>Under 2 minutes</span>
+                {/* Mobile-First Bento Grid */}
+                <div className="kids-bento-grid">
+                    <div className="bento-card highlight">
+                        <div className="bento-icon">⏱️</div>
+                        <h3>2 Minute Quiz</h3>
+                        <p>Super fast questions designed just for kids.</p>
                     </div>
-                    <div className="landing-feature">
-                        <span className="landing-feature-icon">📊</span>
-                        <span>6 simple questions</span>
+                    <div className="bento-card">
+                        <div className="bento-icon">🏆</div>
+                        <h3>Earn Badges</h3>
+                        <p>Become a Planet Hero and collect stickers!</p>
                     </div>
-                    <div className="landing-feature">
-                        <span className="landing-feature-icon">🏆</span>
-                        <span>Earn a badge</span>
-                    </div>
-                </div>
-
-                {/* CTA Buttons */}
-                <div className="landing-cta-group">
-                    <div className="landing-cta">
-                        <Button
-                            variant="primary"
-                            size="lg"
-                            onClick={onStart}
-                            icon="🚀"
-                        >
-                            Calculate
-                        </Button>
-                        <span className="cta-free-label">FREE!</span>
+                    <div className="bento-card">
+                        <div className="bento-icon">🔒</div>
+                        <h3>100% Private</h3>
+                        <p>No signup needed. Your data stays yours.</p>
                     </div>
                 </div>
 
-                <div className="landing-time">
-                    <span>✅</span>
-                    <span>Free • No signup required • 100% anonymous</span>
-                </div>
+                {/* High-Impact CTA Area */}
+                <div className="kids-action-area">
+                    <button onClick={onStart} className="kids-primary-btn">
+                        Start Your Quiz <span className="btn-icon">🚀</span>
+                    </button>
 
-                {/* Stats */}
-                <div className="landing-stats">
-                    <div className="landing-stat">
-                        <div className="landing-stat-value">200kg</div>
-                        <div className="landing-stat-label">Avg Kids CO₂/month</div>
-                    </div>
-                    <div className="landing-stat">
-                        <div className="landing-stat-value">6</div>
-                        <div className="landing-stat-label">Quick Questions</div>
-                    </div>
-                    <div className="landing-stat landing-stat-free">
-                        <div className="landing-stat-value">100%</div>
-                        <div className="landing-stat-label">Free Forever</div>
+                    <div className="kids-trust-row">
+                        <div className="trust-badge">✅ Free Forever</div>
+                        <div className="trust-badge">🛡️ Anonymous</div>
                     </div>
                 </div>
-            </div>
+            </main>
 
-            {/* SEO: Hidden text */}
-            <p className="kids-seo-text">
-                Free carbon footprint calculator for kids ages 8-12. Learn about environmental impact through fun questions.
-            </p>
+
+
+            {/* Compact SEO Section */}
+            <section className="kids-seo-compact">
+                <h2>🌍 Why use a Carbon Footprint Calculator for Kids?</h2>
+                <p>
+                    Every time we use energy, drive in a car, or eat food, we leave a "footprint" on the Earth.
+                </p>
+
+                <ul className="kids-seo-list">
+                    <li>Discover your impact in 2 minutes</li>
+                    <li>Learn simple ways to protect nature</li>
+                    <li>Ride a bike, save energy, and be a hero!</li>
+                </ul>
+
+                <p style={{ opacity: 0.7, fontSize: '0.85rem', marginTop: '2rem', borderTop: '2px dashed #eee', paddingTop: '1rem' }}>
+                    100% Free Educational Tool for Ages 8-12.
+                </p>
+            </section>
         </div>
     );
 }
+

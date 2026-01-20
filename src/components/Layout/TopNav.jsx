@@ -73,6 +73,7 @@ export default function TopNav() {
                             opacity="0.4"
                         />
                     </svg>
+                    <span className="nav-brand-text">StuCarbon</span>
                 </Link>
 
                 {/* Desktop Links */}
@@ -82,12 +83,6 @@ export default function TopNav() {
                     <Link to="/kids" className={`nav-link ${isActive('/kids') ? 'active' : ''}`}>Kids Calculator</Link>
                     <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'active' : ''}`}>Blog</Link>
                 </div>
-
-                {isArticlePage && (
-                    <div className="nav-article-title">
-                        StuCarbon
-                    </div>
-                )}
 
                 {/* Mobile Toggle */}
                 <button

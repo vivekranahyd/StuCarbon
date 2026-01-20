@@ -4,11 +4,7 @@ import './HomePage.css';
 export default function HomePage() {
     return (
         <div className="home-page">
-            {/* Logo */}
-            <div className="home-brand">
-                <span className="home-logo">🌱</span>
-                <span className="home-brand-name">StuCarbon</span>
-            </div>
+
 
             <h1 className="home-title">
                 <span className="home-title-gradient">Carbon Footprint</span>{' '}

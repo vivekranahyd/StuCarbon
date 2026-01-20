@@ -7,18 +7,18 @@
     right: 0;
     z-index: 1000;
     padding: 1rem 0;
-    background: rgba(255, 255, 255, 0.05);
-    /* Ultra transparent initially */
+    background: transparent;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-nav.scrolled {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.2);
+    /* Subtle glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 0.75rem 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-container {
@@ -48,6 +48,15 @@
 
 .logo-svg {
     overflow: visible;
+}
+
+.nav-brand-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--dark);
+    margin-left: 0.75rem;
+    letter-spacing: -0.02em;
 }
 
 /* Desktop Links */
@@ -201,36 +210,5 @@
 
     .mobile-toggle {
         display: block;
-    }
-}
-
-/* Article Page Title */
-.nav-article-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--font-display, sans-serif);
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: var(--dark);
-    letter-spacing: -0.02em;
-    pointer-events: none;
-    white-space: nowrap;
-    z-index: 10;
-}
-
-@media (max-width: 1024px) {
-    .nav-article-title {
-        font-size: 1.25rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-article-title {
-        font-size: 1.25rem;
-        /* Ensure it doesn't overlap logo/hamburger on very small screens if needed */
-        max-width: 50%;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
 }

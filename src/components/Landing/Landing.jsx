@@ -11,10 +11,7 @@ export default function Landing({ onStart }) {
             <div className="landing-blob landing-blob-3" />
 
             <div className="landing-content animate-fade-in">
-                <Link to="/" className="landing-brand">
-                    <span className="landing-logo">🌱</span>
-                    <span className="landing-brand-name">StuCarbon</span>
-                </Link>
+
 
                 <h1 className="landing-title">
                     <span className="text-gradient">Student Carbon Footprint</span>{' '}

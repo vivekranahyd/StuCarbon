@@ -173,12 +173,13 @@ function KidsCalculator() {
 
   // Inject JSON-LD structured data directly into head
   useEffect(() => {
-    const kidsStructuredData = {
+    // 1. Web Application Schema
+    const webAppSchema = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Carbon Footprint Calculator for Kids",
       "alternateName": "StuCarbon Kids Planet Hero Quiz",
-      "description": "A free, fun carbon footprint calculator designed for kids ages 8-12. Children answer 6 simple questions about their daily habits and earn a Planet Hero Animal Badge while learning about environmental impact.",
+      "description": "The best free carbon footprint calculator for kids. Fun, educational, and instant results.",
       "url": "https://stucarbon.com/kids",
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Any",
@@ -196,25 +197,80 @@ function KidsCalculator() {
       "author": {
         "@type": "Organization",
         "name": "StuCarbon"
-      },
-      "educationalLevel": "Elementary School",
-      "learningResourceType": "Interactive Quiz",
-      "teaches": ["Environmental Awareness", "Carbon Footprint", "Sustainability for Kids"]
+      }
     };
 
-    // Remove existing and create new script
-    const existingScript = document.getElementById('ld-kids-app');
-    if (existingScript) existingScript.remove();
+    // 2. FAQ Schema
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a carbon footprint calculator for kids?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A carbon footprint calculator for kids is a simple tool that helps children understand how their daily choices—like food and travel—affect the Earth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this carbon footprint quiz free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The StuCarbon Kids Calculator is 100% free and requires no sign-up or personal data."
+          }
+        }
+      ]
+    };
 
-    const script = document.createElement('script');
-    script.id = 'ld-kids-app';
-    script.type = 'application/ld+json';
-    script.textContent = safeJsonStringify(kidsStructuredData);
-    document.head.appendChild(script);
+
+
+    // 4. Breadcrumb Schema
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://stucarbon.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kids Calculator",
+          "item": "https://stucarbon.com/kids"
+        }
+      ]
+    };
+
+    // Helper to inject scripts
+    const addScript = (id, data) => {
+      const script = document.createElement('script');
+      script.id = id;
+      script.type = 'application/ld+json';
+      script.textContent = safeJsonStringify(data);
+      document.head.appendChild(script);
+    };
+
+    // Cleanup existing
+    ['ld-kids-app', 'ld-kids-faq', 'ld-kids-bread'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    });
+
+    // Inject new
+    addScript('ld-kids-app', webAppSchema);
+    addScript('ld-kids-faq', faqSchema);
+    addScript('ld-kids-bread', breadcrumbSchema);
 
     return () => {
-      const el = document.getElementById('ld-kids-app');
-      if (el) el.remove();
+      ['ld-kids-app', 'ld-kids-faq', 'ld-kids-bread'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.remove();
+      });
     };
   }, []);
 
@@ -222,25 +278,25 @@ function KidsCalculator() {
     <>
       <Helmet>
         {/* Primary SEO Meta Tags */}
-        <title>Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon</title>
-        <meta name="title" content="Carbon Footprint Calculator for Kids | Free Environmental Quiz | StuCarbon" />
-        <meta name="description" content="Kids! Become a Planet Hero today! 🦸‍♂️ Take our fun, free Carbon Footprint Quiz. Answer simple questions, earn badges, and learn how to save the Earth!" />
-        <meta name="keywords" content="carbon footprint calculator for kids, kids carbon footprint quiz, children's environmental calculator, carbon footprint for children, kid-friendly carbon calculator, eco quiz for kids, environmental quiz for children, planet hero quiz, free kids carbon calculator, carbon footprint game for kids" />
+        <title>Best Carbon Footprint Calculator for Kids | Free, Fun & Fast</title>
+        <meta name="title" content="Best Carbon Footprint Calculator for Kids | Free, Fun & Fast" />
+        <meta name="description" content="Calculate your environmental impact with our fun carbon footprint calculator for kids. 100% free, 6 simple questions, and earn your Planet Hero badge today!" />
+        <meta name="keywords" content="carbon footprint calculator for kids, kids carbon footprint quiz, environmental footprint for students, free eco quiz for children, sustainability calculator for kids" />
         <link rel="canonical" href="https://stucarbon.com/kids" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://stucarbon.com/kids" />
-        <meta property="og:title" content="Carbon Footprint Calculator for Kids | Free Planet Hero Quiz" />
-        <meta property="og:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly 2-minute quiz. Earn a Planet Hero Animal Badge!" />
+        <meta property="og:title" content="Best Carbon Footprint Calculator for Kids | Planet Hero Quiz" />
+        <meta property="og:description" content="Fun, free carbon footprint calculator for kids! Answer simple questions, earn badges, and learn how to save the Earth." />
         <meta property="og:image" content="https://stucarbon.com/og-image-kids.png" />
         <meta property="og:site_name" content="StuCarbon" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://stucarbon.com/kids" />
-        <meta name="twitter:title" content="Carbon Footprint Calculator for Kids | Free Planet Hero Quiz" />
-        <meta name="twitter:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly 2-minute quiz." />
+        <meta name="twitter:title" content="Best Carbon Footprint Calculator for Kids | Planet Hero Quiz" />
+        <meta name="twitter:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly quiz." />
         <meta name="twitter:image" content="https://stucarbon.com/og-image-kids.png" />
       </Helmet>
 
@@ -297,7 +353,7 @@ function App() {
       </Helmet>
       <TopNav />
 
-      <main style={{ paddingTop: '3.5rem' }}>
+      <main style={{ paddingTop: '6rem' }}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/students" element={<StudentCalculator />} />
