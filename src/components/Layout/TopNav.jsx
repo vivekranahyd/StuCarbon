@@ -80,7 +80,7 @@ export default function TopNav() {
                 <div className="nav-links-desktop">
                     <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
                     <Link to="/students" className={`nav-link ${isActive('/students') ? 'active' : ''}`}>Students Calculator</Link>
-                    <Link to="/kids" className={`nav-link ${isActive('/kids') ? 'active' : ''}`}>Kids Calculator</Link>
+                    <Link to="/carbon-footprint-calculator-for-kids" className={`nav-link ${isActive('/carbon-footprint-calculator-for-kids') ? 'active' : ''}`}>Kids Calculator</Link>
                     <Link to="/blog" className={`nav-link ${isActive('/blog') ? 'active' : ''}`}>Blog</Link>
                 </div>
 
@@ -101,7 +101,7 @@ export default function TopNav() {
                 <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
                     <Link to="/" className={`mobile-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
                     <Link to="/students" className={`mobile-link ${isActive('/students') ? 'active' : ''}`}>Students Calculator</Link>
-                    <Link to="/kids" className={`mobile-link ${isActive('/kids') ? 'active' : ''}`}>Kids Calculator</Link>
+                    <Link to="/carbon-footprint-calculator-for-kids" className={`mobile-link ${isActive('/carbon-footprint-calculator-for-kids') ? 'active' : ''}`}>Kids Calculator</Link>
                     <Link to="/blog" className={`mobile-link ${isActive('/blog') ? 'active' : ''}`}>Blog</Link>
                 </div>
             </div>

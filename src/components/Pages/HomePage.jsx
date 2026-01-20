@@ -32,7 +32,7 @@ export default function HomePage() {
                 </Link>
 
                 {/* Kids Calculator */}
-                <Link to="/kids" className="home-calc-card home-calc-kids">
+                <Link to="/carbon-footprint-calculator-for-kids" className="home-calc-card home-calc-kids">
                     <div className="home-calc-icon">🧸</div>
                     <h2 className="home-calc-title">Kids Calculator</h2>
                     <p className="home-calc-desc">Fun quiz for children (Ages 8-12)</p>

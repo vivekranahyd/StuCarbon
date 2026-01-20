@@ -11,7 +11,7 @@ const sitemapPath = path.join(__dirname, 'public', 'sitemap.xml');
 
 const staticRoutes = [
     { loc: 'https://stucarbon.com/', lastmod: '2026-01-14', freq: 'weekly', priority: '1.0' },
-    { loc: 'https://stucarbon.com/kids', lastmod: '2026-01-14', freq: 'weekly', priority: '0.9' },
+    { loc: 'https://stucarbon.com/carbon-footprint-calculator-for-kids', lastmod: '2026-01-14', freq: 'weekly', priority: '0.9' },
     { loc: 'https://stucarbon.com/about', lastmod: '2026-01-14', freq: 'monthly', priority: '0.8' },
     { loc: 'https://stucarbon.com/blog', lastmod: new Date().toISOString().split('T')[0], freq: 'weekly', priority: '0.9' },
     { loc: 'https://stucarbon.com/contact', lastmod: '2026-01-14', freq: 'monthly', priority: '0.6' },

@@ -180,7 +180,7 @@ function KidsCalculator() {
       "name": "Carbon Footprint Calculator for Kids",
       "alternateName": "StuCarbon Kids Planet Hero Quiz",
       "description": "The best free carbon footprint calculator for kids. Fun, educational, and instant results.",
-      "url": "https://stucarbon.com/kids",
+      "url": "https://stucarbon.com/carbon-footprint-calculator-for-kids",
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Any",
       "audience": {
@@ -241,7 +241,7 @@ function KidsCalculator() {
           "@type": "ListItem",
           "position": 2,
           "name": "Kids Calculator",
-          "item": "https://stucarbon.com/kids"
+          "item": "https://stucarbon.com/carbon-footprint-calculator-for-kids"
         }
       ]
     };
@@ -282,11 +282,11 @@ function KidsCalculator() {
         <meta name="title" content="Best Carbon Footprint Calculator for Kids | Free, Fun & Fast" />
         <meta name="description" content="Calculate your environmental impact with our fun carbon footprint calculator for kids. 100% free, 6 simple questions, and earn your Planet Hero badge today!" />
         <meta name="keywords" content="carbon footprint calculator for kids, kids carbon footprint quiz, environmental footprint for students, free eco quiz for children, sustainability calculator for kids" />
-        <link rel="canonical" href="https://stucarbon.com/kids" />
+        <link rel="canonical" href="https://stucarbon.com/carbon-footprint-calculator-for-kids" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://stucarbon.com/kids" />
+        <meta property="og:url" content="https://stucarbon.com/carbon-footprint-calculator-for-kids" />
         <meta property="og:title" content="Best Carbon Footprint Calculator for Kids | Planet Hero Quiz" />
         <meta property="og:description" content="Fun, free carbon footprint calculator for kids! Answer simple questions, earn badges, and learn how to save the Earth." />
         <meta property="og:image" content="https://stucarbon.com/og-image-kids.png" />
@@ -294,7 +294,7 @@ function KidsCalculator() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://stucarbon.com/kids" />
+        <meta name="twitter:url" content="https://stucarbon.com/carbon-footprint-calculator-for-kids" />
         <meta name="twitter:title" content="Best Carbon Footprint Calculator for Kids | Planet Hero Quiz" />
         <meta name="twitter:description" content="Fun, free carbon footprint calculator for kids! Help your child learn about their environmental impact with our kid-friendly quiz." />
         <meta name="twitter:image" content="https://stucarbon.com/og-image-kids.png" />
@@ -321,7 +321,7 @@ function App() {
   // Hide navbar on calculator pages to keep them clean
   const isHomePage = location.pathname === '/';
   const isStudentsPage = location.pathname.startsWith('/students');
-  const isKidsPage = location.pathname.startsWith('/kids');
+  const isKidsPage = location.pathname.startsWith('/carbon-footprint-calculator-for-kids');
   const hideNavbar = isHomePage || isStudentsPage || isKidsPage;
 
   return (
@@ -357,7 +357,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/students" element={<StudentCalculator />} />
-          <Route path="/kids" element={<KidsCalculator />} />
+          <Route path="/carbon-footprint-calculator-for-kids" element={<KidsCalculator />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />

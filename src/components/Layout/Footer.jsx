@@ -19,7 +19,7 @@ export default function Footer() {
                     <h4>Calculators</h4>
                     <ul>
                         <li><Link to="/">Student Quiz 🎓</Link></li>
-                        <li><Link to="/kids">Kids Quiz 🧸</Link></li>
+                        <li><Link to="/carbon-footprint-calculator-for-kids">Kids Quiz 🧸</Link></li>
                         <li><Link to="/about">How It Works</Link></li>
                     </ul>
                 </div>
