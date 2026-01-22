@@ -67,22 +67,50 @@ export default function KidsLanding({ onStart }) {
 
 
 
-            {/* Compact SEO Section */}
-            <section className="kids-seo-compact">
-                <h2>🌍 Why use a Carbon Footprint Calculator for Kids?</h2>
-                <p>
-                    Every time we use energy, drive in a car, or eat food, we leave a "footprint" on the Earth.
-                </p>
+            {/* Clean SEO Accordion Section */}
+            <section className="kids-seo-accordion">
+                <div className="accordion-header-row">
+                    <h2>📚 Education Corner</h2>
+                    <span className="badge-new">For Parents & Teachers</span>
+                </div>
 
-                <ul className="kids-seo-list">
-                    <li>Discover your impact in 2 minutes</li>
-                    <li>Learn simple ways to protect nature</li>
-                    <li>Ride a bike, save energy, and be a hero!</li>
-                </ul>
+                <div className="accordion-item">
+                    <details>
+                        <summary>What is a Carbon Footprint? (Simple Definition)</summary>
+                        <p>
+                            Think of a carbon footprint like a mark you leave in the sand, but for the air!
+                            Every time we use electricity, ride in a car, or buy new toys, it uses energy that comes from fossil fuels.
+                            This releases "greenhouse gases" that wrap around the Earth like a blanket and make it warmer.
+                            Our <strong>Carbon Footprint Calculator for Kids</strong> helps you measure your mark and learn how to make it smaller!
+                        </p>
+                    </details>
+                </div>
 
-                <p style={{ opacity: 0.7, fontSize: '0.85rem', marginTop: '2rem', borderTop: '2px dashed #eee', paddingTop: '1rem' }}>
-                    100% Free Educational Tool for Ages 8-12.
-                </p>
+                <div className="accordion-item">
+                    <details>
+                        <summary>Why is this tool free for schools & homeschooling?</summary>
+                        <p>
+                            StuCarbon is committed to 100% free environmental education. We believe every child should have access to
+                            STEM tools that help them understand climate change. This calculator is designed as a perfect
+                            <strong>homeschooling resource</strong> or classroom activity for grades 3-7 (Ages 8-12).
+                            No email or signup is required, ensuring total student privacy.
+                        </p>
+                    </details>
+                </div>
+
+                <div className="accordion-item">
+                    <details>
+                        <summary>How can kids reduce their carbon footprint?</summary>
+                        <p>
+                            Small steps make a big difference! Here are 3 easy ways for kids to be Planet Heroes:
+                        </p>
+                        <ul className="kids-seo-list">
+                            <li>🚲 <strong>Travel Green:</strong> Walk, bike, or take the bus to school instead of a car.</li>
+                            <li>🍔 <strong>Eat Smart:</strong> Try "Meatless Mondays" – veggies use way less water and energy than meat!</li>
+                            <li>💡 <strong>Power Down:</strong> Turn off lights and video games when you leave the room.</li>
+                        </ul>
+                    </details>
+                </div>
             </section>
         </div>
     );

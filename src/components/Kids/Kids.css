@@ -627,3 +627,115 @@
         padding: 2rem 2rem 4rem;
     }
 }
+
+/* ====================
+   CLEAN ACCORDION (SEO)
+   ==================== */
+.kids-seo-accordion {
+    margin-top: 4rem;
+    padding: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.accordion-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.accordion-header-row h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--kids-text);
+    margin: 0;
+}
+
+.badge-new {
+    background: #ecfdf5;
+    color: var(--kids-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 99px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 1px solid var(--kids-accent);
+}
+
+.accordion-item {
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.accordion-item details {
+    padding: 0;
+}
+
+.accordion-item summary {
+    padding: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    color: var(--kids-text);
+    font-size: 1.05rem;
+}
+
+.accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--kids-primary);
+    transition: transform 0.2s;
+}
+
+.accordion-item details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.accordion-item details[open] summary {
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.accordion-item p {
+    padding: 1.25rem;
+    padding-top: 0;
+    margin: 0;
+    padding-top: 1rem;
+    line-height: 1.6;
+    color: var(--kids-text-muted);
+}
+
+/* Enhancing the internal list within the accordion */
+.accordion-item .kids-seo-list {
+    margin: 0;
+    padding: 0 1.25rem 1.25rem;
+}
+
+.accordion-item .kids-seo-list li {
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+.accordion-item .kids-seo-list li::before {
+    content: none;
+}
