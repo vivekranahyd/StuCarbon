@@ -374,6 +374,34 @@ export const blogPosts = [
                 {
                     heading: '3. Doomscrolling Energy',
                     content: "Auto-playing videos on social media suck massive data and energy. Turn off 'Auto-Play' in your settings to save battery and the planet."
+                },
+                {
+                    heading: '4. Vampire Charging',
+                    content: "Leaving your charger plugged in when not in use still draws power. It's small, but multiplied by billions of phones, it's a massive energy leak."
+                },
+                {
+                    heading: '5. Screen Brightness',
+                    content: "Running at 100% brightness drains your battery twice as fast, doubling your charging cycles. Auto-brightness is your friend."
+                },
+                {
+                    heading: '6. The Gold in Your Pocket',
+                    content: "Your phone contains gold, silver, and copper. When you bin it, you are literally throwing away precious earth resources that destroyed landscapes to mine."
+                },
+                {
+                    heading: '7. Plastic Cases',
+                    content: "Most cheap phone cases are non-recyclable plastic that will outlive you. Switch to a compostable case (like Pela) or a durable one that lasts."
+                },
+                {
+                    heading: '8. 4K Streaming on Small Screens',
+                    content: "Streaming 4K video to a 6-inch phone screen is a waste of bandwidth and energy. You literally cannot see the difference. Switch to 1080p or 720p."
+                },
+                {
+                    heading: '9. Notification Overload',
+                    content: "Every 'ding' lights up your screen and wakes up your processor. Turn off non-essential notifications to save your sanity and your battery."
+                },
+                {
+                    heading: '10. The Drawer of Doom',
+                    content: "We all have a drawer full of old phones. Don't let them sit there. Sell them (Back Market) or recycle them properly so the metals can be reused."
                 }
             ],
             conclusion: "Your phone is a tool, not a disposable toy. Treat it with care, and it will last—saving you money and carbon.",
