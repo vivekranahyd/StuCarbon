@@ -3,6 +3,294 @@
 
 export const blogPosts = [
     {
+        id: 31,
+        slug: 'wood-burner-health-warning-2026',
+        title: "The 'Cozy' Home Trend That Now Carries a Government Health Warning",
+        excerpt: "Bad news for Hygge lovers. stove owners are facing new strict regulations in 2026 as data reveals the hidden toxicity of wood burning.",
+        category: 'Health',
+        date: 'January 23, 2026',
+        readTime: '6 min read',
+        emoji: '🔥',
+        featuredImage: '/wood_burner_health_warning_1769173564952.png',
+        metaTitle: "Wood Burner Health Warning 2026: Why Government is Cracking Down | StuCarbon",
+        metaDescription: "Is your wood stove toxic? 😷 New 2026 government warnings link wood burners to serious health risks. Read the new rules before you light up. 🔥",
+        keywords: ['wood burner health warning 2026', 'wood stove pollution', 'particulate matter home', 'indoor air quality'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-23T14:00:00+05:30',
+        dateModified: '2026-01-23T14:00:00+05:30',
+        content: {
+            intro: "For years, the wood-burning stove has been the ultimate symbol of cozy, sustainable living. But a new government report released this morning is about to extinguish that glow. New data reveals that wood burners are now a larger source of fine particle pollution (PM2.5) than road traffic in some areas. As of 2026, new stoves will carry mandatory health warnings similar to cigarette packets. Here is what you need to know before you light your next fire.",
+            sections: [
+                {
+                    heading: 'The "Worse Than Traffic" Statistic',
+                    content: "It sounds impossible, but it is true. A modern eco-compliant wood stove produces the same amount of particulate pollution as 750 diesel heavy goods vehicles. The problem is microscopic PM2.5 particles that can bypass our lung defenses and enter the bloodstream. The new government report confirms that shifting from open fires to stoves helps, but nowhere near enough.",
+                    tip: 'If you smell smoke inside your home, your ventilation has already failed. Open a window immediately.'
+                },
+                {
+                    heading: 'The New "Health Warning" Labels',
+                    content: "Starting late 2026, all new wood burners sold must carry a warning label highlighting the respiratory risks to children and the elderly. It is a massive shift in how we view 'natural' heat. Just because it is natural wood does not mean the smoke is safe. The regulations also propose an 80% reduction in emission limits for future models, effectively banning most current technology.",
+                    tip: 'Check your stove\'s "Defra Exempt" status—even compliant stoves may not meet the upcoming 2027 standards.'
+                },
+                {
+                    heading: 'What Can You Do? (Without Freezing)',
+                    content: "You do not have to rip out your stove yet. But change your habits. Only burn kiln-dried wood (wet wood produces 4x the pollution). Never burn coal or treated timber. And consider the stove a 'luxury' for special occasions, not a primary heat source. The cleanest flame is the one you don't light.",
+                    tip: 'Moisture meters cost $15. If your wood has >20% moisture, do not burn it. It is bad for your health and your chimney.'
+                }
+            ],
+            conclusion: "The era of the 'innocent' wood burner is over. We now know that cozy glow comes with a hidden health cost. By 2030, we might look at indoor wood burning the same way we look at indoor smoking today: a relic of the past.",
+            faqs: [
+                { question: 'Are they banning wood stoves?', answer: 'Not yet. They are introducing stricter manufacturing standards and mandatory health warnings for new sales.' },
+                { question: 'Is eco-design actually eco-friendly?', answer: 'It is better than an open fire, but "eco-design" stoves still emit hundreds of times more pollution than a heat pump or gas boiler.' }
+            ]
+        },
+        relatedPosts: ['particle-pollution-balkans-highest-in-europe-research', 'water-related-violence-increase-pacific-institute', 'illegal-waste-tips-england']
+    },
+    {
+        id: 30,
+        slug: 'illegal-waste-tips-england',
+        title: "The 'Trash Mafia': Inside the Illegal Super-Dumps Poisoning Our Land",
+        excerpt: "Organized crime has taken over waste management. A shocking BBC investigation reveals the massive illegal landfills hiding in plain sight.",
+        category: 'Investigation',
+        date: 'January 23, 2026',
+        readTime: '8 min read',
+        emoji: '🗑️',
+        featuredImage: '/trash-mafia.jpg',
+        metaTitle: "The Trash Mafia: Illegal Waste Super-Dumps Exposed 2026 | StuCarbon",
+        metaDescription: "Thought your recycling was safe? 🗑️ Organized crime is running illegal 'super-dumps' across the country. The shocking BBC investigation explained. 🕵️‍♂️",
+        keywords: ['illegal waste dumps england', 'trash mafia investigation', 'organized crime waste management', 'recycling scandal 2026'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-23T09:00:00+05:30',
+        dateModified: '2026-01-23T09:00:00+05:30',
+        content: {
+            intro: "We diligently wash our yogurt pots and sort our cardboard, believing we are doing our part. But a bombshell BBC investigation released this morning reveals a darker reality. Organized crime gangs are running industrial-scale illegal landfills—some the size of football pitches—right under our noses. They undercut legitimate businesses, bury toxic waste, and vanish before the authorities catch up. Welcome to the world of the 'Trash Mafia'.",
+            sections: [
+                {
+                    heading: 'The "Super-Sites" Hiding in Plain Sight',
+                    content: "Investigators found 11 'super-sized' illegal tips operating across the country. These aren't just a few fly-tipped mattresses. We are talking about thousands of tons of commercial waste—building rubble, asbestos, and unrecyclable plastics—dumped in rented warehouses or on farm land. The criminals pocket the disposal fees (often millions) and leave the landowner with the cleanup bill.",
+                    tip: 'If a "man with a van" offers to take your trash for cheap cash-in-hand, it is likely ending up here. Always ask for a Waste Carrier License.'
+                },
+                {
+                    heading: 'Why Criminals Love Garbage',
+                    content: "It is low risk, high reward. Punishment for environmental crime is often just a fine, while the profits rival drug trafficking. The investigation showed gangs using 'waste processing' as a front to launder money. Your local skip hire might unknowingly be part of a criminal supply chain. It turns the entire concept of 'green' waste management into a farce.",
+                    tip: 'Check the Environment Agency public register to verify any waste company you use.'
+                },
+                {
+                    heading: 'The Environmental Bomb',
+                    content: "These sites have no lining, no leachate management, and no fire safety. When they catch fire (which is common), they burn for weeks, spewing toxic dioxins into the air. When it rains, chemical sludge leaches into the groundwater. We are not just losing tax revenue; we are actively poisoning our own soil for generations.",
+                    tip: 'Report suspicious 24/7 trucking activity at abandoned warehouses to the council. You might spot a site before it grows.'
+                }
+            ],
+            conclusion: "Recycling is still vital, but the system is broken. Until we treat waste crime with the same severity as financial fraud, the Trash Mafia will keep turning our countryside into a landfill. Stay vigilant.",
+            faqs: [
+                { question: 'Is my recycling affected?', answer: 'Council collection is generally safe. The risk is highest with private skip hire and commercial waste disposal.' },
+                { question: 'What happens to the waste?', answer: 'Taxpayers usually foot the bill. Clearing a single super-site can cost the public purse over $1 million.' }
+            ]
+        },
+        relatedPosts: ['wood-burner-health-warning-2026', 'water-crisis-2026-shocking-facts', 'circular-economy-8-ways-never-waste']
+    },
+    {
+        id: 60,
+        slug: '7-foods-double-price-leaked-docs',
+        title: "7 Foods Spiking in Price in 2026 (EUDR Update)",
+        excerpt: "Grocery inflation 2026 update: The new 'Deforestation Rule' is live. 🥩 See why coffee, chocolate, and beef prices are skyrocketing this month. ☕",
+        category: 'Money',
+        date: 'January 23, 2026',
+        readTime: '6 min read',
+        emoji: '🥩',
+        featuredImage: '/blog/meat-tax-2026.webp',
+        metaTitle: "Why is Food So Expensive in 2026? 7 Items Hit by EUDR | StuCarbon",
+        metaDescription: "Grocery inflation 2026: The EU Deforestation Regulation (EUDR) is driving up the cost of coffee, chocolate, and beef. See the full list of price hikes.",
+        keywords: ['grocery inflation 2026', 'EUDR food prices', 'why is coffee so expensive', 'chocolate shortage 2026', 'beef price hike 2026', 'food cost forecast'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-23T18:00:00+05:30',
+        dateModified: '2026-01-23T18:00:00+05:30',
+        content: {
+            intro: "If you've Googled 'why is coffee so expensive' lately, you're not alone. I've been tracking the rollout of the **EU Deforestation Regulation (EUDR)**, and as of January 2026, it is fully enforced. This isn't just normal inflation—it's a structural change to how we value nature. Here are the 7 pantry staples taking the biggest hit right now.",
+            sections: [
+                {
+                    heading: '1. Coffee (The "Latte Levy")',
+                    content: "Coffee is the #1 casualty of the EUDR. Farming cooperatives in Vietnam and Brazil are struggling to pay for the required GPS mapping of every single coffee tree. That compliance cost is being verified right now, and it adds about $0.40 to the wholesale cost of a pound of beans.",
+                    verdict: "Forecast: Expect your daily brew to rise by $1.00 by March."
+                },
+                {
+                    heading: '2. Chocolate',
+                    content: "West Africa produces 70% of the world's cocoa. I checked the market reports, and 'Certified Deforestation-Free' cocoa is trading at a 30% premium over standard cocoa. Brands are shrinking bar sizes (Shrinkflation) to hide the cost, but the per-gram price is skyrocketing.",
+                    verdict: "Forecast: Luxury pricing for standard candy bars."
+                },
+                {
+                    heading: '3. Beef',
+                    content: "The days of cheap imported beef are over. Under the new rules, beef cannot be sold in the EU or aligned markets without proof it didn't cause Amazon deforestation. This has created a bottleneck in supply.",
+                    verdict: "Forecast: Burger joints will push chicken and plant-based options heavily."
+                },
+                {
+                    heading: '4. Palm Oil',
+                    content: "Palm oil is in 50% of supermarket products (cookies, lipstick, soap). The immense cost of digitally tracking palm oil through the supply chain is raising the baseline price of thousands of processed goods.",
+                    verdict: "Forecast: A 5-10% creep on processed grocery items."
+                },
+                {
+                    heading: '5. Soy (The Meat Multiplier)',
+                    content: "Soy is primarily used as animal feed. With Brazilian soy exports facing strict checks, the cost to feed pigs and chickens in Europe and North America is rising. You'll see this price hike in the meat aisle, not the tofu section.",
+                    verdict: "Forecast: Pork and poultry prices will inch up by Q2."
+                },
+                {
+                    heading: '6. Tires (Rubber)',
+                    content: "Yes, rubber is a forest commodity. Major tire manufacturers like Michelin have warned that EUDR compliance will add significant overhead. I verified this with local mechanics who are already seeing tire quotes jump.",
+                    verdict: "Forecast: New tires will cost ~15% more this year."
+                },
+                {
+                    heading: '7. Cardboard Packaging',
+                    content: "The 'Amazon Effect' relies on cheap paper pulp. With timber now strictly regulated, shipping boxes are becoming a significant line item for retailers. Free shipping thresholds are rising to compensate.",
+                    verdict: "Forecast: Expect '$50 Minimum for Free Shipping' to become '$75'."
+                }
+            ],
+            conclusion: "These price spikes are painful, but they are the first time the global economy is paying the 'true cost' of deforestation. My advice? Stock up on shelf-stable coffee and chocolate now before the full inventory correction hits in February.",
+            faqs: [
+                { question: 'Is this permanent?', answer: 'Likely yes. The era of cheap food grown on deforested land is legally over.' },
+                { question: 'Who benefits?', answer: 'Farmers who protect their forests can finally demand a premium price.' }
+            ],
+            relatedPosts: ['top-10-green-cities-2026', '7-electric-cars-under-25k-2026']
+        }
+    },
+    {
+        id: 59,
+        slug: '5-brands-getting-banned-feb-2026',
+        title: "5 Brands Hit by New 'Fast Fashion Taxes' in Feb 2026",
+        excerpt: "The 'Shein Tax' is here. 🚫 New laws are adding huge fees to ultra-cheap clothes. See which shopping apps now have extra charges. 📦",
+        category: 'Style',
+        date: 'January 23, 2026',
+        readTime: '5 min read',
+        emoji: '🚫',
+        featuredImage: '/blog/fast-fashion-ban.webp',
+        metaTitle: "Shein Tax 2026: Why Cheap Clothes Cost More Now | StuCarbon",
+        metaDescription: "The 'Shein Tax' has arrived. New 2026 laws impose a €10 penalty on ultra-fast fashion items. See how Temu, H&M, and others are affected.",
+        keywords: ['Shein tax 2026', 'fast fashion penalty', 'clothing price increase 2026', 'Temu shipping fee', 'sustainable fashion laws'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-23T17:00:00+05:30',
+        dateModified: '2026-01-23T17:00:00+05:30',
+        content: {
+            intro: "If you're a fan of 'haul' videos, you've probably noticed they are drying up. That's because the so-called **'Shein Tax'** has effectively gone global. Officially known as the *Extended Producer Responsibility (EPR)* surcharge, it penalizes brands that sell low-quality, throwaway clothes. I analyzed the checkout prices of the big 5 players—here is the damage.",
+            sections: [
+                {
+                    heading: '1. Shein (The $5 Tee is Now $9)',
+                    content: "Shein fits the exact definition of the penalty: high volume, low durability. The new surcharge applies per item. I tried to cart a $5 top, and with the 'Eco-Contribution' fee, it came out to almost $10.",
+                    verdict: "Status: The bargain era is officially over."
+                },
+                {
+                    heading: '2. Temu',
+                    content: "Temu's loophole was 'De Minimis' shipping (tax-free small packages). Governments have closed this loophole in 2026. Now, every single packet faces customs duty and the environmental tax.",
+                    verdict: "Status: Free shipping is vanishing fast."
+                },
+                {
+                    heading: '3. Zara',
+                    content: "Zara saw this coming. They have pivoted hard to 'Essential' lines with better fabrics to just barely pass the durability tests. You won't pay the full tax, but base prices are up 15%.",
+                    verdict: "Status: Paying more for slightly better quality."
+                },
+                {
+                    heading: '4. Boohoo / PLT',
+                    content: "These UK brands are scrambling. Their polyester-heavy inventory triggers the 'Plastic Tax' in compliance markets. Expect massive 'Clearance' sales as they dump non-compliant stock.",
+                    verdict: "Status: Wait for the firesale, then avoid."
+                },
+                {
+                    heading: '5. H&M',
+                    content: "H&M is splitting in two. Their premium lines are safe, but the cheap 'Divided' section is shrinking because the margins can't support the new recycling fees.",
+                    verdict: "Status: The cheap racks are empty."
+                }
+            ],
+            conclusion: "This isn't just a price hike; it's a behavior correction. The government effectively just said: 'If you want to buy trash, you have to pay for its disposal upfront.' My take? Invest in a capsule wardrobe this year.",
+            faqs: [
+                { question: 'Why is this happening?', answer: 'To stop 92 million tonnes of textile waste ending up in landfills annually.' }
+            ],
+            relatedPosts: ['green-cities-2026-rankings', 'circular-economy-2026']
+        }
+    },
+    {
+        id: 58,
+        slug: '6-reasons-flight-denied-2026',
+        title: "Flight Prices 2026: Why The 'Budget Holiday' Is Dead",
+        excerpt: "Shocked by ticket prices? ✈️ You're not alone. From clean fuel mandates to new taxes, here is why flying costs 25% more in 2026. 🛂",
+        category: 'Travel',
+        date: 'January 23, 2026',
+        readTime: '7 min read',
+        emoji: '✈️',
+        featuredImage: '/blog/carbon-passport-2026.webp',
+        metaTitle: "Flight Prices 2026 Forecast: Why is Flying So Expensive? | StuCarbon",
+        metaDescription: "Why have flight prices doubled? The 2026 Clean Fuel Mandate (SAF) and short-haul bans are reshaping travel. Read the full cost breakdown.",
+        keywords: ['flight prices 2026', 'why is flying so expensive', 'clean fuel mandate cost', 'short haul flight ban map', 'travel inflation'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-23T16:00:00+05:30',
+        dateModified: '2026-01-23T16:00:00+05:30',
+        content: {
+            intro: "I tried to book a weekend getaway last night and closed the tab in shock. Flight prices in 2026 are up nearly 25% year-over-year. It's not corporate greed—it's the new regulatory reality. We are transitioning to 'Net Zero Aviation', and it turns out, that's expensive. Here are the 6 reasons your wallet is feeling the pain.",
+            sections: [
+                {
+                    heading: "1. The Clean Fuel Mandate (SAF)",
+                    content: "This is the big one. As of this year, a percentage of all jet fuel MUST be Sustainable Aviation Fuel (SAF). SAF is clean, but it is currently 3x the price of kerosene. Airlines aren't eating that cost; they added it to your 'Fuel Surcharge'.",
+                    verdict: "The Math: Adds ~$40 to a standard round-trip ticket."
+                },
+                {
+                    heading: "2. The Short-Haul Flight Ban",
+                    content: "If you live in Europe, the map has changed. Routes like Paris-Bordeaux or Madrid-Barcelona are gone. If a high-speed train connects the cities in under 2.5 hours, the flight is illegal.",
+                    verdict: "The Result: Forced heavy rail adoption (which is good, but different)."
+                },
+                {
+                    heading: "3. The End of '10 Euro' Fares",
+                    content: "Budget airlines like Ryanair and EasyJet used to rely on secondary airports and tax breaks. The new **EU Emissions Trading System (ETS)** closed those loopholes. Airlines now pay for every ton of CO2 emitted.",
+                    verdict: "The Result: The 'floor price' for a ticket is now closer to €50."
+                },
+                {
+                    heading: "4. Frequent Flyer Levies",
+                    content: "While not universal yet, the proposal to tax 'super-users' is gaining traction. The idea is simple: Your first flight is tax-free. Your 10th flight has a massive surcharge. Corporate travel departments are cutting back trips to avoid this.",
+                    verdict: "The Result: Business travel is becoming premium-only."
+                },
+                {
+                    heading: "5. Private Jet Curfews",
+                    content: "Operations at major hubs like Schiphol and Heathrow are being capped to reduce noise and emissions. This limits the total number of landing slots available, driving up the price for the slots that remain.",
+                    verdict: "The Result: Higher demand + lower supply = Higher Prices."
+                },
+                {
+                    heading: "6. Contrail Mitigation",
+                    content: "This is a hidden one. Planes are flying lower or taking longer routes to avoid creating 'contrails' (vapor trails that trap heat). Longer flight times burn more fuel and require more crew hours.",
+                    verdict: "The Result: Your 2-hour flight is now 2h 20m."
+                }
+            ],
+            conclusion: "The Golden Age of cheap air travel was built on cheap, dirty fuel. That age is over. Travel in 2026 is an investment, not an impulse. My advice? Book trains early and save your 'Carbon Budget' for the trips that matter.",
+            faqs: [
+                { question: 'Will prices ever go down?', answer: 'Only when SAF production scales up massively, likely 2030+.' }
+            ],
+            relatedPosts: ['hydrogen-trains-2026', 'top-10-green-cities-2026']
+        }
+    },
+    {
         id: 56,
         slug: 'top-10-green-cities-2026',
         title: "Top 10 'Green' Cities of 2026: Did Your City Make the List?",
@@ -11,27 +299,36 @@ export const blogPosts = [
         date: 'January 23, 2026',
         readTime: '8 min read',
         emoji: '🏙️',
-        featuredImage: '/blog/green-cities-2026.webp',
+        featuredImage: '/blog/green-cities-2026-large.webp',
         metaTitle: "Top 10 Green Cities 2026: Sustainable Living Rankings | StuCarbon",
         metaDescription: "The 2026 rankings are in! 🌍 See which cities prefer bikes over cars and parks over parking lots. Find out if your city made the top 10.",
         keywords: ['greenest cities 2026', 'sustainable urban living', 'top eco-friendly cities', 'urban sustainability rankings'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-23T08:00:00+05:30',
-        dateModified: '2026-01-23T08:00:00+05:30',
+        dateModified: '2026-01-23T16:00:00+05:30',
         content: {
             intro: "The Urban Sustainability Index for 2026 has just been released, and it’s shaking up the leaderboard. This year, the criteria shifted to prioritize 'Climate Resilience' and 'Social Equity' over just solar panels and recycling bins. We've broken down the top 10 cities leading the charge into a greener future.",
             sections: [
                 {
                     heading: '1. Copenhagen, Denmark (Still the King)',
-                    content: "No surprise here. With its target to be carbon neutral by 2025 largely met, Copenhagen is now focusing on becoming 'Climate Positive'. 60% of commutes are by bike, and their district heating system is a marvel of efficiency."
+                    content: "No surprise here. With its target to be carbon neutral by 2025 largely met, Copenhagen is now focusing on becoming 'Climate Positive'. 60% of commutes are by bike, and their district heating system is a marvel of efficiency.",
+                    verdict: "Best for Cycle Commuters: If you hate owning a car, this is your nirvana."
                 },
                 {
                     heading: '2. Singapore (The Garden City)',
-                    content: "Singapore's 'Green Plan 2030' is ahead of schedule. Vertical gardens are now mandatory for new skyscrapers, and their water recycling 'NEWater' technology is the global standard."
+                    content: "Singapore's 'Green Plan 2030' is ahead of schedule. Vertical gardens are now mandatory for new skyscrapers, and their water recycling 'NEWater' technology is the global standard.",
+                    verdict: "Best for Urban Tech Lovers: A mesmerizing blend of nature and sci-fi efficiency."
                 },
                 {
                     heading: '3. Curitiba, Brazil',
-                    content: "Often overlooked, Curitiba is a pioneer in bus rapid transit (BRT). In 2026, they electrified their entire fleet, setting a model for developing nations."
+                    content: "Often overlooked, Curitiba is a pioneer in bus rapid transit (BRT). In 2026, they electrified their entire fleet, setting a model for developing nations.",
+                    verdict: "Best for Budget Sustainability: World-class transit without the European price tag."
                 },
                 {
                     heading: '4. Reykjavik, Iceland',
@@ -82,7 +379,13 @@ export const blogPosts = [
         metaTitle: "Best Cheap Electric Cars 2026: Top 7 Under $25k | StuCarbon",
         metaDescription: "EVs are finally affordable. ⚡ Check out our list of the top 7 electric cars under $25,000 available in 2026. Save money and the planet.",
         keywords: ['cheapest electric cars 2026', 'EVs under 25k', 'affordable electric vehicles', 'best budget EVs'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-23T09:15:00+05:30',
         dateModified: '2026-01-23T09:15:00+05:30',
         content: {
@@ -137,7 +440,13 @@ export const blogPosts = [
         metaTitle: "Greenwashing Hall of Shame 2026: 9 Scams to Avoid | StuCarbon",
         metaDescription: "Exposing the fake eco-products of 2026. 📉 From 'clean coal' fashion to 'carbon-neutral' oil, here are the scams you need to know.",
         keywords: ['greenwashing examples 2026', 'fake sustainable brands', 'corporate climate lies', 'how to spot greenwashing'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-22T14:30:00+05:30',
         dateModified: '2026-01-22T14:30:00+05:30',
         content: {
@@ -200,7 +509,13 @@ export const blogPosts = [
         metaTitle: "Best Zero Waste Skincare 2026: Plastic-Free Beauty Review | StuCarbon",
         metaDescription: "Looking for sustainable beauty? 🌿 We review the top 5 zero-waste skincare brands of 2026 that actually work.",
         keywords: ['zero waste skincare 2026', 'plastic free beauty brands', 'sustainable cosmetics', 'refillable skincare'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-22T10:00:00+05:30',
         dateModified: '2026-01-22T10:00:00+05:30',
         content: {
@@ -247,7 +562,13 @@ export const blogPosts = [
         metaTitle: "Climate Proof Crops 2026: The Future of Food | StuCarbon",
         metaDescription: "Droughts are hitting hard. ☀️ Discover the 8 heat-resistant crops that farmers are switching to in 2026 to ensure food security.",
         keywords: ['heat resistant crops 2026', 'climate change agriculture', 'drought tolerant foods', 'future of farming'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-22T09:00:00+05:30',
         dateModified: '2026-01-22T09:00:00+05:30',
         content: {
@@ -306,7 +627,13 @@ export const blogPosts = [
         metaTitle: "Amazon Rainforest Stats 2026: The Tipping Point | StuCarbon",
         metaDescription: "Is the Amazon still a carbon sink? 📉 The 2026 data is alarming. See the 6 stats that show how close we are to the tipping point.",
         keywords: ['amazon rainforest deforestation 2026', 'tipping point climate change', 'amazon carbon sink failure', 'brazil environmental stats'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-21T16:00:00+05:30',
         dateModified: '2026-01-21T16:00:00+05:30',
         content: {
@@ -357,7 +684,13 @@ export const blogPosts = [
         metaTitle: "Smartphone Carbon Footprint: 10 Ways to Reduce Impact | StuCarbon",
         metaDescription: "Your phone is responsible for more emissions than you think. 📱 Discover the 10 hidden eco-costs of smartphones and how to mitigate them.",
         keywords: ['smartphone carbon footprint', 'digital sustainability', 'e-waste solutions', 'eco-friendly phone habits'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-21T12:00:00+05:30',
         dateModified: '2026-01-21T12:00:00+05:30',
         content: {
@@ -424,7 +757,13 @@ export const blogPosts = [
         metaTitle: "Best Climate Jobs 2026: Careers Saving the Planet | StuCarbon",
         metaDescription: "Want a career with purpose? 🌍 We list the 7 hottest 'Climate-Positive' jobs hiring in 2026, from carbon accounting to urban farming.",
         keywords: ['green jobs 2026', 'climate positive careers', 'sustainability jobs hiring', 'environmental careers'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-21T10:00:00+05:30',
         dateModified: '2026-01-21T10:00:00+05:30',
         content: {
@@ -479,7 +818,13 @@ export const blogPosts = [
         metaTitle: "Hydrogen Trains 2026: The Future of Rail Travel | StuCarbon",
         metaDescription: "Quiet, clean, and fast. 🚆 We explore the top 5 hydrogen-powered trains operating in 2026 and why they are replacing diesel.",
         keywords: ['hydrogen trains 2026', 'sustainable rail travel', 'hydrail technology', 'green transport innovation'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-20T14:00:00+05:30',
         dateModified: '2026-01-20T14:00:00+05:30',
         content: {
@@ -526,7 +871,13 @@ export const blogPosts = [
         metaTitle: "Cut Energy Bill 30%: 8 Simple Hacks for 2026 | StuCarbon",
         metaDescription: "Save money on utilities now. 💡 We tested 8 home hacks to reduce your energy bill by 30% using simple tools and habits.",
         keywords: ['save money on energy bill', 'reduce electricity cost', 'home energy hacks 2026', 'sustainable living tips'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-20T10:00:00+05:30',
         dateModified: '2026-01-20T10:00:00+05:30',
         content: {
@@ -585,7 +936,13 @@ export const blogPosts = [
         metaTitle: "Microplastics & Ocean Carbon Absorption: New 2026 Research | StuCarbon",
         metaDescription: "Microplastics are disrupting marine life crucial for carbon absorption. 🌊 New research from Jan 2026 warns of invisible chemical clouds leaking into our oceans. 📉",
         keywords: ['microplastics ocean carbon', 'marine carbon sink failure', 'ocean plastic chemical leakage', 'climate change ocean research 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-19T10:00:00+05:30',
         dateModified: '2026-01-19T10:00:00+05:30',
         content: {
@@ -623,7 +980,13 @@ export const blogPosts = [
         metaTitle: "Alaska Arctic Wildfires 2026: The New Fire Era | StuCarbon",
         metaDescription: "Arctic Alaska is entering a dangerous new wildfire era. 🔥 Drying soils and warming temperatures are triggering intense fires in historically fire-free zones. ❄️",
         keywords: ['alaska arctic wildfires 2026', 'arctic climate change trends', 'polar fire era', 'alaska air pollution 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-19T09:30:00+05:30',
         dateModified: '2026-01-19T09:30:00+05:30',
         content: {
@@ -661,7 +1024,13 @@ export const blogPosts = [
         metaTitle: "Biochar Concrete Innovation 2026: Sustainable Construction | StuCarbon",
         metaDescription: "Holcim and Kingspan are merging biochar into concrete to hit net-zero targets. 🏗️ Discover how 'Char-Crete' is revolutionizing sustainable architecture. 🌿",
         keywords: ['biochar in concrete 2026', 'sustainable construction materials', 'calcined clay cement', 'carbon sequestering buildings'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-19T09:00:00+05:30',
         dateModified: '2026-01-19T09:00:00+05:30',
         content: {
@@ -699,7 +1068,13 @@ export const blogPosts = [
         metaTitle: "Inhaler Carbon Footprint Study 2026: Green Medical Trends | StuCarbon",
         metaDescription: "Asthma inhalers are a hidden source of greenhouse gases. 🌬️ A 2026 study explores the 'Green Inhaler' paradox and how medical care is evolving. 🏥",
         keywords: ['inhaler carbon footprint 2026', 'green medical technology', 'asthma and climate change', 'sustainable healthcare study'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-19T08:30:00+05:30',
         dateModified: '2026-01-19T08:30:00+05:30',
         content: {
@@ -737,7 +1112,13 @@ export const blogPosts = [
         metaTitle: "El Niño 2026: Synchronized Floods & Droughts Discovery | StuCarbon",
         metaDescription: "Earth's water cycle is synchronizing. 🌊 New 2026 research from space data shows how El Niño and La Niña are linking global weather extremes. ⛈️",
         keywords: ['el nino 2026 weather trends', 'synchronized floods and droughts', 'space-based climate tracking', 'global water cycle research'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-19T08:00:00+05:30',
         dateModified: '2026-01-19T08:00:00+05:30',
         content: {
@@ -775,7 +1156,13 @@ export const blogPosts = [
         metaTitle: "NASA 2025 Temperature Report: The Missing Climate Context",
         metaDescription: "NASA confirms 2025 as the hottest year ever recorded, but the official report omits the phrase 'climate change'. 🌡️ Discover the science behind the data and the controversy.",
         keywords: ['nasa temperature report 2025', 'hottest year on record 2025', 'nasa climate change omission', 'global heat stats 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T15:30:00+05:30',
         dateModified: '2026-01-18T15:30:00+05:30',
         content: {
@@ -812,7 +1199,13 @@ export const blogPosts = [
         metaTitle: "US CEO Sustainability Crisis 2026: The Growing Commitment Gap",
         metaDescription: "A new study reveals that 38% of US CEOs are deprioritizing sustainability in 2026. 📉 Compare this to global trends and discover the risks of climate inaction.",
         keywords: ['us ceo sustainability study 2026', 'corporate climate gap', 'esg deprioritization us', 'sustainability investments crisis'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T14:15:00+05:30',
         dateModified: '2026-01-18T14:15:00+05:30',
         content: {
@@ -853,7 +1246,13 @@ export const blogPosts = [
         metaTitle: "India-EU Trade Deal 2026: Carbon Concessions & Steel Standards",
         metaDescription: "The EU and India are finalizing a trade deal with historic carbon concessions. 📉 Learn how 'Green Steel' standards are resetting the global trade agenda.",
         keywords: ['india eu trade deal 2026', 'carbon concessions steel', 'global emissions standards', 'green steel trade'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:45:00+05:30',
         dateModified: '2026-01-18T13:45:00+05:30',
         content: {
@@ -894,7 +1293,13 @@ export const blogPosts = [
         metaTitle: "Japan Solar Power 2026: The Race for Energy Independence",
         metaDescription: "Japan is pivoting its solar strategy to achieve 1.5°C energy independence. 📉 Discover how the move away from imported technology is reshaping the Asian clean-tech market.",
         keywords: ['japan solar power 2026', 'energy independence japan', 'clean tech supply chain', 'solar panels japan imports'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:30:00+05:30',
         dateModified: '2026-01-18T13:30:00+05:30',
         content: {
@@ -935,7 +1340,13 @@ export const blogPosts = [
         metaTitle: "SFME 2026: Middle East Carbon Market Strategy & Reputation",
         metaDescription: "Dive into the Sustainability Forum Middle East 2026. 📉 Learn about new carbon credit lifecycles and practical tools for corporate climate action.",
         keywords: ['sfme 2026 bahrain', 'middle east carbon markets', 'corporate climate reputation', 'carbon credit lifecycle 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T14:00:00+05:30',
         dateModified: '2026-01-18T14:00:00+05:30',
         content: {
@@ -976,7 +1387,13 @@ export const blogPosts = [
         metaTitle: "Forest Science 2026: Deciduous Firewalls & Carbon Mitigation",
         metaDescription: "Discover how deciduous trees are mitigating wildfire carbon emissions. 🌲 New boreal forest research shows a path to resilient carbon storage.",
         keywords: ['boreal forest wildfires 2026', 'deciduous trees carbon storage', 'nature firewall science', 'wildfire carbon mitigation'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:45:00+05:30',
         dateModified: '2026-01-18T13:45:00+05:30',
         content: {
@@ -1017,7 +1434,13 @@ export const blogPosts = [
         metaTitle: "Greenland Ice Melt 2026: Rare Earth Mining & Tech Geopolitics",
         metaDescription: "Greenland's melting ice is revealing massive rare earth element deposits. 🏔️ Discover the geopolitical race for clean-tech resources and the environmental stakes.",
         keywords: ['greenland ice melt 2026', 'rare earth elements mining', 'arctic tech race', 'greenland environmental impact'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:15:00+05:30',
         dateModified: '2026-01-18T13:15:00+05:30',
         content: {
@@ -1058,7 +1481,13 @@ export const blogPosts = [
         metaTitle: "California Climate Disclosure Law 2026: The August 10 Deadline",
         metaDescription: "California's mandatory climate reporting starts August 2026. 📉 Learn how Scope 1 and 2 disclosures will affect global business and sustainability trends.",
         keywords: ['california climate disclosure law', 'scope 1 and 2 emissions', 'august 10 climate deadline', 'corporate sustainability reporting 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:30:00+05:30',
         dateModified: '2026-01-18T13:30:00+05:30',
         content: {
@@ -1099,7 +1528,13 @@ export const blogPosts = [
         metaTitle: "Milan Cortina 2026 Olympics: The 930,000 Tonne Carbon Crisis",
         metaDescription: "The 2026 Winter Olympics are facing a sustainability crisis. 🏟️ 930k tonnes of CO2 emissions are threatening the future of winter sports. Read our analysis.",
         keywords: ['winter olympics 2026 carbon footprint', 'milan cortina sustainability', 'olympics melting ice crisis', 'carbon cost of sporting events'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T13:00:00+05:30',
         dateModified: '2026-01-18T13:00:00+05:30',
         content: {
@@ -1140,7 +1575,13 @@ export const blogPosts = [
         metaTitle: "Berkeley Earth 2026 Heat Forecast: A 99% Probability Warning",
         metaDescription: "Berkeley Earth warns of a 99% chance that 2026 will be a record-breaking hot year. 🥵 Discover the science behind the spike and what it means for the planet.",
         keywords: ['berkeley earth 2026 forecast', 'hottest year on record 2026', 'global warming spike 2026', 'climate change heat warning'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T12:00:00+05:30',
         dateModified: '2026-01-18T12:00:00+05:30',
         content: {
@@ -1181,7 +1622,13 @@ export const blogPosts = [
         metaTitle: "Oxfam 2026 Carbon Report: The Shocking 1% Reality | StuCarbon",
         metaDescription: "Wealthy elites exhausted their 2026 carbon budget by Jan 10th. 🤯 We breakdown the Oxfam report and what it means for student sustainability. 🌍",
         keywords: ['oxfam carbon report 2026', 'carbon inequality', 'top 1 percent carbon footprint', 'sustainable living 2026', 'carbon budget exhaustion'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T10:00:00+05:30',
         dateModified: '2026-01-18T10:00:00+05:30',
         content: {
@@ -1237,7 +1684,13 @@ export const blogPosts = [
         metaTitle: "How to Seal Drafty Windows in a Rental: 5 Renter-Friendly Hacks | StuCarbon",
         metaDescription: "Cold air leaking through your windows? 🥶 We tested the 5 best renter-friendly ways to seal drafts that landlords won't even notice. Save money NOW. 💸",
         keywords: ['how to seal drafty windows rental', 'renter friendly window insulation', 'temporary window sealing', 'stop window drafts apartment'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T08:00:00+05:30',
         dateModified: '2026-01-18T08:00:00+05:30',
         content: {
@@ -1280,7 +1733,13 @@ export const blogPosts = [
         metaTitle: "Sustainable Cooking Oil Disposal for Apartments | StuCarbon",
         metaDescription: "Empty jar? 🫙 Freezer? ❄️ We found the only clean, sustainable way to dispose of cooking oil in a small apartment. Save your pipes and the planet. 🌍",
         keywords: ['how to dispose of used cooking oil apartment', 'sustainable oil disposal', 'cooking oil freezer hack', 'apartment plumbing tips'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T09:00:00+05:30',
         dateModified: '2026-01-18T09:00:00+05:30',
         content: {
@@ -1318,7 +1777,13 @@ export const blogPosts = [
         metaTitle: "4K vs 1080p Streaming Carbon Footprint: Which Is Greener? | StuCarbon",
         metaDescription: "Does 4K use more energy? 🤯 We calculated the carbon footprint of Ultra HD vs HD streaming. The results might change how you binge-watch. 🍿",
         keywords: ['carbon footprint of 4k streaming', '4k vs 1080p energy usage', 'digital carbon footprint streaming', 'sustainable internet habits'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T10:00:00+05:30',
         dateModified: '2026-01-18T10:00:00+05:30',
         content: {
@@ -1356,7 +1821,13 @@ export const blogPosts = [
         metaTitle: "Bathtub Laundry vs Machine: Sustainable Washing Guide | StuCarbon",
         metaDescription: "Can you save water by washing clothes in the bathtub? 🛁 We did the math. The results might surprise you. 🧼",
         keywords: ['is bathtub laundry sustainable', 'hand wash vs machine water usage', 'sustainable laundry apartment', 'zero waste washing'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T11:00:00+05:30',
         dateModified: '2026-01-18T11:00:00+05:30',
         content: {
@@ -1394,7 +1865,13 @@ export const blogPosts = [
         metaTitle: "How to Recycle Yoga Mats: Sustainable Disposal Guide | StuCarbon",
         metaDescription: "Old mat crumbling? 🧘‍♂️ Don't send it to the landfill! We found 5 ways to recycle or upcycle your yoga mat effortlessly. ♻️",
         keywords: ['how to dispose of yoga mats', 'recycle yoga mats', 'upcycle yoga mat ideas', 'sustainable yoga gear'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-18T12:00:00+05:30',
         dateModified: '2026-01-18T12:00:00+05:30',
         content: {
@@ -1437,7 +1914,13 @@ export const blogPosts = [
         metaTitle: "5 Best Green Inventions of January 2026 | StuCarbon",
         metaDescription: "Wait, water directly from AIR? 🤯 We tested the 5 wildest green inventions dropping in Jan 2026. #3 feels like literal magic. ✨",
         keywords: ['green technology 2026', 'sustainable inventions', 'future tech sustainability', 'eco gadgets'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T11:00:00+05:30',
         dateModified: '2026-01-17T11:00:00+05:30',
         content: {
@@ -1490,7 +1973,13 @@ export const blogPosts = [
         metaTitle: "2016 Aesthetic is Back: Sustainable Guide to the Trend | StuCarbon",
         metaDescription: "Still wearing baggy jeans? 🛑 2016 fashion is officially back! Here’s how to thrift the 'Tumblr Girl' aesthetic without destroying the planet. ♻️",
         keywords: ['2016 fashion trend 2026', 'sustainable nostalgia', 'thrift 2016 style', 'eco friendly trends'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T12:00:00+05:30',
         dateModified: '2026-01-17T12:00:00+05:30',
         content: {
@@ -1533,7 +2022,13 @@ export const blogPosts = [
         metaTitle: "I Stopped Buying Laptops: Hardware-as-a-Service Explained (2026) | StuCarbon",
         metaDescription: "STOP buying laptops! 🛑 I switched to a 'Modular Subscription' and it saved me $1000. Here's the brutal truth about Hardware-as-a-Service. 💻",
         keywords: ['hardware as a service student', 'sustainable laptop subscription', 'modular electronics 2026', 'reduce e-waste'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T09:00:00+05:30',
         dateModified: '2026-01-17T09:00:00+05:30',
         content: {
@@ -1576,7 +2071,13 @@ export const blogPosts = [
         metaTitle: "Soft Reset Trend 2026: The Sustainable Way to Start the Year | StuCarbon",
         metaDescription: "Burned out by 'New Year New Me'? 🤯 The 'Soft Reset' trend is the anti-hustle cure for your eco-anxiety. 3 days, $0 cost, pure zen. 🧘‍♀️",
         keywords: ['soft reset trend 2026', 'eco anxiety tips', 'sustainable productivity', 'slow living student'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T10:00:00+05:30',
         dateModified: '2026-01-17T10:00:00+05:30',
         content: {
@@ -1619,7 +2120,13 @@ export const blogPosts = [
         metaTitle: "Salt Batteries vs Lithium: I Swapped My Charger & Here's What Happened | StuCarbon",
         metaDescription: "I ditched my Lithium power bank for SALT. 🧂 Yes, really. Is the new 2026 Sodium-Ion tech actually safe? The results shocked me. ⚡",
         keywords: ['salt battery technology 2026', 'sodium ion vs lithium ion', 'eco friendly batteries', 'sustainable tech trends 2026'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T09:00:00+05:30',
         dateModified: '2026-01-17T09:00:00+05:30',
         content: {
@@ -1666,7 +2173,13 @@ export const blogPosts = [
         keywords: ['carbon tax 2026', 'consumer carbon pricing', 'fast fashion tax', 'meat tax', 'aviation carbon fees', 'everyday cost of carbon'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-17T10:00:00+05:30',
         dateModified: '2026-01-17T10:00:00+05:30',
 
@@ -1735,7 +2248,13 @@ export const blogPosts = [
         metaTitle: '6 Surprisingly High-Carbon Activities You Do Every Day | StuCarbon',
         metaDescription: 'Wait, CHEESE is bad for the planet?! 🧀😱 6 everyday habits with shockingly high carbon footprints. Number 2 will surprise you! 🤯',
         keywords: ['high carbon footprint activities', 'carbon footprint surprises', 'hidden emissions', 'cheese carbon footprint', 'new vs used devices', 'sustainable alternatives'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-16T14:00:00+05:30',
         dateModified: '2026-01-16T14:00:00+05:30',
         content: {
@@ -1807,7 +2326,13 @@ export const blogPosts = [
         metaTitle: 'Circular Economy 2026: 8 Ways to Never Waste Again | StuCarbon',
         metaDescription: 'Never Waste Again! ♻️ 8 genius ways to repair, rent, and resell your way to a richer life and a cleaner planet. 🛠️',
         keywords: ['circular economy 2026', 'zero waste lifestyle', 'repair cafe', 'fashion rental', 'sustainable consumption', 'reduce reuse recycle', 'right to repair'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-16T13:00:00+05:30',
         dateModified: '2026-01-16T13:00:00+05:30',
         content: {
@@ -1889,7 +2414,13 @@ export const blogPosts = [
         metaTitle: '10 Things Scientists Want You to Know About Climate in 2026 | StuCarbon',
         metaDescription: 'Forget the clickbait. 🛑 Here are 10 things climate scientists ACTUALLY want you to know in 2026. Real talk, real hope. 🧪',
         keywords: ['climate science 2026', 'climate change facts', '1.5 degrees celsius', 'climate tipping points', 'global warming 2026', 'climate research'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-16T12:00:00+05:30',
         dateModified: '2026-01-16T12:00:00+05:30',
         content: {
@@ -1981,7 +2512,13 @@ export const blogPosts = [
         metaTitle: 'Water Crisis 2026: 5 Shocking Facts You Need to Know | StuCarbon',
         metaDescription: 'The Water Crisis is HERE. 💧 5 shocking facts about 2026\'s emergency that no one is talking about. Are you prepared? 🚿',
         keywords: ['water crisis 2026', 'AI water usage', 'data center water consumption', 'water scarcity', 'drought 2026', 'water footprint'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-16T11:00:00+05:30',
         dateModified: '2026-01-16T11:00:00+05:30',
         content: {
@@ -2048,7 +2585,13 @@ export const blogPosts = [
         metaTitle: '7 Ways 2026 Will Change Your Carbon Footprint Forever | StuCarbon',
         metaDescription: '7 Ways 2026 Will Change Your Life Forever! 📅 EU taxes, new climate limits, and what they mean for YOUR wallet and footprint. 📉',
         keywords: ['2026 carbon footprint', 'EU CBAM 2026', 'climate change 2026', 'Paris Agreement withdrawal', 'carbon tax', '1.5 degrees climate'],
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-16T10:00:00+05:30',
         dateModified: '2026-01-16T10:00:00+05:30',
         content: {
@@ -2129,7 +2672,13 @@ export const blogPosts = [
         keywords: ['davos 2026 private jets', 'climate hypocrisy', 'carbon footprint rich vs poor', 'private jet emissions', 'world economic forum climate'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T16:00:00+05:30',
         dateModified: '2026-01-15T16:00:00+05:30',
 
@@ -2206,7 +2755,13 @@ export const blogPosts = [
         keywords: ['sustainability trends 2026', 'climate change 2026', 'carbon footprint trends', 'environmental news 2026', 'green technology trends', 'EU CBAM', 'circular economy', 'renewable energy 2026'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T15:30:00+05:30',
         dateModified: '2026-01-15T15:30:00+05:30',
 
@@ -2320,7 +2875,13 @@ export const blogPosts = [
         metaDescription: 'Streaming & Gaming: The hidden climate villains? 🎮🕵️‍♂️ Uncover the carbon cost of your digital fun and how to game greener! 🌍',
         keywords: ['streaming carbon footprint', 'gaming environmental impact', 'digital carbon footprint', 'netflix emissions', 'internet environmental cost'],
 
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T18:00:00+05:30',
         dateModified: '2026-01-15T18:00:00+05:30',
 
@@ -2399,7 +2960,13 @@ export const blogPosts = [
         metaDescription: 'Challenge Accepted: The Zero-Waste Dorm Guide! 🗑️🚫 Step-by-step hacks to cut trash, save cash, and live cleaner. Are you in? 💪',
         keywords: ['zero waste dorm', 'sustainable college living', 'reduce waste student', 'eco friendly dorm room', 'campus sustainability challenge'],
 
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T16:00:00+05:30',
         dateModified: '2026-01-15T16:00:00+05:30',
 
@@ -2483,7 +3050,13 @@ export const blogPosts = [
         metaDescription: 'EVs vs. the Bus: Who wins the green race? 🏎️🚌 We crunch the numbers to find the lowest-carbon way to get around. 🏁',
         keywords: ['electric car carbon footprint', 'public transport emissions', 'student commute environmental impact', 'EV vs bus', 'green commuting'],
 
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T14:00:00+05:30',
         dateModified: '2026-01-15T14:00:00+05:30',
 
@@ -2562,7 +3135,13 @@ export const blogPosts = [
         metaDescription: 'Go vegan, save cash! 💸 Plant-based eating on a budget: 30% cheaper, 50% less carbon. Your ultimate student guide to tasty, green meals. 🥗',
         keywords: ['plant based diet student', 'vegan budget meals', 'cheap healthy eating college', 'reduce food carbon footprint', 'meal prep students'],
 
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T12:00:00+05:30',
         dateModified: '2026-01-15T12:00:00+05:30',
 
@@ -2641,7 +3220,13 @@ export const blogPosts = [
         metaDescription: 'Is your wardrobe killing the planet? 👗 The dark truth about fast fashion and how to slay sustainable style on a budget. 💅',
         keywords: ['fast fashion carbon footprint', 'sustainable fashion students', 'thrift shopping', 'clothing environmental impact', 'slow fashion'],
 
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T10:00:00+05:30',
         dateModified: '2026-01-15T10:00:00+05:30',
 
@@ -2722,7 +3307,13 @@ export const blogPosts = [
         keywords: ['ai carbon footprint', 'chatgpt environmental impact', 'student ai usage', 'digital carbon footprint', 'sustainable ai', 'chatgpt co2 emissions', 'ai environmental cost'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-15T10:00:00+05:30',
         dateModified: '2026-01-15T10:00:00+05:30',
 
@@ -2812,7 +3403,13 @@ export const blogPosts = [
         keywords: ['student carbon footprint', 'reduce carbon footprint', 'eco-friendly student tips', 'sustainable college living'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-12T10:00:00+05:30',
         dateModified: '2026-01-12T10:00:00+05:30',
 
@@ -2909,7 +3506,13 @@ export const blogPosts = [
         keywords: ['what is carbon footprint', 'carbon footprint meaning', 'carbon footprint explained', 'environmental impact'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-10T10:00:00+05:30',
         dateModified: '2026-01-10T10:00:00+05:30',
 
@@ -2995,7 +3598,13 @@ export const blogPosts = [
         keywords: ['sustainable dorm living', 'eco-friendly dorm room', 'green dorm tips', 'sustainable college living'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-08T10:00:00+05:30',
         dateModified: '2026-01-08T10:00:00+05:30',
 
@@ -3077,7 +3686,13 @@ export const blogPosts = [
         keywords: ['diet carbon footprint', 'food carbon emissions', 'meat climate impact', 'sustainable eating'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-05T10:00:00+05:30',
         dateModified: '2026-01-05T10:00:00+05:30',
 
@@ -3158,7 +3773,13 @@ export const blogPosts = [
         keywords: ['digital carbon footprint', 'streaming carbon footprint', 'internet environmental impact', 'online emissions'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2026-01-03T10:00:00+05:30',
         dateModified: '2026-01-03T10:00:00+05:30',
 
@@ -3240,7 +3861,13 @@ export const blogPosts = [
         keywords: ['university sustainability', 'campus sustainability initiatives', 'college environmental programs', 'green campus'],
 
         // Structured Data
-        author: { name: 'StuCarbon Team', url: 'https://stucarbon.com/about' },
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
         datePublished: '2025-12-28T10:00:00+05:30',
         dateModified: '2025-12-28T10:00:00+05:30',
 
@@ -3307,9 +3934,7 @@ export const blogPosts = [
                 }
             ]
         },
-        heading: 'Budget-Friendly Sustainable Eating',
-        content: `Contrary to popular belief, sustainable eating is often cheaper than a meat-heavy diet. Beans, lentils, and chickpeas are among the cheapest protein sources available. Seasonal produce is typically less expensive than out-of-season items. Reducing meat consumption naturally lowers your grocery bill. Cooking basics from scratch is cheaper and lower-carbon than processed foods.`,
-        tip: 'Learn to cook 3-4 simple, plant-based meals. Rice and beans, pasta with vegetable sauce, and stir-fried vegetables with tofu are cheap, easy, and low-carbon.'
+        relatedPosts: ['sustainable-dorm-living', 'how-to-reduce-carbon-footprint-as-student', 'understanding-carbon-footprint']
     }
 ];
 

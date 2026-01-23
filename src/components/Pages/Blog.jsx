@@ -277,7 +277,11 @@ export function BlogPost() {
                         <span className="blog-article-separator">•</span>
                         <span className="blog-article-read-time">{post.readTime}</span>
                         <span className="blog-article-separator">•</span>
-                        <span className="blog-article-author">By {post.author.name}</span>
+                        <span className="blog-article-separator">•</span>
+                        <div className="blog-article-author-inline">
+                            <img src={post.author.image} alt={post.author.name} width="32" height="32" />
+                            <span>By {post.author.name}</span>
+                        </div>
                     </div>
                 </header>
 
@@ -319,6 +323,18 @@ export function BlogPost() {
                         <section key={index} id={`section-${index + 1}`} className="blog-section">
                             <h2>{section.heading}</h2>
                             <p>{section.content}</p>
+
+                            {/* StuCarbon Verdict Block */}
+                            {section.verdict && (
+                                <div className="blog-verdict">
+                                    <div className="blog-verdict-header">
+                                        <span className="blog-verdict-icon">💚</span>
+                                        <strong>StuCarbon Verdict</strong>
+                                    </div>
+                                    <p>{section.verdict}</p>
+                                </div>
+                            )}
+
                             {section.tip && (
                                 <div className="blog-tip">
                                     <span className="blog-tip-icon">💡</span>
@@ -356,6 +372,21 @@ export function BlogPost() {
                             </Link>
                         </div>
                     </section>
+
+                    {/* Author Bio Section (E-E-A-T) */}
+                    <div className="blog-author-bio">
+                        <img
+                            src={post.author.image || '/vivek-rana.jpg'}
+                            alt={post.author.name}
+                            className="blog-author-img"
+                            width="80"
+                            height="80"
+                        />
+                        <div className="blog-author-info">
+                            <h3>About the Author</h3>
+                            <p>{post.author.bio}</p>
+                        </div>
+                    </div>
 
                     {/* FAQs */}
                     <section id="faqs" className="blog-faqs">
