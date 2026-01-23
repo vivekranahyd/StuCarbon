@@ -24,6 +24,8 @@ export default function Blog() {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="StuCarbon Blog - Student Sustainability Tips" />
                 <meta name="twitter:description" content="Tips, guides, and insights for sustainable student living." />
+                <meta name="twitter:image" content="https://stucarbon.com/og-image-blog.webp" />
+                <meta property="og:image" content="https://stucarbon.com/og-image-blog.webp" />
             </Helmet>
 
             <div className="blog-page">
