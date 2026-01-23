@@ -8,9 +8,9 @@
   </url>
   <url>
     <loc>https://stucarbon.com/carbon-footprint-calculator-for-kids</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://stucarbon.com/about</loc>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://stucarbon.com/blog</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -41,6 +41,66 @@
     <lastmod>2026-01-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/top-10-green-cities-2026</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/7-electric-cars-under-25k-2026</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/9-worst-greenwashing-scams-2026</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/5-best-zero-waste-skincare-brands-2026</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/top-8-heat-resistant-crops-feeding-the-world</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/6-shocking-stats-amazon-2026</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/10-ways-your-phone-is-killing-the-planet</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/7-climate-positive-jobs-hiring-now</loc>
+    <lastmod>2026-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/top-5-hydrogen-trains-revolutionizing-travel</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/8-simple-hacks-cut-energy-bill-30-percent</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stucarbon.com/blog/microplastics-ocean-carbon-absorption-2026</loc>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+    <title>StuCarbon Blog</title>
+    <link>https://stucarbon.com/blog</link>
+    <description>Student-friendly sustainability hacks, carbon-busting tips, and guides.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2026 08:03:26 GMT</lastBuildDate>
+    <atom:link href="https://stucarbon.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+        <title>Top 10 'Green' Cities of 2026: Did Your City Make the List?</title>
+        <link>https://stucarbon.com/blog/top-10-green-cities-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/top-10-green-cities-2026</guid>
+        <pubDate>Fri, 23 Jan 2026 02:30:00 GMT</pubDate>
+        <description>The 2026 rankings are in! 🌍 See which cities prefer bikes over cars and parks over parking lots. Find out if your city made the top 10.</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/green-cities-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>7 Electric Cars Under $25k in 2026: The Affordable EV Revolution</title>
+        <link>https://stucarbon.com/blog/7-electric-cars-under-25k-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/7-electric-cars-under-25k-2026</guid>
+        <pubDate>Fri, 23 Jan 2026 03:45:00 GMT</pubDate>
+        <description>EVs are finally affordable. ⚡ Check out our list of the top 7 electric cars under $25,000 available in 2026. Save money and the planet.</description>
+        <category>Tech</category>
+        <media:content url="https://stucarbon.com/blog/cheap-ev-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>9 Worst Greenwashing Scams We Found in 2026</title>
+        <link>https://stucarbon.com/blog/9-worst-greenwashing-scams-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/9-worst-greenwashing-scams-2026</guid>
+        <pubDate>Thu, 22 Jan 2026 09:00:00 GMT</pubDate>
+        <description>Exposing the fake eco-products of 2026. 📉 From 'clean coal' fashion to 'carbon-neutral' oil, here are the scams you need to know.</description>
+        <category>Analysis</category>
+        <media:content url="https://stucarbon.com/blog/greenwashing-scams-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>5 Best 'Zero-Waste' Skincare Brands 2026: Glow Without the Trash</title>
+        <link>https://stucarbon.com/blog/5-best-zero-waste-skincare-brands-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/5-best-zero-waste-skincare-brands-2026</guid>
+        <pubDate>Thu, 22 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Looking for sustainable beauty? 🌿 We review the top 5 zero-waste skincare brands of 2026 that actually work.</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/zero-waste-skincare-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>Top 8 Heat-Resistant Crops Feeding the World in a Warming 2026</title>
+        <link>https://stucarbon.com/blog/top-8-heat-resistant-crops-feeding-the-world</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/top-8-heat-resistant-crops-feeding-the-world</guid>
+        <pubDate>Thu, 22 Jan 2026 03:30:00 GMT</pubDate>
+        <description>Droughts are hitting hard. ☀️ Discover the 8 heat-resistant crops that farmers are switching to in 2026 to ensure food security.</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/heat-resistant-crops.webp" medium="image" />
+    </item>
+    <item>
+        <title>6 Shocking Stats from the Amazon in 2026: The Tipping Point is Here</title>
+        <link>https://stucarbon.com/blog/6-shocking-stats-amazon-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/6-shocking-stats-amazon-2026</guid>
+        <pubDate>Wed, 21 Jan 2026 10:30:00 GMT</pubDate>
+        <description>Is the Amazon still a carbon sink? 📉 The 2026 data is alarming. See the 6 stats that show how close we are to the tipping point.</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/amazon-stats-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>10 Ways Your Phone is Killing the Planet (And How to Fix It)</title>
+        <link>https://stucarbon.com/blog/10-ways-your-phone-is-killing-the-planet</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/10-ways-your-phone-is-killing-the-planet</guid>
+        <pubDate>Wed, 21 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Your phone is responsible for more emissions than you think. 📱 Discover the 10 hidden eco-costs of smartphones and how to mitigate them.</description>
+        <category>Tech</category>
+        <media:content url="https://stucarbon.com/blog/phone-killing-planet.webp" medium="image" />
+    </item>
+    <item>
+        <title>7 'Climate-Positive' Jobs Hiring Now: Get Paid to Save the Earth</title>
+        <link>https://stucarbon.com/blog/7-climate-positive-jobs-hiring-now</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/7-climate-positive-jobs-hiring-now</guid>
+        <pubDate>Wed, 21 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Want a career with purpose? 🌍 We list the 7 hottest 'Climate-Positive' jobs hiring in 2026, from carbon accounting to urban farming.</description>
+        <category>Business</category>
+        <media:content url="https://stucarbon.com/blog/climate-jobs-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>Top 5 Hydrogen Trains Revolutionizing Travel in 2026</title>
+        <link>https://stucarbon.com/blog/top-5-hydrogen-trains-revolutionizing-travel</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/top-5-hydrogen-trains-revolutionizing-travel</guid>
+        <pubDate>Tue, 20 Jan 2026 08:30:00 GMT</pubDate>
+        <description>Quiet, clean, and fast. 🚆 We explore the top 5 hydrogen-powered trains operating in 2026 and why they are replacing diesel.</description>
+        <category>Innovation</category>
+        <media:content url="https://stucarbon.com/blog/hydrogen-trains-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>8 Simple Hacks to Cut Your Energy Bill by 30% (Without Freezing)</title>
+        <link>https://stucarbon.com/blog/8-simple-hacks-cut-energy-bill-30-percent</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/8-simple-hacks-cut-energy-bill-30-percent</guid>
+        <pubDate>Tue, 20 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Save money on utilities now. 💡 We tested 8 home hacks to reduce your energy bill by 30% using simple tools and habits.</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/energy-bill-hacks.webp" medium="image" />
+    </item>
+    <item>
+        <title>How Microplastics are Silently Killing the Ocean's Carbon Cycle</title>
+        <link>https://stucarbon.com/blog/microplastics-ocean-carbon-absorption-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/microplastics-ocean-carbon-absorption-2026</guid>
+        <pubDate>Mon, 19 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Microplastics are disrupting marine life crucial for carbon absorption. 🌊 New research from Jan 2026 warns of invisible chemical clouds leaking into our oceans. 📉</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/microplastics-ocean-carbon.webp" medium="image" />
+    </item>
+    <item>
+        <title>Alaska's Arctic Fire Era: Why the Tundra is Burning in 2026</title>
+        <link>https://stucarbon.com/blog/alaska-arctic-wildfire-era-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/alaska-arctic-wildfire-era-2026</guid>
+        <pubDate>Mon, 19 Jan 2026 04:00:00 GMT</pubDate>
+        <description>Arctic Alaska is entering a dangerous new wildfire era. 🔥 Drying soils and warming temperatures are triggering intense fires in historically fire-free zones. ❄️</description>
+        <category>Analysis</category>
+        <media:content url="https://stucarbon.com/blog/alaska-arctic-wildfire.webp" medium="image" />
+    </item>
+    <item>
+        <title>Construction Breakthrough: How Biochar Concrete Turns Skyscrapers into Carbon Sinks</title>
+        <link>https://stucarbon.com/blog/biochar-concrete-construction-breakthrough-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/biochar-concrete-construction-breakthrough-2026</guid>
+        <pubDate>Mon, 19 Jan 2026 03:30:00 GMT</pubDate>
+        <description>Holcim and Kingspan are merging biochar into concrete to hit net-zero targets. 🏗️ Discover how 'Char-Crete' is revolutionizing sustainable architecture. 🌿</description>
+        <category>Innovation</category>
+        <media:content url="https://stucarbon.com/blog/biochar-concrete-city.webp" medium="image" />
+    </item>
+    <item>
+        <title>Medical Emissions: The 2026 Drive for 'Green Inhalers' and Clean Healthcare</title>
+        <link>https://stucarbon.com/blog/inhaler-carbon-footprint-climate-study-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/inhaler-carbon-footprint-climate-study-2026</guid>
+        <pubDate>Mon, 19 Jan 2026 03:00:00 GMT</pubDate>
+        <description>Asthma inhalers are a hidden source of greenhouse gases. 🌬️ A 2026 study explores the 'Green Inhaler' paradox and how medical care is evolving. 🏥</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/asthma-inhaler-climate.webp" medium="image" />
+    </item>
+    <item>
+        <title>Atmospheric Whiplash: Why NASA Says Global Weather Extremes are Now Synchronized</title>
+        <link>https://stucarbon.com/blog/el-nino-la-nina-weather-synchronization-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/el-nino-la-nina-weather-synchronization-2026</guid>
+        <pubDate>Mon, 19 Jan 2026 02:30:00 GMT</pubDate>
+        <description>Earth's water cycle is synchronizing. 🌊 New 2026 research from space data shows how El Niño and La Niña are linking global weather extremes. ⛈️</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/synchronized-weather-chaos.webp" medium="image" />
+    </item>
+    <item>
+        <title>NASA Just Dropped the 2025 Heat Report—and Something Massive is Missing</title>
+        <link>https://stucarbon.com/blog/nasa-2025-temperature-report-climate-omission</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/nasa-2025-temperature-report-climate-omission</guid>
+        <pubDate>Sun, 18 Jan 2026 10:00:00 GMT</pubDate>
+        <description>NASA confirms 2025 as the hottest year ever recorded, but the official report omits the phrase 'climate change'. 🌡️ Discover the science behind the data and the controversy.</description>
+        <category>Science</category>
+        
+    </item>
+    <item>
+        <title>38% of US CEOs Just Quit on Climate: Here’s Why</title>
+        <link>https://stucarbon.com/blog/us-ceo-sustainability-gap-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/us-ceo-sustainability-gap-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 08:45:00 GMT</pubDate>
+        <description>A new study reveals that 38% of US CEOs are deprioritizing sustainability in 2026. 📉 Compare this to global trends and discover the risks of climate inaction.</description>
+        <category>Business</category>
+        <media:content url="https://stucarbon.com/blog/ceo-sustainability-crisis-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The $1 Trillion Trade Secret: India and EU Just Reset Carbon</title>
+        <link>https://stucarbon.com/blog/india-eu-carbon-concession-trade-deal-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/india-eu-carbon-concession-trade-deal-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 08:15:00 GMT</pubDate>
+        <description>The EU and India are finalizing a trade deal with historic carbon concessions. 📉 Learn how 'Green Steel' standards are resetting the global trade agenda.</description>
+        <category>Policy</category>
+        <media:content url="https://stucarbon.com/blog/india-eu-trade-climate-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Japan Just Dumped China for Local Solar: The Shocking Result</title>
+        <link>https://stucarbon.com/blog/japan-solar-energy-independence-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/japan-solar-energy-independence-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 08:00:00 GMT</pubDate>
+        <description>Japan is pivoting its solar strategy to achieve 1.5°C energy independence. 📉 Discover how the move away from imported technology is reshaping the Asian clean-tech market.</description>
+        <category>Energy</category>
+        <media:content url="https://stucarbon.com/blog/japan-solar-independence-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The Middle East’s New $1 Trillion Secret: It’s Not Oil</title>
+        <link>https://stucarbon.com/blog/sfme-2026-carbon-markets-strategy</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/sfme-2026-carbon-markets-strategy</guid>
+        <pubDate>Sun, 18 Jan 2026 08:30:00 GMT</pubDate>
+        <description>Dive into the Sustainability Forum Middle East 2026. 📉 Learn about new carbon credit lifecycles and practical tools for corporate climate action.</description>
+        <category>Business</category>
+        <media:content url="https://stucarbon.com/blog/sfme-2026-strategy-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Nature’s New “Firewall” is Saving the World from Carbon Bombs</title>
+        <link>https://stucarbon.com/blog/boreal-forest-firewall-carbon-science-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/boreal-forest-firewall-carbon-science-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 08:15:00 GMT</pubDate>
+        <description>Discover how deciduous trees are mitigating wildfire carbon emissions. 🌲 New boreal forest research shows a path to resilient carbon storage.</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/boreal-forest-firewall-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Greenland is Melting: And Tech Giants are Racing for the Loot</title>
+        <link>https://stucarbon.com/blog/greenland-ice-melt-rare-earth-mining-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/greenland-ice-melt-rare-earth-mining-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 07:45:00 GMT</pubDate>
+        <description>Greenland's melting ice is revealing massive rare earth element deposits. 🏔️ Discover the geopolitical race for clean-tech resources and the environmental stakes.</description>
+        <category>Geopolitics</category>
+        <media:content url="https://stucarbon.com/blog/greenland-melting-mining-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>August 10th: The Day California Changes Business Forever</title>
+        <link>https://stucarbon.com/blog/california-climate-disclosure-law-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/california-climate-disclosure-law-2026</guid>
+        <pubDate>Sun, 18 Jan 2026 08:00:00 GMT</pubDate>
+        <description>California's mandatory climate reporting starts August 2026. 📉 Learn how Scope 1 and 2 disclosures will affect global business and sustainability trends.</description>
+        <category>Policy</category>
+        <media:content url="https://stucarbon.com/blog/california-climate-law-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The 930K Tonne Olympic Disaster: Melting the Very Snow it Needs</title>
+        <link>https://stucarbon.com/blog/olympics-2026-carbon-footprint-crisis</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/olympics-2026-carbon-footprint-crisis</guid>
+        <pubDate>Sun, 18 Jan 2026 07:30:00 GMT</pubDate>
+        <description>The 2026 Winter Olympics are facing a sustainability crisis. 🏟️ 930k tonnes of CO2 emissions are threatening the future of winter sports. Read our analysis.</description>
+        <category>Sports</category>
+        <media:content url="https://stucarbon.com/blog/olympics-2026-carbon-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>99% Warning Issued for 2026: Are You Ready for the Heat?</title>
+        <link>https://stucarbon.com/blog/berkeley-earth-2026-heat-warning</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/berkeley-earth-2026-heat-warning</guid>
+        <pubDate>Sun, 18 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Berkeley Earth warns of a 99% chance that 2026 will be a record-breaking hot year. 🥵 Discover the science behind the spike and what it means for the planet.</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/berkeley-earth-heat-warning-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>I Analyzed the Oxfam Carbon Report: The Reality is Shocking</title>
+        <link>https://stucarbon.com/blog/oxfam-carbon-report-2026-disparity</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/oxfam-carbon-report-2026-disparity</guid>
+        <pubDate>Sun, 18 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Wealthy elites exhausted their 2026 carbon budget by Jan 10th. 🤯 We breakdown the Oxfam report and what it means for student sustainability. 🌍</description>
+        <category>Analysis</category>
+        <media:content url="https://stucarbon.com/blog/oxfam-2026-disparity.webp" medium="image" />
+    </item>
+    <item>
+        <title>How to Seal Drafty Windows in a Rental (Without Losing Your Deposit)</title>
+        <link>https://stucarbon.com/blog/seal-drafty-windows-rental</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/seal-drafty-windows-rental</guid>
+        <pubDate>Sun, 18 Jan 2026 02:30:00 GMT</pubDate>
+        <description>Cold air leaking through your windows? 🥶 We tested the 5 best renter-friendly ways to seal drafts that landlords won't even notice. Save money NOW. 💸</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/renter-window-sealing.webp" medium="image" />
+    </item>
+    <item>
+        <title>How to Dispose of Used Cooking Oil in a Small Apartment (The Clean Way)</title>
+        <link>https://stucarbon.com/blog/dispose-cooking-oil-apartment</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/dispose-cooking-oil-apartment</guid>
+        <pubDate>Sun, 18 Jan 2026 03:30:00 GMT</pubDate>
+        <description>Empty jar? 🫙 Freezer? ❄️ We found the only clean, sustainable way to dispose of cooking oil in a small apartment. Save your pipes and the planet. 🌍</description>
+        <category>Tips</category>
+        <media:content url="https://stucarbon.com/blog/apartment-oil-disposal.webp" medium="image" />
+    </item>
+    <item>
+        <title>Is 4K Streaming Killing the Planet? The Hidden Carbon Cost of Ultra HD</title>
+        <link>https://stucarbon.com/blog/4k-vs-1080p-streaming-carbon</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/4k-vs-1080p-streaming-carbon</guid>
+        <pubDate>Sun, 18 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Does 4K use more energy? 🤯 We calculated the carbon footprint of Ultra HD vs HD streaming. The results might change how you binge-watch. 🍿</description>
+        <category>Digital</category>
+        <media:content url="https://stucarbon.com/blog/streaming-carbon-comparison.webp" medium="image" />
+    </item>
+    <item>
+        <title>Bathtub Laundry: Is Hand-Washing Actually More Sustainable?</title>
+        <link>https://stucarbon.com/blog/bathtub-laundry-vs-machine</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/bathtub-laundry-vs-machine</guid>
+        <pubDate>Sun, 18 Jan 2026 05:30:00 GMT</pubDate>
+        <description>Can you save water by washing clothes in the bathtub? 🛁 We did the math. The results might surprise you. 🧼</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/bathtub-laundry-eco.webp" medium="image" />
+    </item>
+    <item>
+        <title>How to Dispose of Old Yoga Mats (The Guide for Eco-Warriors)</title>
+        <link>https://stucarbon.com/blog/recycle-yoga-mats-environmentally</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/recycle-yoga-mats-environmentally</guid>
+        <pubDate>Sun, 18 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Old mat crumbling? 🧘‍♂️ Don't send it to the landfill! We found 5 ways to recycle or upcycle your yoga mat effortlessly. ♻️</description>
+        <category>Tips</category>
+        <media:content url="https://stucarbon.com/blog/yoga-mat-recycling.webp" medium="image" />
+    </item>
+    <item>
+        <title>5 Mind-Blowing Green Inventions Launched in Jan 2026</title>
+        <link>https://stucarbon.com/blog/green-inventions-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/green-inventions-2026</guid>
+        <pubDate>Sat, 17 Jan 2026 05:30:00 GMT</pubDate>
+        <description>Wait, water directly from AIR? 🤯 We tested the 5 wildest green inventions dropping in Jan 2026. #3 feels like literal magic. ✨</description>
+        <category>Innovation</category>
+        <media:content url="https://stucarbon.com/blog/future-tech-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>The '2016 Aesthetic' is Back, but This Time It's Sustainable</title>
+        <link>https://stucarbon.com/blog/2016-aesthetic-sustainable</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/2016-aesthetic-sustainable</guid>
+        <pubDate>Sat, 17 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Still wearing baggy jeans? 🛑 2016 fashion is officially back! Here’s how to thrift the 'Tumblr Girl' aesthetic without destroying the planet. ♻️</description>
+        <category>Fashion</category>
+        <media:content url="https://stucarbon.com/blog/2016-nostalgia.webp" medium="image" />
+    </item>
+    <item>
+        <title>Why I Stopped Buying Laptops: The Rise of Hardware-as-a-Service</title>
+        <link>https://stucarbon.com/blog/haas-laptop-subscription</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/haas-laptop-subscription</guid>
+        <pubDate>Sat, 17 Jan 2026 03:30:00 GMT</pubDate>
+        <description>STOP buying laptops! 🛑 I switched to a 'Modular Subscription' and it saved me $1000. Here's the brutal truth about Hardware-as-a-Service. 💻</description>
+        <category>Technology</category>
+        <media:content url="https://stucarbon.com/blog/haas-laptop.webp" medium="image" />
+    </item>
+    <item>
+        <title>I Tried the 'Soft Reset' January Trend to Cure My Eco-Anxiety</title>
+        <link>https://stucarbon.com/blog/soft-reset-january-trend</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/soft-reset-january-trend</guid>
+        <pubDate>Sat, 17 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Burned out by 'New Year New Me'? 🤯 The 'Soft Reset' trend is the anti-hustle cure for your eco-anxiety. 3 days, $0 cost, pure zen. 🧘‍♀️</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/soft-reset.webp" medium="image" />
+    </item>
+    <item>
+        <title>I Swapped My Lithium Charger for a 'Salt Battery' and It's a Game Changer</title>
+        <link>https://stucarbon.com/blog/salt-batteries-lithium-alternative</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/salt-batteries-lithium-alternative</guid>
+        <pubDate>Sat, 17 Jan 2026 03:30:00 GMT</pubDate>
+        <description>I ditched my Lithium power bank for SALT. 🧂 Yes, really. Is the new 2026 Sodium-Ion tech actually safe? The results shocked me. ⚡</description>
+        <category>Technology</category>
+        <media:content url="https://stucarbon.com/blog/ai-diet-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>5 New 'Carbon Taxes' Hitting Everyday Products in 2026</title>
+        <link>https://stucarbon.com/blog/carbon-tax-everyday-products-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/carbon-tax-everyday-products-2026</guid>
+        <pubDate>Sat, 17 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Coffee, clothes, and flights? 💸 The age of the 'Carbon Tax' is here. See the 5 everyday items getting hit with climate fees in 2026. 📉</description>
+        <category>Politics</category>
+        <media:content url="https://stucarbon.com/blog/carbon-tax-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>6 Surprisingly High-Carbon Activities (And What to Do Instead)</title>
+        <link>https://stucarbon.com/blog/6-surprisingly-high-carbon-activities</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/6-surprisingly-high-carbon-activities</guid>
+        <pubDate>Fri, 16 Jan 2026 08:30:00 GMT</pubDate>
+        <description>Wait, CHEESE is bad for the planet?! 🧀😱 6 everyday habits with shockingly high carbon footprints. Number 2 will surprise you! 🤯</description>
+        <category>Tips</category>
+        <media:content url="https://stucarbon.com/blog/surprising-carbon-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Circular Economy Revolution: 8 Ways to Never Waste Again</title>
+        <link>https://stucarbon.com/blog/circular-economy-8-ways-never-waste</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/circular-economy-8-ways-never-waste</guid>
+        <pubDate>Fri, 16 Jan 2026 07:30:00 GMT</pubDate>
+        <description>Never Waste Again! ♻️ 8 genius ways to repair, rent, and resell your way to a richer life and a cleaner planet. 🛠️</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/circular-economy-2026-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>10 Things Scientists Want You to Know About Climate Change in 2026</title>
+        <link>https://stucarbon.com/blog/10-things-scientists-climate-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/10-things-scientists-climate-2026</guid>
+        <pubDate>Fri, 16 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Forget the clickbait. 🛑 Here are 10 things climate scientists ACTUALLY want you to know in 2026. Real talk, real hope. 🧪</description>
+        <category>Science</category>
+        <media:content url="https://stucarbon.com/blog/climate-science-2026-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The Water Crisis Is Here: 5 Shocking Facts About 2026's Growing Emergency</title>
+        <link>https://stucarbon.com/blog/water-crisis-2026-shocking-facts</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/water-crisis-2026-shocking-facts</guid>
+        <pubDate>Fri, 16 Jan 2026 05:30:00 GMT</pubDate>
+        <description>The Water Crisis is HERE. 💧 5 shocking facts about 2026's emergency that no one is talking about. Are you prepared? 🚿</description>
+        <category>Environment</category>
+        <media:content url="https://stucarbon.com/blog/water-crisis-2026-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>7 Ways 2026 Will Change Your Carbon Footprint Forever</title>
+        <link>https://stucarbon.com/blog/7-ways-2026-changes-carbon-footprint</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/7-ways-2026-changes-carbon-footprint</guid>
+        <pubDate>Fri, 16 Jan 2026 04:30:00 GMT</pubDate>
+        <description>7 Ways 2026 Will Change Your Life Forever! 📅 EU taxes, new climate limits, and what they mean for YOUR wallet and footprint. 📉</description>
+        <category>Trends</category>
+        <media:content url="https://stucarbon.com/blog/2026-carbon-changes-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Rich People Flew 1,500 Private Jets to a Climate Summit. Yes, Really.</title>
+        <link>https://stucarbon.com/blog/private-jets-davos-2026-carbon-hypocrisy</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/private-jets-davos-2026-carbon-hypocrisy</guid>
+        <pubDate>Thu, 15 Jan 2026 10:30:00 GMT</pubDate>
+        <description>1,500 Private Jets for a Climate Summit?! ✈️🤬 The viral story exposing massive hypocrisy and why it matters for YOUR footprint. 🔥</description>
+        <category>News</category>
+        <media:content url="https://stucarbon.com/blog/davos-private-jets-2026.webp" medium="image" />
+    </item>
+    <item>
+        <title>12 Sustainability Trends Reshaping the World in 2026 (You Need to Know)</title>
+        <link>https://stucarbon.com/blog/12-sustainability-trends-2026</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/12-sustainability-trends-2026</guid>
+        <pubDate>Thu, 15 Jan 2026 10:00:00 GMT</pubDate>
+        <description>2026 is changing EVERYTHING! 🌍 From carbon taxes to AI climate tech—here are the 12 trends rewriting our future. Don't be left behind! 🔮</description>
+        <category>Trends</category>
+        <media:content url="https://stucarbon.com/blog/sustainability-trends-2026-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Netflix, Gaming &amp; Your Carbon Footprint: The Complete Digital Impact Guide</title>
+        <link>https://stucarbon.com/blog/streaming-gaming-carbon-footprint-guide</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/streaming-gaming-carbon-footprint-guide</guid>
+        <pubDate>Thu, 15 Jan 2026 12:30:00 GMT</pubDate>
+        <description>Streaming &amp; Gaming: The hidden climate villains? 🎮🕵️‍♂️ Uncover the carbon cost of your digital fun and how to game greener! 🌍</description>
+        <category>Technology</category>
+        <media:content url="https://stucarbon.com/blog/streaming-footprint-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The Zero-Waste Dorm Challenge: A Complete Guide to Sustainable Living</title>
+        <link>https://stucarbon.com/blog/zero-waste-dorm-challenge-guide</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/zero-waste-dorm-challenge-guide</guid>
+        <pubDate>Thu, 15 Jan 2026 10:30:00 GMT</pubDate>
+        <description>Challenge Accepted: The Zero-Waste Dorm Guide! 🗑️🚫 Step-by-step hacks to cut trash, save cash, and live cleaner. Are you in? 💪</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/zero-waste-dorm-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Electric Car vs Public Transit: Which Is Greener for Your Commute?</title>
+        <link>https://stucarbon.com/blog/electric-car-vs-public-transport-carbon</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/electric-car-vs-public-transport-carbon</guid>
+        <pubDate>Thu, 15 Jan 2026 08:30:00 GMT</pubDate>
+        <description>EVs vs. the Bus: Who wins the green race? 🏎️🚌 We crunch the numbers to find the lowest-carbon way to get around. 🏁</description>
+        <category>Transportation</category>
+        <media:content url="https://stucarbon.com/blog/transport-carbon-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Plant-Based Eating on a Student Budget: Save Money and the Planet</title>
+        <link>https://stucarbon.com/blog/plant-based-eating-student-budget</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/plant-based-eating-student-budget</guid>
+        <pubDate>Thu, 15 Jan 2026 06:30:00 GMT</pubDate>
+        <description>Go vegan, save cash! 💸 Plant-based eating on a budget: 30% cheaper, 50% less carbon. Your ultimate student guide to tasty, green meals. 🥗</description>
+        <category>Food</category>
+        <media:content url="https://stucarbon.com/blog/plant-based-diet-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>Fast Fashion's Dirty Secret: Why Your $10 Shirt Costs the Earth</title>
+        <link>https://stucarbon.com/blog/fast-fashion-carbon-footprint-students</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/fast-fashion-carbon-footprint-students</guid>
+        <pubDate>Thu, 15 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Is your wardrobe killing the planet? 👗 The dark truth about fast fashion and how to slay sustainable style on a budget. 💅</description>
+        <category>Lifestyle</category>
+        <media:content url="https://stucarbon.com/blog/fast-fashion-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>The Hidden Carbon Footprint of AI: What Every Student Using ChatGPT Should Know</title>
+        <link>https://stucarbon.com/blog/ai-carbon-footprint-chatgpt-students</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/ai-carbon-footprint-chatgpt-students</guid>
+        <pubDate>Thu, 15 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Does ChatGPT have a carbon footprint? 🤖 The hidden environmental cost of AI and how to use tech responsibly. ☁️</description>
+        <category>Technology</category>
+        <media:content url="https://stucarbon.com/blog/ai-carbon-footprint-hero.webp" medium="image" />
+    </item>
+    <item>
+        <title>10 Easy Ways to Reduce Your Carbon Footprint as a Student</title>
+        <link>https://stucarbon.com/blog/how-to-reduce-carbon-footprint-as-student</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/how-to-reduce-carbon-footprint-as-student</guid>
+        <pubDate>Mon, 12 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Slash your carbon footprint without spending a dime! 💸 Discover 10 easy, student-friendly hacks to save the planet and your budget. 🌍</description>
+        <category>Tips</category>
+        
+    </item>
+    <item>
+        <title>What is a Carbon Footprint? A Student's Guide</title>
+        <link>https://stucarbon.com/blog/understanding-carbon-footprint</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/understanding-carbon-footprint</guid>
+        <pubDate>Sat, 10 Jan 2026 04:30:00 GMT</pubDate>
+        <description>What exactly IS a carbon footprint? 🤔 We break down the science simply and show how your daily choices impact the planet. Measure yours today! 👣</description>
+        <category>Education</category>
+        
+    </item>
+    <item>
+        <title>The Ultimate Guide to Sustainable Dorm Living</title>
+        <link>https://stucarbon.com/blog/sustainable-dorm-living</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/sustainable-dorm-living</guid>
+        <pubDate>Thu, 08 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Turn your dorm into an eco-paradise! 🏡 Simple, cheap, and stylish ways to make your space sustainable. Zero-waste living starts here! ✨</description>
+        <category>Lifestyle</category>
+        
+    </item>
+    <item>
+        <title>How Your Diet Affects Your Carbon Footprint</title>
+        <link>https://stucarbon.com/blog/meat-consumption-carbon-impact</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/meat-consumption-carbon-impact</guid>
+        <pubDate>Mon, 05 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Eat good, feel good, save the planet! 🥗 Discover how simple diet swaps can massively reduce your carbon footprint. Delicious &amp; eco-friendly! 🥑</description>
+        <category>Food</category>
+        
+    </item>
+    <item>
+        <title>Your Digital Carbon Footprint: Streaming, Gaming &amp; More</title>
+        <link>https://stucarbon.com/blog/digital-carbon-footprint</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/digital-carbon-footprint</guid>
+        <pubDate>Sat, 03 Jan 2026 04:30:00 GMT</pubDate>
+        <description>Netflix, Gaming, &amp; CO2: The hidden cost of your digital life! 🎮📺 Learn how to binge-watch and game without guzzling energy. ⚡</description>
+        <category>Technology</category>
+        
+    </item>
+    <item>
+        <title>How Universities Are Leading the Sustainability Charge</title>
+        <link>https://stucarbon.com/blog/campus-sustainability-initiatives</link>
+        <guid isPermaLink="true">https://stucarbon.com/blog/campus-sustainability-initiatives</guid>
+        <pubDate>Sun, 28 Dec 2025 04:30:00 GMT</pubDate>
+        <description>Is your campus green enough? 🌿 Explore the coolest sustainability initiatives transforming universities worldwide and how YOU can get involved! 🚀</description>
+        <category>Campus</category>
+        
+    </item>
+</channel>
+</rss>

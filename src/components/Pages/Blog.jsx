@@ -113,13 +113,19 @@ export function BlogPost() {
 
     // Inject JSON-LD structured data directly into head (react-helmet-async has issues with script tags)
     useEffect(() => {
+        // Check if post is "fresh" (less than 48 hours old) for NewsArticle schema
+        const refreshThreshold = 48 * 60 * 60 * 1000; // 48 hours in ms
+        const isFresh = (new Date() - new Date(post.datePublished)) < refreshThreshold;
+
         // JSON-LD Structured Data for Google Rich Results
         const structuredData = {
             "@context": "https://schema.org",
-            "@type": "Article",
+            "@type": isFresh ? "NewsArticle" : "Article", // Dynamic schema switching for Discover
             "headline": post.title,
             "description": post.metaDescription,
-            "image": `https://stucarbon.com${post.featuredImage}`,
+            "image": [
+                `https://stucarbon.com${post.featuredImage}`
+            ],
             "author": {
                 "@type": "Organization",
                 "name": post.author.name,
