@@ -434,7 +434,7 @@ export const blogPosts = [
     {
         id: 55,
         slug: '7-electric-cars-under-25k-2026',
-        title: "7 Electric Cars Under $25k in 2026: The Affordable EV Revolution",
+        title: "Best Cheap Electric Cars 2026: Top 7 Under $25k",
         excerpt: "Think EVs are too expensive? 🚗 Think again. The 2026 market is flooded with affordable options. Here are the 7 best buys under $25k.",
         category: 'Tech',
         date: 'January 23, 2026',
@@ -1969,7 +1969,7 @@ export const blogPosts = [
     {
         id: 25,
         slug: 'green-inventions-2026',
-        title: "5 Mind-Blowing Green Inventions Launched in Jan 2026",
+        title: "5 Best Green Inventions of January 2026",
         excerpt: "From algae-powered streetlights to water-from-air bottles. We rounded up the coolest sustainable tech dropping this month.",
         category: 'Innovation',
         date: 'January 17, 2026',
