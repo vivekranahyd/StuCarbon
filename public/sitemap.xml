@@ -8,9 +8,9 @@
   </url>
   <url>
     <loc>https://stucarbon.com/carbon-footprint-calculator-for-kids</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://stucarbon.com/about</loc>
@@ -41,6 +41,12 @@
     <lastmod>2026-01-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://stucarbon.com/blog/worst-winter-storms-us-history-vs-2026</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stucarbon.com/blog/dont-buy-s26-ultra-keep-s23</loc>

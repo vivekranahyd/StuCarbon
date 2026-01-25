@@ -3,6 +3,110 @@
 
 export const blogPosts = [
     {
+        id: 35,
+        slug: 'worst-winter-storms-us-history-vs-2026',
+        title: "7 Worst Winter Storms in US History: How Does 2026 Compare?",
+        excerpt: "From the 'White Hurricane' of 1913 to the Great Blizzard of 1888, see how today's 2026 ice crisis ranks against the deadliest weather events in American history. ❄️",
+        category: 'Climate News',
+        date: 'January 25, 2026',
+        readTime: '7 min read',
+        emoji: '🌩️',
+        featuredImage: '/blog/winter-storm-history.webp',
+        metaTitle: "7 Worst Winter Storms in US History vs 2026 | StuCarbon",
+        metaDescription: "Is the 2026 storm the worst ever? ❄️ We rank the top 7 deadliest US blizzards in history, from the 1888 Great Blizzard to today's ice crisis.",
+        keywords: ['worst winter storms us history', 'historic blizzards list', 'winter storm 2026 vs 1888', 'deadliest us snowstorms', 'great blizzard 1888'],
+        author: {
+            name: 'Vivek Rana',
+            url: '/about',
+            image: '/vivek-rana.jpg',
+            role: 'Sustainability Enthusiast',
+            bio: 'Vivek Rana is a passionate sustainability enthusiast challenging the status quo and finding better ways to protect our planet.'
+        },
+        datePublished: '2026-01-25T18:00:00+05:30',
+        dateModified: '2026-01-25T18:00:00+05:30',
+        content: {
+            intro: "As 160 million Americans brace for the 'Ice Age' of 2026, social media is flooded with comparisons. Is this really unprecedented? Or have we forgotten the frozen monsters of the past? We dug into the archives to rank the 7 most catastrophic winter storms in U.S. history to see exactly where today's crisis fits on the disaster scale.",
+            sections: [
+                {
+                    heading: '1. The Great Blizzard of 1888 (The "Great White Hurricane")',
+                    content: "The gold standard of bad weather. In March 1888, the East Coast was buried under 55 inches of snow. Sustained winds hit 45 mph for days. The result? 400 deaths and the total paralysis of New York City. Fun fact: This storm was so bad it convinced NYC to finally build the subway system underground.",
+                    verdict: "Status: The deadliest (400+ fatalities).",
+                    infographic: {
+                        url: '/blog/storm-1888-nyc.webp',
+                        alt: 'People walking in snow tunnels, NYC 1888',
+                        caption: 'NYC streets required tunnels to move (1888)'
+                    }
+                },
+                {
+                    heading: '2. The 1993 "Storm of the Century"',
+                    content: "If you were alive in '93, you remember this. It hit 26 states at once. It wasn't just snow; it was a 'white hurricane' that dropped snowfall as far south as Florida. 10 million people lost power (a record at the time).",
+                    verdict: "Status: The most widespread (covering 50% of the US population).",
+                    infographic: {
+                        url: '/blog/storm-1993-map.webp',
+                        alt: 'Satellite view of 1993 Storm of the Century',
+                        caption: 'The storm covered the entire Eastern Seaboard.'
+                    }
+                },
+                {
+                    heading: '3. The Knickerbocker Storm (1922)',
+                    content: "Named after the tragedy it caused. 28 inches of heavy, wet snow famously collapsed the roof of the Knickerbocker Theater in Washington D.C., killing 98 people during a movie screening. It remains D.C.'s biggest snow event on record.",
+                    verdict: "Status: The most tragic structural failure.",
+                    infographic: {
+                        url: '/blog/storm-1922-knickerbocker.webp',
+                        alt: 'Collapsed roof of Knickerbocker Theater',
+                        caption: 'The aftermath of the theater collapse.'
+                    }
+                },
+                {
+                    heading: '4. The Great Lakes Storm of 1913',
+                    content: "A nightmare for sailors. Two converging storm fronts created hurricane-force winds on the Great Lakes, sinking 12 major ships and killing over 250 sailors. It remains the deadliest natural disaster in the Great Lakes region.",
+                    verdict: "Status: The worst maritime winter disaster.",
+                    infographic: {
+                        url: '/blog/storm-1913-ship.webp',
+                        alt: 'Ship battling waves in 1913 Great Lakes storm',
+                        caption: 'Ships were no match for the hurricane-force winds.'
+                    }
+                },
+                {
+                    heading: '5. Snowmageddon (2010)',
+                    content: "The viral storm. Two back-to-back blizzards slammed the Mid-Atlantic, dropping 30+ inches of snow. It broke nearly every snowfall record in the book for Washington D.C. and Baltimore, shutting down the federal government for a week.",
+                    verdict: "Status: The costliest paralysis of the capital.",
+                    infographic: {
+                        url: '/blog/storm-2010-snowmageddon.webp',
+                        alt: 'US Capitol building buried in snow 2010',
+                        caption: 'Snowmageddon buried Washington D.C.'
+                    }
+                },
+                {
+                    heading: '6. The Armistice Day Blizzard (1940)',
+                    content: "The 'duck hunter's storm'. The temperature dropped from 60°F to freezing in hours, catching thousands of lightly dressed hunters off guard in the Midwest. 145 people froze to death in the sudden shift.",
+                    verdict: "Status: The fastest temperature drop.",
+                    infographic: {
+                        url: '/blog/storm-1940-armistice.webp',
+                        alt: 'Hunters in boat during 1940 blizzard',
+                        caption: 'Hunters were caught unprepared by the sudden freeze.'
+                    }
+                },
+                {
+                    heading: '7. The 2026 "Ice Crisis" (Happening Now)',
+                    content: "So, how does today compare? While snowfall totals are lower than 1888, the *ice* accumulation is historic. We are seeing 1.5 inches of ice in the South, snapping grids faster than wind ever could. It won't beat the death toll of 1888 (thanks to modern heating), but it might set the record for economic damage.",
+                    verdict: "Status: Potentially the most expensive (Grid failure costs pending).",
+                    infographic: {
+                        url: '/blog/storm-2026-ice-crisis.webp',
+                        alt: 'Futuristic icy city street 2026',
+                        caption: '2026: An infrastructure nightmare.'
+                    }
+                }
+            ],
+            conclusion: "The 2026 storm is brutal, but history reminds us: it could always be worse. At least we have Netflix and insulated housing (mostly). Stay warm, stay off the roads, and respect the ice.",
+            faqs: [
+                { question: 'What was the deadliest US winter storm?', answer: 'The Great Blizzard of 1888, which killed over 400 people.' },
+                { question: 'Is 2026 breaking records?', answer: 'Yes, specifically for ice accumulation in the South and wind chill records in the Midwest.' }
+            ],
+            relatedPosts: ['us-cities-colder-than-antarctica-2026', 'wood-burner-health-warning-2026']
+        }
+    },
+    {
         id: 34,
         slug: 'dont-buy-s26-ultra-keep-s23',
         title: "Don't Buy the S26 Ultra: Keep Your S23",

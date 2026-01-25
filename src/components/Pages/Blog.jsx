@@ -350,7 +350,8 @@ export function BlogPost() {
                                         alt={section.infographic.alt}
                                         loading="lazy"
                                         width="1200"
-                                        height="630"
+                                        height="auto"
+                                        style={{ maxWidth: '100%', height: 'auto' }}
                                     />
                                     {section.infographic.caption && (
                                         <figcaption>{section.infographic.caption}</figcaption>
