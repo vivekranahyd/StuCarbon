@@ -270,17 +270,51 @@ export function BlogPost() {
                 <header className="blog-article-header">
                     <span className="blog-article-category">{post.category}</span>
                     <h1 className="blog-article-title">{post.title}</h1>
-                    <div className="blog-article-meta">
-                        <span className="blog-article-date">
-                            <time dateTime={post.datePublished}>{post.date}</time>
-                        </span>
-                        <span className="blog-article-separator">•</span>
-                        <span className="blog-article-read-time">{post.readTime}</span>
-                        <span className="blog-article-separator">•</span>
-                        <span className="blog-article-separator">•</span>
-                        <div className="blog-article-author-inline">
-                            <img src={post.author.image} alt={post.author.name} width="32" height="32" />
-                            <span>By {post.author.name}</span>
+                    <div className="blog-article-meta-header">
+                        <img
+                            src={post.author.image}
+                            alt={post.author.name}
+                            className="blog-author-img-large"
+                            width="64"
+                            height="64"
+                        />
+                        <div className="blog-meta-text">
+                            <div className="blog-author-name-line">
+                                BY <span className="blog-author-name-highlight">{post.author.name.toUpperCase()}</span>
+                            </div>
+                            <div className="blog-article-date">
+                                <time dateTime={post.datePublished}>
+                                    Published on {new Date(post.datePublished).toLocaleString('en-US', {
+                                        month: 'short',
+                                        day: 'numeric',
+                                        year: 'numeric',
+                                        hour: 'numeric',
+                                        minute: '2-digit',
+                                        hour12: true,
+                                        timeZone: 'America/New_York',
+                                        timeZoneName: 'short'
+                                    })}
+                                </time>
+                                {post.dateModified && post.dateModified !== post.datePublished && (
+                                    <>
+                                        <span className="blog-article-separator">•</span>
+                                        <span>
+                                            Last Updated: {new Date(post.dateModified).toLocaleString('en-US', {
+                                                month: 'short',
+                                                day: 'numeric',
+                                                year: 'numeric',
+                                                hour: 'numeric',
+                                                minute: '2-digit',
+                                                hour12: true,
+                                                timeZone: 'America/New_York',
+                                                timeZoneName: 'short'
+                                            })}
+                                        </span>
+                                    </>
+                                )}
+                                <span className="blog-article-separator">•</span>
+                                <span className="blog-article-read-time">{post.readTime}</span>
+                            </div>
                         </div>
                     </div>
                 </header>

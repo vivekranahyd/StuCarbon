@@ -11,7 +11,7 @@ Add the new blog post object(s) to `src/data/blogPosts.js`:
 - Increment the `id` from the last post
 - Create a unique, SEO-friendly `slug`
 - **Catchy Title**: Title MUST be short (max 10 words) and highly clickable (Discover-optimized).
-- Include all required fields: title, excerpt, category, date, readTime, emoji
+- Include all required fields: title, excerpt, category, date (with exact time), readTime, emoji
 - Add SEO meta: metaTitle, metaDescription, keywords
 - Add structured data: author, datePublished, dateModified
 - Write full content with intro, sections, conclusion, and FAQs
@@ -48,8 +48,8 @@ Ensure the article scores ~100 on PageSpeed Insights:
 
 ## Notes
 - Date format in sitemap: `YYYY-MM-DD`
-- Date format in blogPosts.js: `Month DD, YYYY` (e.g., "January 15, 2026")
-- datePublished/dateModified format: ISO 8601 (e.g., "2026-01-15T10:00:00+05:30")
+- Date format in blogPosts.js: `Month DD, YYYY • H:MM AM/PM EST` (e.g., "January 25, 2026 • 6:00 PM EST")
+- datePublished/dateModified format: ISO 8601 (e.g., "2026-01-15T10:00:00+05:30"). Always ensure `dateModified` is updated if content changes significantly.
 
 ## JSON-LD Structured Data Guidelines
 All pages with JSON-LD structured data MUST use the shared `safeJsonStringify` utility from `src/utils/jsonLd.js`. This prevents Google Search Console parsing errors by escaping special characters.
